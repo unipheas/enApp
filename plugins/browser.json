@@ -7,8 +7,17 @@
         "files": {}
     },
     "installed_plugins": {
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.ionicframework.enapp672295"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.ionicframework.enapp672295"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.ionicframework.enapp672295"
+        },
         "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.ionicframework.enapp398759"
+            "PACKAGE_NAME": "com.ionicframework.enapp672295"
         }
     },
     "dependent_plugins": {}

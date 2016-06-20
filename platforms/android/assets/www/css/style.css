@@ -1,1 +1,286 @@
-/* Empty. Add your own CSS if you like */
+/*FONTS*/
+@font-face {
+  font-family: 'nanum_penregular';
+  src: url('nanumpenscript-regular-webfont.woff2') format('woff2'),
+  url('nanumpenscript-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/*GLOBALS*/
+
+.button{
+  /* button: */
+  background: rgba(0,0,0,0.50);
+  box-shadow: 0px 2px 4px 0px #000000;
+  border-radius: 10px;
+  width: 77.74px;
+  height: 78.81px;
+  margin: 3px;
+  float:left;
+  list-style-type:none;
+  width:23%;
+
+  /* text */
+  font-family: .HelveticaNeueDeskInterface-Regular;
+  font-size: 42.64px;
+  color: #02FD3D;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 77.74px;
+}
+
+.buttonRow{
+  width:375px;
+  height:75px;
+  margin-left:-26px;
+}
+
+.titleBackground{
+  /* titleBackground: */
+  background: rgba(0, 0, 0, 0.30);
+  border: 1px solid #979797;
+  margin: 0px -10px;
+  padding: 0;
+}
+
+.title{
+  /* title: */
+  font-family: NanumPen;
+  font-size: 36px;
+  color: #02FD3D;
+  letter-spacing: 0px;
+  text-shadow: 0px 2px 4px #000000;
+}
+
+.backButton{
+  float: left;
+  clear: both;
+  padding: 10px;
+  margin-top: -12px;
+}
+
+.titleText{
+  text-align: center;
+}
+
+.contentText{
+  /* content: */
+
+  font-family: .HelveticaNeueDeskInterface-Regular;
+  font-size: 48px;
+  color: #02FD3D;
+  letter-spacing: 0px;
+  text-shadow: 0px 2px 4px #000000;
+}
+
+/* MAIN */
+
+.main {
+  background: url(../img/bg/main/background.png); /*  add ../ to go up a dir */
+  background-size: cover;
+  /*background-size: 375px 800px; */
+  background-repeat: no-repeat;
+}
+
+#mainTitleBackground{
+  /* titleBackground: */
+  opacity: 0.3;
+  background: #000000;
+  border: 1px solid #979797;
+}
+
+#mainTitle{
+  /* title: */
+
+  font-family: NanumPen;
+  font-size: 24px;
+  color: #02FD3D;
+  letter-spacing: 0px;
+  text-shadow: 0px 2px 4px #000000;
+}
+#mainShortVowels{
+  /* shortVowels: */
+
+  font-family: NanumPen;
+  font-size: 32px;
+  color: #FF00F1;
+  letter-spacing: 0px;
+  text-shadow: 0px 2px 4px #000000;
+}
+
+a:active, a:hover, a:link, a:visited  {
+  color: #ff00f1;
+  text-decoration: none !important;
+
+}
+#mainLongVowels{
+  /* longVowels: */
+
+  font-family: NanumPen;
+  font-size: 36px;
+  color: #FF001F;
+  letter-spacing: 0px;
+  text-shadow: 0px 2px 4px #000000;
+}
+
+a:active, a:link, a:hover, a:visited {
+  color: #ff001f;
+  text-decoration: none !important;
+}
+#mainConsonants{
+  /* consonants: */
+
+  font-family: NanumPen;
+  font-size: 36px;
+  color: #FFE400;
+  letter-spacing: 0px;
+  text-shadow: 0px 2px 4px #000000;
+}
+a:link, a:hover, a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+a:active {
+  color: #ffe400;
+  text-decoration: none;
+}
+#mainBlends{
+  /* blends: */
+
+  font-family: NanumPen;
+  font-size: 36px;
+  color: #15FF00;
+  letter-spacing: 0px;
+  text-shadow: 0px 2px 4px #000000;
+}
+a:link, a:hover, a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+a:active {
+  color: #15ff00;
+  text-decoration: none;
+}
+#mainMoreComing{
+  /* moreComing: */
+
+  font-family: NanumPen;
+  font-size: 36px;
+  color: #00F8FF;
+  letter-spacing: 0px;
+  text-shadow: 0px 2px 4px #000000;
+}
+a:link, a:hover, a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+a:active {
+  color: #00f8ff;
+  text-decoration: none;
+}
+#mainSoon{
+  /* soon: */
+
+  font-family: NanumPen;
+  font-size: 48px;
+  color: #37FF00;
+  letter-spacing: 0px;
+  text-shadow: 0px 2px 4px #000000;
+}
+a:link, a:hover, a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+a:active {
+  color: #37ff00;
+  text-decoration: none;
+}
+
+
+/* SHORT VOWELS */
+#shortTitle{
+  /* title: */
+  font-family: NanumPen;
+  font-size: 36px;
+  color: #02FD3D;
+  letter-spacing: 0px;
+  text-shadow: 0px 2px 4px #000000;
+}
+
+
+
+/* LONG VOWELS */
+#longTitle{
+  /* title: */
+  font-family: NanumPen;
+  font-size: 36px;
+  color: #02FD3D;
+  letter-spacing: 0px;
+  text-shadow: 0px 2px 4px #000000;
+}
+.longBottomButton1{
+  /* button: */
+  background: rgba(0,0,0,0.48);
+  border: 1px solid #040404;
+  box-shadow: 0px 2px 4px 0px #000000;
+  border-radius: 10px;
+}
+.longBottomText1{
+  /* text */
+  font-family: .HelveticaNeueDeskInterface-Regular;
+  font-size: 48px;
+  color: #02FD3D;
+  letter-spacing: 0px;
+}
+#longBottomButton2{
+  /* button: */
+  opacity: 0.5;
+  background: rgba(0,0,0,0.50);
+  border: 1px solid #040404;
+  box-shadow: 0px 2px 4px 0px #000000;
+  border-radius: 10px;
+}
+#longBottomText2{
+  /* a_e: */
+  font-family: .HelveticaNeueDeskInterface-Regular;
+  font-size: 48px;
+  color: #02FD3D;
+  letter-spacing: 0px;
+}
+
+
+
+/* CONSONANTS */
+.consBody{
+  background: url(../img/bg/consonants/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+/* BLENDS */
+.blendsBody {
+  background: url(../img/bg/blends/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.blendsContent{
+
+}
+
+#oioy{
+  /* oi,oy: */
+  font-size: 30px;
+}
+#ouow{
+  /* ou,ow: */
+  font-size: 26px;
+}
+#erurir{
+  /* er,ur,ir: */
+  font-size: 20px;
+}
