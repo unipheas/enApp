@@ -1,4 +1,5 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 module.exports = [
     {
@@ -19,6 +20,12 @@ module.exports.metadata =
 // TOP OF METADATA
 {
 >>>>>>> Stashed changes
+=======
+module.exports = [];
+module.exports.metadata = 
+// TOP OF METADATA
+{
+>>>>>>> master
     "cordova-plugin-whitelist": "1.2.2"
 }
 // BOTTOM OF METADATA

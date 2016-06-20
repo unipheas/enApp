@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 // Ionic Starter App
 
@@ -49,3 +50,5 @@ angular.module('starter', ['ionic'])
 //   });
 // })
 >>>>>>> Stashed changes
+=======
+>>>>>>> master

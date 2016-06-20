@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 /* Empty. Add your own CSS if you like */
 =======
+=======
+>>>>>>> master
 /*FONTS*/
 @font-face {
   font-family: 'nanum_penregular';
@@ -203,11 +206,14 @@ a:active {
 
 
 /* SHORT VOWELS */
+<<<<<<< HEAD
 /* background */
 .shortVowelsBody{
   background: url(../img/bg/shortVowels/background.png);
   background-size: cover;
   background-repeat: no-repeat;
+=======
+>>>>>>> master
 #shortTitle{
   /* title: */
   font-family: NanumPen;
@@ -228,12 +234,15 @@ a:active {
   letter-spacing: 0px;
   text-shadow: 0px 2px 4px #000000;
 }
+<<<<<<< HEAD
 /* background */
 .longVowelsBody{
   background: url(../img/bg/longVowels/background.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
+=======
+>>>>>>> master
 .longBottomButton1{
   /* button: */
   background: rgba(0,0,0,0.48);
@@ -298,4 +307,7 @@ a:active {
   /* er,ur,ir: */
   font-size: 20px;
 }
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> master
