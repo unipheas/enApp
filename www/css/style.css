@@ -200,20 +200,29 @@ a:active {
 
 
 /* SHORT VOWELS */
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 =======
 =======
 >>>>>>> Stashed changes
+=======
+
+>>>>>>> master
 /* background */
 .shortVowelsBody{
   background: url(../img/bg/shortVowels/background.png);
   background-size: cover;
   background-repeat: no-repeat;
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
+=======
+}
+
+>>>>>>> master
 #shortTitle{
   /* title: */
   font-family: NanumPen;
@@ -222,8 +231,6 @@ a:active {
   letter-spacing: 0px;
   text-shadow: 0px 2px 4px #000000;
 }
-
-
 
 /* LONG VOWELS */
 #longTitle{
@@ -234,21 +241,29 @@ a:active {
   letter-spacing: 0px;
   text-shadow: 0px 2px 4px #000000;
 }
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 =======
 =======
 >>>>>>> Stashed changes
+=======
+
+>>>>>>> master
 /* background */
 .longVowelsBody{
   background: url(../img/bg/longVowels/background.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
+=======
+
+>>>>>>> master
 .longBottomButton1{
   /* button: */
   background: rgba(0,0,0,0.48);

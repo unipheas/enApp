@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< Updated upstream
@@ -58,3 +59,5 @@ angular.module('starter', ['ionic'])
 >>>>>>> master
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> master

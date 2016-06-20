@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< Updated upstream
@@ -7,6 +8,8 @@
 >>>>>>> master
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> master
 /*FONTS*/
 @font-face {
   font-family: 'nanum_penregular';
@@ -209,20 +212,29 @@ a:active {
 
 
 /* SHORT VOWELS */
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 >>>>>>> Stashed changes
+=======
+
+>>>>>>> master
 /* background */
 .shortVowelsBody{
   background: url(../img/bg/shortVowels/background.png);
   background-size: cover;
   background-repeat: no-repeat;
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 >>>>>>> master
 =======
 >>>>>>> Stashed changes
+=======
+}
+
+>>>>>>> master
 #shortTitle{
   /* title: */
   font-family: NanumPen;
@@ -231,8 +243,6 @@ a:active {
   letter-spacing: 0px;
   text-shadow: 0px 2px 4px #000000;
 }
-
-
 
 /* LONG VOWELS */
 #longTitle{
@@ -243,21 +253,29 @@ a:active {
   letter-spacing: 0px;
   text-shadow: 0px 2px 4px #000000;
 }
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 >>>>>>> Stashed changes
+=======
+
+>>>>>>> master
 /* background */
 .longVowelsBody{
   background: url(../img/bg/longVowels/background.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 >>>>>>> master
 =======
 >>>>>>> Stashed changes
+=======
+
+>>>>>>> master
 .longBottomButton1{
   /* button: */
   background: rgba(0,0,0,0.48);
@@ -322,6 +340,7 @@ a:active {
   /* er,ur,ir: */
   font-size: 20px;
 }
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< HEAD
 >>>>>>> Stashed changes
@@ -329,3 +348,5 @@ a:active {
 >>>>>>> master
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> master
