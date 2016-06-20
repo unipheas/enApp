@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< Updated upstream
 // Ionic Starter App
@@ -25,6 +26,8 @@ angular.module('starter', ['ionic'])
   });
 })
 =======
+=======
+>>>>>>> Stashed changes
 // // Ionic Starter App
 //
 // // angular.module is a global place for creating, registering and retrieving Angular modules
@@ -49,6 +52,9 @@ angular.module('starter', ['ionic'])
 //     }
 //   });
 // })
+<<<<<<< Updated upstream
 >>>>>>> Stashed changes
 =======
 >>>>>>> master
+=======
+>>>>>>> Stashed changes

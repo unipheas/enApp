@@ -1,6 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <widget id="com.ionicframework.starter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+=======
+<widget id="com.ionicframework.enapp672295" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+>>>>>>> Stashed changes
 =======
 <widget id="com.ionicframework.enapp672295" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
 >>>>>>> Stashed changes
@@ -19,7 +23,11 @@
         <param name="ios-package" value="CDVLocalStorage" />
     </feature>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     <name>HelloCordova</name>
+=======
+    <name>enApp</name>
+>>>>>>> Stashed changes
 =======
     <name>enApp</name>
 >>>>>>> Stashed changes
@@ -39,10 +47,13 @@
     <preference name="android-minSdkVersion" value="16" />
     <preference name="BackupWebStorage" value="none" />
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     <feature name="SplashScreen">
         <param name="ios-package" value="CDVSplashScreen" />
         <param name="onload" value="true" />
     </feature>
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 </widget>

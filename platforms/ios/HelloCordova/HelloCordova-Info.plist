@@ -50,7 +50,11 @@
     </dict>
     <key>CFBundleIdentifier</key>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     <string>com.ionicframework.starter</string>
+=======
+    <string>com.ionicframework.enapp672295</string>
+>>>>>>> Stashed changes
 =======
     <string>com.ionicframework.enapp672295</string>
 >>>>>>> Stashed changes

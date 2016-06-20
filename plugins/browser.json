@@ -7,6 +7,7 @@
         "files": {}
     },
     "installed_plugins": {
+<<<<<<< Updated upstream
         "cordova-plugin-console": {
             "PACKAGE_NAME": "com.ionicframework.enapp672295"
         },
@@ -18,6 +19,10 @@
         },
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.ionicframework.enapp672295"
+=======
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.ionicframework.enapp398759"
+>>>>>>> Stashed changes
         }
     },
     "dependent_plugins": {}
