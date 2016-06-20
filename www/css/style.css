@@ -206,6 +206,7 @@ a:active {
   background: url(../img/bg/shortVowels/background.png);
   background-size: cover;
   background-repeat: no-repeat;
+}
 
 #shortTitle{
   /* title: */
@@ -263,7 +264,6 @@ a:active {
 }
 
 
-
 /* CONSONANTS */
 .consBody{
   background: url(../img/bg/consonants/background.png);
@@ -272,16 +272,11 @@ a:active {
 }
 
 
-
 /* BLENDS */
 .blendsBody {
   background: url(../img/bg/blends/background.png);
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-.blendsContent{
-
 }
 
 #oioy{
