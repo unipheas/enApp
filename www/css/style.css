@@ -9,7 +9,6 @@
 }
 
 /*GLOBALS*/
-
 .button{
   /* button: */
   background: rgba(0,0,0,0.50);
@@ -75,8 +74,8 @@
   text-shadow: 0px 2px 4px #000000;
 }
 
-/* MAIN */
 
+/* MAIN */
 .main {
   background: url(../img/bg/main/background.png); /*  add ../ to go up a dir */
   background-size: cover;
@@ -263,6 +262,26 @@ a:active {
   letter-spacing: 0px;
 }
 
+.vowelMenu {
+  list-style-type: none;
+  margin-left: -40px;
+}
+
+.lbutton{
+  background: rgba(0,0,0,0.50);
+  box-shadow: 0px 2px 4px 0px #000000;
+  border-radius: 10px;
+  width: 77.74px;
+  height: 78.81px;
+  margin: 4px;
+  width:23%;
+  font-family: .HelveticaNeueDeskInterface-Regular;
+  font-size: 42.64px;
+  color: #02FD3D;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 77.74px;
+}
 
 /* CONSONANTS */
 .consBody{
