@@ -191,6 +191,23 @@ a:active, a:hover, a:link, a:visited  {
   background-repeat: no-repeat;
 }
 
+.subVmenu{
+  text-align: center;
+   margin-top: 55%;
+}
+
+.subButton{
+  background: rgba(0,0,0,0.50);
+  box-shadow: 0px 2px 4px 0px #000000;
+  border-radius: 10px;
+  padding: 8px;
+  margin: 5px;
+  font-family: .HelveticaNeueDeskInterface-Regular;
+  font-size: 40px;
+  color: #02FD3D;
+  letter-spacing: 4px;
+}
+
                                             /* CONSONANTS */
 .consBody{
   background: url(../img/bg/consonants/background.png);
