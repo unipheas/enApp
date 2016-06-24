@@ -193,7 +193,7 @@ a:active, a:hover, a:link, a:visited  {
 
 .subVmenu{
   text-align: center;
-   margin-top: 55%;
+   margin-top: 58%;
 }
 
 .subButton{
@@ -203,7 +203,7 @@ a:active, a:hover, a:link, a:visited  {
   padding: 8px;
   margin: 5px;
   font-family: .HelveticaNeueDeskInterface-Regular;
-  font-size: 40px;
+  font-size: 30px;
   color: #02FD3D;
   letter-spacing: 4px;
 }
