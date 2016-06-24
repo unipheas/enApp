@@ -9,6 +9,10 @@
 }
 
 /*GLOBALS*/
+body{
+  max-width: 355px;
+}
+
 .button{
   /* button: */
   background: rgba(0,0,0,0.50);

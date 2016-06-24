@@ -1,15 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-/* Empty. Add your own CSS if you like */
-=======
-=======
->>>>>>> master
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> master
 /*FONTS*/
 @font-face {
   font-family: 'nanum_penregular';
@@ -21,7 +9,6 @@
 }
 
 /*GLOBALS*/
-
 .button{
   /* button: */
   background: rgba(0,0,0,0.50);
@@ -77,255 +64,141 @@
   text-align: center;
 }
 
-.contentText{
-  /* content: */
 
-  font-family: .HelveticaNeueDeskInterface-Regular;
-  font-size: 48px;
-  color: #02FD3D;
-  letter-spacing: 0px;
-  text-shadow: 0px 2px 4px #000000;
-}
-
-/* MAIN */
-
+                                                        /* MAIN */
 .main {
-  background: url(../img/bg/main/background.png); /*  add ../ to go up a dir */
+  background: url(../img/bg/main/background.png);
   background-size: cover;
-  /*background-size: 375px 800px; */
   background-repeat: no-repeat;
 }
 
 #mainTitleBackground{
   /* titleBackground: */
-  opacity: 0.3;
-  background: #000000;
   border: 1px solid #979797;
+  background: rgba(0, 0, 0, 0.30);
+  margin: 0;
+  padding: 0;
 }
 
 #mainTitle{
   /* title: */
-
   font-family: NanumPen;
   font-size: 24px;
   color: #02FD3D;
   letter-spacing: 0px;
   text-shadow: 0px 2px 4px #000000;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
-#mainShortVowels{
-  /* shortVowels: */
 
+.menu{
   font-family: NanumPen;
-  font-size: 32px;
-  color: #FF00F1;
   letter-spacing: 0px;
   text-shadow: 0px 2px 4px #000000;
+
+}
+
+.mainShortVowels {
+  /* shortVowels: */
+  font-size: 32px;
+  color: #FF00F1;
+  margin: 15px 10px 0 20px;
+}
+
+.mainLongVowels {
+  /* longVowels: */
+  font-size: 36px;
+  color: #FF001F;
+  margin: 0 0 30px 180px;
+}
+
+.mainConsonants{
+  /* consonants: */
+  font-size: 36px;
+  color: #FFE400;
+  margin: 60px 0 70px 0;
+}
+
+.mainBlends{
+  /* blends: */
+  font-size: 36px;
+  color: #15FF00;
+  margin: 0 0 60px 180px;
+}
+
+.mainMoreComing{
+  /* moreComing: */
+  font-size: 36px;
+  color: #00F8FF;
+  margin: 0 0 15px 20px;
+}
+
+#mainSoon{
+  /* soon: */
+  font-size: 48px;
+  color: #37FF00;
+  margin: 0 0 0 190px;
+
 }
 
 a:active, a:hover, a:link, a:visited  {
-  color: #ff00f1;
   text-decoration: none !important;
-
-}
-#mainLongVowels{
-  /* longVowels: */
-
-  font-family: NanumPen;
-  font-size: 36px;
-  color: #FF001F;
-  letter-spacing: 0px;
-  text-shadow: 0px 2px 4px #000000;
+  color: currentColor;
 }
 
-a:active, a:link, a:hover, a:visited {
-  color: #ff001f;
-  text-decoration: none !important;
-}
-#mainConsonants{
-  /* consonants: */
-
-  font-family: NanumPen;
-  font-size: 36px;
-  color: #FFE400;
-  letter-spacing: 0px;
-  text-shadow: 0px 2px 4px #000000;
-}
-a:link, a:hover, a:visited {
-  color: inherit;
-  text-decoration: none;
-}
-a:active {
-  color: #ffe400;
-  text-decoration: none;
-}
-#mainBlends{
-  /* blends: */
-
-  font-family: NanumPen;
-  font-size: 36px;
-  color: #15FF00;
-  letter-spacing: 0px;
-  text-shadow: 0px 2px 4px #000000;
-}
-a:link, a:hover, a:visited {
-  color: inherit;
-  text-decoration: none;
-}
-a:active {
-  color: #15ff00;
-  text-decoration: none;
-}
-#mainMoreComing{
-  /* moreComing: */
-
-  font-family: NanumPen;
-  font-size: 36px;
-  color: #00F8FF;
-  letter-spacing: 0px;
-  text-shadow: 0px 2px 4px #000000;
-}
-a:link, a:hover, a:visited {
-  color: inherit;
-  text-decoration: none;
-}
-a:active {
-  color: #00f8ff;
-  text-decoration: none;
-}
-#mainSoon{
-  /* soon: */
-
-  font-family: NanumPen;
-  font-size: 48px;
-  color: #37FF00;
-  letter-spacing: 0px;
-  text-shadow: 0px 2px 4px #000000;
-}
-a:link, a:hover, a:visited {
-  color: inherit;
-  text-decoration: none;
-}
-a:active {
-  color: #37ff00;
-  text-decoration: none;
+                                                    /* VOWELS */
+.vowelMenu {
+  list-style-type: none;
+  margin-left: -40px;
 }
 
+.lbutton{
+  background: rgba(0,0,0,0.50);
+  box-shadow: 0px 2px 4px 0px #000000;
+  border-radius: 10px;
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  width:20%;
+  font-family: .HelveticaNeueDeskInterface-Regular;
+  font-size: 42.64px;
+  color: #02FD3D;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 63px;
+}
 
-/* SHORT VOWELS */
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-=======
->>>>>>> Stashed changes
-=======
+                                              /* SHORT VOWELS */
 
->>>>>>> master
 /* background */
 .shortVowelsBody{
   background: url(../img/bg/shortVowels/background.png);
   background-size: cover;
   background-repeat: no-repeat;
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
->>>>>>> master
-=======
->>>>>>> Stashed changes
-=======
 }
 
->>>>>>> master
-#shortTitle{
-  /* title: */
-  font-family: NanumPen;
-  font-size: 36px;
-  color: #02FD3D;
-  letter-spacing: 0px;
-  text-shadow: 0px 2px 4px #000000;
-}
+                                              /* LONG VOWELS */
 
-/* LONG VOWELS */
-#longTitle{
-  /* title: */
-  font-family: NanumPen;
-  font-size: 36px;
-  color: #02FD3D;
-  letter-spacing: 0px;
-  text-shadow: 0px 2px 4px #000000;
-}
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-=======
->>>>>>> Stashed changes
-=======
-
->>>>>>> master
 /* background */
 .longVowelsBody{
   background: url(../img/bg/longVowels/background.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
->>>>>>> master
-=======
->>>>>>> Stashed changes
-=======
 
->>>>>>> master
-.longBottomButton1{
-  /* button: */
-  background: rgba(0,0,0,0.48);
-  border: 1px solid #040404;
-  box-shadow: 0px 2px 4px 0px #000000;
-  border-radius: 10px;
-}
-.longBottomText1{
-  /* text */
-  font-family: .HelveticaNeueDeskInterface-Regular;
-  font-size: 48px;
-  color: #02FD3D;
-  letter-spacing: 0px;
-}
-#longBottomButton2{
-  /* button: */
-  opacity: 0.5;
-  background: rgba(0,0,0,0.50);
-  border: 1px solid #040404;
-  box-shadow: 0px 2px 4px 0px #000000;
-  border-radius: 10px;
-}
-#longBottomText2{
-  /* a_e: */
-  font-family: .HelveticaNeueDeskInterface-Regular;
-  font-size: 48px;
-  color: #02FD3D;
-  letter-spacing: 0px;
-}
-
-
-
-/* CONSONANTS */
+                                            /* CONSONANTS */
 .consBody{
   background: url(../img/bg/consonants/background.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-
-
-/* BLENDS */
+                                              /* BLENDS */
 .blendsBody {
   background: url(../img/bg/blends/background.png);
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-.blendsContent{
-
 }
 
 #oioy{
@@ -340,13 +213,3 @@ a:active {
   /* er,ur,ir: */
   font-size: 20px;
 }
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-<<<<<<< HEAD
->>>>>>> Stashed changes
-=======
->>>>>>> master
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> master

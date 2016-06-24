@@ -5,13 +5,7 @@
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title>Consonants</title>
     <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap-3.3.6-dist/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
     <script type="text/javascript" scr="js/app.js"></script>
-    <script type="text/javascript" src="js/jquery.mobile.custom/jquery.mobile.custom.js"></script>
-    <script
-			  src="http://code.jquery.com/jquery-3.0.0.min.js"
-			  integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="
-			  crossorigin="anonymous"></script>
   </head>
   <body class="consBody">
     <!-- The title -->
@@ -29,43 +23,41 @@
   <!-- The content -->
   <div class="blendsContent">
       <div class="buttonRow"><ul>
-        <li class="button click">B</li>
-        <li class="button click">C</li>
-        <li class="button click">D</li>
-        <li class="button click">F</li>
+        <li class="button" id="click">B</li>
+        <li class="button">C</li>
+        <li class="button">D</li>
+        <li class="button">F</li>
       </ul></div>
       <div class="buttonRow"><ul>
-        <li class="button click">G</li>
-        <li class="button click">H</li>
-        <li class="button click">J</li>
-        <li class="button click">K</li>
+        <li class="button">G</li>
+        <li class="button">H</li>
+        <li class="button">J</li>
+        <li class="button">K</li>
       </ul></div>
       <div class="buttonRow"><ul>
-        <li class="button click">L</li>
-        <li class="button click">M</li>
-        <li class="button click">N</li>
-        <li class="button click">P</li>
+        <li class="button">L</li>
+        <li class="button">M</li>
+        <li class="button">N</li>
+        <li class="button">P</li>
       </ul></div>
       <div class="buttonRow"><ul>
-        <li class="button click">Q</li>
-        <li class="button click">R</li>
-        <li class="button click">S</li>
-        <li class="button click">T</li>
+        <li class="button">Q</li>
+        <li class="button">R</li>
+        <li class="button">S</li>
+        <li class="button">T</li>
       </ul></div>
       <div class="buttonRow"><ul>
-        <li class="button click">V</li>
-        <li class="button click">W</li>
-        <li class="button click">X</li>
-        <li class="button click">Y</li>
+        <li class="button">V</li>
+        <li class="button">W</li>
+        <li class="button">X</li>
+        <li class="button">Y</li>
       </ul></div>
       <div class="buttonRow"><ul>
         <li class="button" style="margin-left: 135px;">Z</li>
       </ul></div>
   </div>
-<script type="text/javascript">
-$(document).ready(Function(){
-  $('.click').fadein("slow");
-});
-</script>
 </body>
+<script type="text/javascript">
+  document.getElementById("click").style.background="rgba(0,0,0,0.80)";
+</script>
 </html>
