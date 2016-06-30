@@ -13,6 +13,7 @@
 // });
 
 $(document).ready(function(){
+  // Change all clicked elements to dark and light shading.
   $('li').click(function(){ // When selector 'li' is clicked do the function
     $('li').removeClass('buttonDark').addClass('buttonLight'); // remove dark and add light from all li
      $(this).removeClass('buttonLight') // selected li gets light
@@ -21,10 +22,12 @@ $(document).ready(function(){
 
   $('span').click(function(){
      $(this)
-        .removeClass('buttonLight')
-        .siblings(this)
-        .removeClass('buttonDark')
-        .addClass('buttonLight');
-     $(this).addClass('buttonDark');
+        .removeClass('buttonLight') // selected removes light
+        .addClass('buttonDark') // selected adds dark
+        .siblings(this) // choose all other siblings of selected
+        .removeClass('buttonDark') // remove dark
+        .addClass('buttonLight'); // add light
   });
+
+  
 });
