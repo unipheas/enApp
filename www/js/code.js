@@ -13,7 +13,18 @@
 // });
 
 $(document).ready(function(){
-  $('button').click(function(){
-     $(this).addClass('.buttonDark');
+  $('li').click(function(){ // When selector 'li' is clicked do the function
+    $('li').removeClass('buttonDark').addClass('buttonLight'); // remove dark and add light from all li
+     $(this).removeClass('buttonLight') // selected li gets light
+     $(this).addClass('buttonDark'); // selected li removes dark
+  });
+
+  $('span').click(function(){
+     $(this)
+        .removeClass('buttonLight')
+        .siblings(this)
+        .removeClass('buttonDark')
+        .addClass('buttonLight');
+     $(this).addClass('buttonDark');
   });
 });
