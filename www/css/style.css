@@ -13,9 +13,16 @@ body{
   max-width: 355px;
 }
 
+.buttonDark{
+  background: rgba(0,0,0,0.80);
+}
+
+.buttonLight{
+  background: rgba(0,0,0,0.50);
+}
+
 .button{
   /* button: */
-  background: rgba(0,0,0,0.50);
   box-shadow: 0px 2px 4px 0px #000000;
   border-radius: 10px;
   width: 77.74px;
@@ -159,7 +166,6 @@ a:active, a:hover, a:link, a:visited  {
 }
 
 .lbutton{
-  background: rgba(0,0,0,0.50);
   box-shadow: 0px 2px 4px 0px #000000;
   border-radius: 10px;
   width: 60px;
@@ -216,11 +222,10 @@ a:active, a:hover, a:link, a:visited  {
 
 .subVmenu{
   text-align: center;
-   margin-top: 58%;
+   margin-top: 55%;
 }
 
 .subButton{
-  background: rgba(0,0,0,0.50);
   box-shadow: 0px 2px 4px 0px #000000;
   border-radius: 10px;
   padding: 8px;
