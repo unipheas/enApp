@@ -5,10 +5,9 @@
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title>Long Vowels</title>
     <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/bootstrap-3.3.6-dist/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
-
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile.min.js"></script>
   </head>
-
 <body class="longVowelsBody">
     <!-- Title -->
     <div class="titleBackground">
@@ -17,18 +16,32 @@
           <a href="index.html"><img src="img/backButton.png"></a>
         </div>
         <div class="titleText">
-          <!--This is a comment to test the mergyness. -->
           L O N G  V O W E L S
         </div>
       </div>
     </div>
-          <ul class="vowelMenu">
-            <li class="lbutton">A</li>
-            <li class="lbutton">E</li>
-            <li class="lbutton">I</li>
-            <li class="lbutton">O</li>
-            <li class="lbutton">U</li>
-          </ul>
+    <!-- content -->
+    <div class="content">
+      <img src="img/apple.png" alt="" />
+      <p class="vowelWord">Lake</p>
+      <p class="vowelWord">Rake</p>
+      <p class="vowelWord">Snake</p>
+      <audio src=""></audio>
+    </div>
+    <!-- Menu -->
+    <ul class="vowelMenu">
+      <li class="lbutton buttonDark" id="a">A</li>
+      <li class="lbutton buttonLight" id="e">E</li>
+      <li class="lbutton buttonLight" id="i">I</li>
+      <li class="lbutton buttonLight" id="o">O</li>
+      <li class="lbutton buttonLight" id="u">U</li>
+    </ul>
+    <!-- sub menu -->
+    <div class="subVmenu">
+      <span class="subButton buttonDark" id="ay">ay</span>
+      <span class="subButton buttonLight" id="ai">ai</span>
+      <span class="subButton buttonLight" id="a_e">a_e</span>
+    </div>
+<script type="text/javascript" src="js/code.js"></script>
 </body>
-
 </html>
