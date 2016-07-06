@@ -761,4 +761,11 @@ $(document).ready(function(){
           .addClass('buttonLight');
   });
 
+
+
+      // CONSONANTS
+  // $('#b').on('click',function(){
+  //   $('#dialog').dialog("open");
+  // });
+
  });
