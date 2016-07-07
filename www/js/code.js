@@ -25,12 +25,12 @@ $(document).ready(function(){
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word1',
-      text: 'Ant'
+      text: 'Apple`'
     }));
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word2',
-      text: 'Apple'
+      text: 'Ant'
     }));
     $('.content p#word3').replaceWith($('<p></p>',{
       class: 'vowelWord',
@@ -43,7 +43,7 @@ $(document).ready(function(){
   });
   $('#shortE').on('click',function(){
     $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/elephant.png'
+      src: 'img/phonics_img/shortVowels/egg.png'
     }));
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
@@ -66,17 +66,17 @@ $(document).ready(function(){
   });
   $('#shortI').on('click',function(){
     $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/ink.png'
+      src: 'img/phonics_img/shortVowels/insect.png'
     }));
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word1',
-      text: 'In'
+      text: 'Insect'
     }));
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word2',
-      text: 'Inside'
+      text: 'In'
     }));
     $('.content p#word3').replaceWith($('<p></p>',{
       class: 'vowelWord',
@@ -89,12 +89,12 @@ $(document).ready(function(){
   });
   $('#shortO').on('click',function(){
     $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/dog.png'
+      src: 'img/phonics_img/shortVowels/orange.png'
     }));
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word1',
-      text: 'On'
+      text: 'Orange'
     }));
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
@@ -112,12 +112,12 @@ $(document).ready(function(){
   });
   $('#shortU').on('click',function(){
     $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/ball.png'
+      src: 'img/phonics_img/shortVowels/umbrella.png'
     }));
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word1',
-      text: 'Up'
+      text: 'Umbrella'
     }));
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
@@ -166,7 +166,7 @@ $(document).ready(function(){
                 //Long Vowel A
   $('#longA').on('click',function(){
     $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/apple.png'
+      src: 'img/phonics_img/longVowels/lake.png'
     }));
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
@@ -194,7 +194,7 @@ $(document).ready(function(){
   });
   $('#ay').on('click',function(){
     $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/apple.png'
+      src: 'img/phonics_img/longVowels/lake.png'
     }));
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
@@ -280,12 +280,12 @@ $(document).ready(function(){
               //Long Vowel E
   $('#longE').on('click',function(){
     $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/apple.png'
+      src: 'img/phonics_img/longVowels/eat.png'
     }));
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word1',
-      text: 'Bee'
+      text: 'Eat'
     }));
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
@@ -394,12 +394,12 @@ $(document).ready(function(){
             //Long Vowel I
   $('#longI').on('click',function(){
     $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/apple.png'
+      src: 'img/phonics_img/longVowels/ice.png'
     }));
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word1',
-      text: 'Pie'
+      text: 'Ice'
     }));
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
@@ -536,7 +536,7 @@ $(document).ready(function(){
           //Long Vowel O
   $('#longO').on('click',function(){
     $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/apple.png'
+      src: 'img/phonics_img/longVowels/boat.png'
     }));
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
@@ -650,12 +650,12 @@ $(document).ready(function(){
           //Long Vowel U
   $('#longU').on('click',function(){
     $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/apple.png'
+      src: 'img/phonics_img/longVowels/uniform.png'
     }));
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word1',
-      text: 'Blue'
+      text: 'Uniform'
     }));
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
