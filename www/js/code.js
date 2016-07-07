@@ -25,7 +25,7 @@ $(document).ready(function(){
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word1',
-      text: 'Apple`'
+      text: 'Apple'
     }));
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
