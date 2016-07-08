@@ -133,22 +133,22 @@ $(document).ready(function(){
                 //Long Vowel A
   $('#longA').on('click',function(){
     $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/longVowels/lake.png'
+      src: 'img/phonics_img/longVowels/subMenu/day.png'
     }));
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word1',
-      text: 'Lake'
+      text: 'Day'
     }));
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word2',
-      text: 'Ray'
+      text: 'Pay'
     }));
     $('.content p#word3').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word3',
-      text: 'Tray'
+      text: 'Play'
     }));
     $('.content audio').replaceWith($('<audio></audio>',{
       src: ''
@@ -245,7 +245,6 @@ $(document).ready(function(){
           .removeClass('buttonDark')
           .addClass('buttonLight');
   });
-
               //Long Vowel E
   $('#longE').on('click',function(){
     $('.content img').replaceWith($('<img></img>',{
@@ -392,12 +391,12 @@ $(document).ready(function(){
             //Long Vowel I
   $('#longI').on('click',function(){
     $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/longVowels/ice.png'
+      src: 'img/phonics_img/longVowels/subMenu/pie.png'
     }));
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word1',
-      text: 'Ice'
+      text: 'Pie'
     }));
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
@@ -407,7 +406,7 @@ $(document).ready(function(){
     $('.content p#word3').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word3',
-      text: 'Sigh'
+      text: 'Tie'
     }));
     $('.content audio').replaceWith($('<audio></audio>',{
       src: ''
@@ -532,7 +531,6 @@ $(document).ready(function(){
           .removeClass('buttonDark')
           .addClass('buttonLight');
   });
-
           //Long Vowel O
   $('#longO').on('click',function(){
     $('.content img').replaceWith($('<img></img>',{
@@ -648,7 +646,6 @@ $(document).ready(function(){
           .removeClass('buttonDark')
           .addClass('buttonLight');
   });
-
           //Long Vowel U
   $('#longU').on('click',function(){
     $('.content img').replaceWith($('<img></img>',{
