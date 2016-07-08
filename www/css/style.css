@@ -292,9 +292,11 @@ a:active, a:hover, a:link, a:visited  {
   background-color: grey;
   padding: 3px;
   border-radius: 5px;
+  font-size: 25px;
 }
 
 .conContent{
+  font-size: 46px;
 }
 
 .conContent img {

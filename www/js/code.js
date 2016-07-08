@@ -743,6 +743,217 @@ $(document).ready(function(){
   $('#close').on('click',function(){
     $('#overlay').hide();
   });
+  $('#overlay').hide();
 
-  
+              // CONSONANTS
+  $('#b').on('click',function(){
+    $('#overlay').show();
+    $('.conContent img').replaceWith($('<img></img>',{
+      src: 'img/phonics_img/consonants/ball.png'
+    }));
+    $('.conContent p#word1').replaceWith($('<p></p>',{
+      id: 'word1',
+      text: 'Ball'
+    }));
+  })
+  $('#c').on('click',function(){
+    $('#overlay').show();
+    $('.conContent img').replaceWith($('<img></img>',{
+      src: 'img/phonics_img/consonants/cat.png'
+    }));
+    $('.conContent p#word1').replaceWith($('<p></p>',{
+      id: 'word1',
+      text: 'Cat'
+    }));
+  })
+  $('#d').on('click',function(){
+    $('#overlay').show();
+    $('.conContent img').replaceWith($('<img></img>',{
+      src: 'img/phonics_img/consonants/dog.png'
+    }));
+    $('.conContent p#word1').replaceWith($('<p></p>',{
+      id: 'word1',
+      text: 'Dog'
+    }));
+  })
+  $('#f').on('click',function(){
+    $('#overlay').show();
+    $('.conContent img').replaceWith($('<img></img>',{
+      src: 'img/phonics_img/consonants/fish.png'
+    }));
+    $('.conContent p#word1').replaceWith($('<p></p>',{
+      id: 'word1',
+      text: 'Fish'
+    }));
+  })
+  $('#g').on('click',function(){
+    $('#overlay').show();
+    $('.conContent img').replaceWith($('<img></img>',{
+      src: 'img/phonics_img/consonants/goat.png'
+    }));
+    $('.conContent p#word1').replaceWith($('<p></p>',{
+      id: 'word1',
+      text: 'Goat'
+    }));
+  })
+  $('#h').on('click',function(){
+    $('#overlay').show();
+    $('.conContent img').replaceWith($('<img></img>',{
+      src: 'img/phonics_img/consonants/hat.png'
+    }));
+    $('.conContent p#word1').replaceWith($('<p></p>',{
+      id: 'word1',
+      text: 'Hat'
+    }));
+  })
+  $('#j').on('click',function(){
+    $('#overlay').show();
+    $('.conContent img').replaceWith($('<img></img>',{
+      src: 'img/phonics_img/consonants/jar.png'
+    }));
+    $('.conContent p#word1').replaceWith($('<p></p>',{
+      id: 'word1',
+      text: 'Jar'
+    }));
+  })
+  $('#k').on('click',function(){
+    $('#overlay').show();
+    $('.conContent img').replaceWith($('<img></img>',{
+      src: 'img/phonics_img/consonants/king.png'
+    }));
+    $('.conContent p#word1').replaceWith($('<p></p>',{
+      id: 'word1',
+      text: 'King'
+    }));
+  })
+  $('#l').on('click',function(){
+    $('#overlay').show();
+    $('.conContent img').replaceWith($('<img></img>',{
+      src: 'img/phonics_img/consonants/lady.png'
+    }));
+    $('.conContent p#word1').replaceWith($('<p></p>',{
+      id: 'word1',
+      text: 'Lady'
+    }));
+  })
+  $('#m').on('click',function(){
+    $('#overlay').show();
+    $('.conContent img').replaceWith($('<img></img>',{
+      src: 'img/phonics_img/consonants/mouse.png'
+    }));
+    $('.conContent p#word1').replaceWith($('<p></p>',{
+      id: 'word1',
+      text: 'Mouse'
+    }));
+  })
+  $('#n').on('click',function(){
+    $('#overlay').show();
+    $('.conContent img').replaceWith($('<img></img>',{
+      src: 'img/phonics_img/consonants/nose.png'
+    }));
+    $('.conContent p#word1').replaceWith($('<p></p>',{
+      id: 'word1',
+      text: 'Nose'
+    }));
+  })
+  $('#p').on('click',function(){
+    $('#overlay').show();
+    $('.conContent img').replaceWith($('<img></img>',{
+      src: 'img/phonics_img/consonants/pencil.png'
+    }));
+    $('.conContent p#word1').replaceWith($('<p></p>',{
+      id: 'word1',
+      text: 'Pencil'
+    }));
+  })
+  $('#q').on('click',function(){
+    $('#overlay').show();
+    $('.conContent img').replaceWith($('<img></img>',{
+      src: 'img/phonics_img/consonants/queen.png'
+    }));
+    $('.conContent p#word1').replaceWith($('<p></p>',{
+      id: 'word1',
+      text: 'Queen'
+    }));
+  })
+  $('#r').on('click',function(){
+    $('#overlay').show();
+    $('.conContent img').replaceWith($('<img></img>',{
+      src: 'img/phonics_img/consonants/robot.png'
+    }));
+    $('.conContent p#word1').replaceWith($('<p></p>',{
+      id: 'word1',
+      text: 'Robot'
+    }));
+  })
+  $('#s').on('click',function(){
+    $('#overlay').show();
+    $('.conContent img').replaceWith($('<img></img>',{
+      src: 'img/phonics_img/consonants/snake.png'
+    }));
+    $('.conContent p#word1').replaceWith($('<p></p>',{
+      id: 'word1',
+      text: 'Snake'
+    }));
+  })
+  $('#t').on('click',function(){
+    $('#overlay').show();
+    $('.conContent img').replaceWith($('<img></img>',{
+      src: 'img/phonics_img/consonants/tshirt.png'
+    }));
+    $('.conContent p#word1').replaceWith($('<p></p>',{
+      id: 'word1',
+      text: 'Tshirt'
+    }));
+  })
+  $('#v').on('click',function(){
+    $('#overlay').show();
+    $('.conContent img').replaceWith($('<img></img>',{
+      src: 'img/phonics_img/consonants/van.png'
+    }));
+    $('.conContent p#word1').replaceWith($('<p></p>',{
+      id: 'word1',
+      text: 'Van'
+    }));
+  })
+  $('#w').on('click',function(){
+    $('#overlay').show();
+    $('.conContent img').replaceWith($('<img></img>',{
+      src: 'img/phonics_img/consonants/whale.png'
+    }));
+    $('.conContent p#word1').replaceWith($('<p></p>',{
+      id: 'word1',
+      text: 'Whale'
+    }));
+  })
+  $('#x').on('click',function(){
+    $('#overlay').show();
+    $('.conContent img').replaceWith($('<img></img>',{
+      src: 'img/phonics_img/consonants/x-box.png'
+    }));
+    $('.conContent p#word1').replaceWith($('<p></p>',{
+      id: 'word1',
+      text: 'X-box'
+    }));
+  })
+  $('#y').on('click',function(){
+    $('#overlay').show();
+    $('.conContent img').replaceWith($('<img></img>',{
+      src: 'img/phonics_img/consonants/yellow.png'
+    }));
+    $('.conContent p#word1').replaceWith($('<p></p>',{
+      id: 'word1',
+      text: 'Yellow'
+    }));
+  })
+  $('#z').on('click',function(){
+    $('#overlay').show();
+    $('.conContent img').replaceWith($('<img></img>',{
+      src: 'img/phonics_img/consonants/zebra.png'
+    }));
+    $('.conContent p#word1').replaceWith($('<p></p>',{
+      id: 'word1',
+      text: 'Zebra'
+    }));
+  })
  });
