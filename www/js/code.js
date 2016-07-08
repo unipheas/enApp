@@ -139,17 +139,17 @@ $(document).ready(function(){
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word1',
-      text: 'Pay'
+      text: 'Lake'
     }));
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word2',
-      text: 'Day'
+      text: 'Ray'
     }));
     $('.content p#word3').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word3',
-      text: 'Play'
+      text: 'Tray'
     }));
     $('.content audio').replaceWith($('<audio></audio>',{
       src: ''
@@ -164,17 +164,17 @@ $(document).ready(function(){
   });
   $('#ay').on('click',function(){
     $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/longVowels/lake.png'
+      src: 'img/phonics_img/longVowels/subMenu/day.png'
     }));
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word1',
-      text: 'Pay'
+      text: 'Day'
     }));
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word2',
-      text: 'Day'
+      text: 'Pay'
     }));
     $('.content p#word3').replaceWith($('<p></p>',{
       class: 'vowelWord',
@@ -192,12 +192,12 @@ $(document).ready(function(){
   });
   $('#ai').on('click',function(){
     $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/apple.png'
+      src: 'img/phonics_img/longVowels/subMenu/rain.png'
     }));
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word1',
-      text: 'Paid'
+      text: 'Rain'
     }));
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
@@ -207,7 +207,7 @@ $(document).ready(function(){
     $('.content p#word3').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word3',
-      text: 'Rain'
+      text: 'Paid'
     }));
     $('.content audio').replaceWith($('<audio></audio>',{
       src: ''
@@ -220,12 +220,12 @@ $(document).ready(function(){
   });
   $('#a_e').on('click',function(){
     $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/apple.png'
+      src: 'img/phonics_img/longVowels/subMenu/plane.png'
     }));
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word1',
-      text: 'Paper'
+      text: 'Plane'
     }));
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
@@ -235,7 +235,7 @@ $(document).ready(function(){
     $('.content p#word3').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word3',
-      text: 'Plane'
+      text: 'Paper'
     }));
     $('.content audio').replaceWith($('<audio></audio>',{
       src: ''
@@ -250,12 +250,12 @@ $(document).ready(function(){
               //Long Vowel E
   $('#longE').on('click',function(){
     $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/longVowels/eat.png'
+      src: 'img/phonics_img/longVowels/subMenu/bee.png'
     }));
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word1',
-      text: 'Eat'
+      text: 'Bee'
     }));
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
@@ -280,7 +280,7 @@ $(document).ready(function(){
   });
   $('#ee').on('click',function(){
     $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/apple.png'
+      src: 'img/phonics_img/longVowels/subMenu/bee.png'
     }));
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
@@ -308,12 +308,12 @@ $(document).ready(function(){
   });
   $('#ea').on('click',function(){
     $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/apple.png'
+      src: 'img/phonics_img/longVowels/eat.png'
     }));
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word1',
-      text: 'Bean'
+      text: 'Eat'
     }));
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
@@ -336,17 +336,17 @@ $(document).ready(function(){
   });
   $('#e_e').on('click',function(){
     $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/apple.png'
+      src: 'img/phonics_img/longVowels/subMenu/chinese.png'
     }));
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word1',
-      text: 'Theme'
+      text: 'Chinese'
     }));
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word2',
-      text: 'Theme'
+      text: 'Athlete'
     }));
     $('.content p#word3').replaceWith($('<p></p>',{
       class: 'vowelWord',
@@ -362,7 +362,34 @@ $(document).ready(function(){
           .removeClass('buttonDark')
           .addClass('buttonLight');
   });
-
+  $('#eay').on('click',function(){
+    $('.content img').replaceWith($('<img></img>',{
+      src: 'img/phonics_img/longVowels/subMenu/Angry.png'
+    }));
+    $('.content p#word1').replaceWith($('<p></p>',{
+      class: 'vowelWord',
+      id: 'word1',
+      text: 'Angry'
+    }));
+    $('.content p#word2').replaceWith($('<p></p>',{
+      class: 'vowelWord',
+      id: 'word2',
+      text: 'Happy'
+    }));
+    $('.content p#word3').replaceWith($('<p></p>',{
+      class: 'vowelWord',
+      id: 'word3',
+      text: 'Lady'
+    }));
+    $('.content audio').replaceWith($('<audio></audio>',{
+      src: ''
+    }));
+    $('#eay').removeClass('buttonLight')
+          .addClass('buttonDark')
+          .siblings(this)
+          .removeClass('buttonDark')
+          .addClass('buttonLight');
+  });
             //Long Vowel I
   $('#longI').on('click',function(){
     $('.content img').replaceWith($('<img></img>',{
@@ -381,7 +408,7 @@ $(document).ready(function(){
     $('.content p#word3').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word3',
-      text: 'Pie'
+      text: 'Sigh'
     }));
     $('.content audio').replaceWith($('<audio></audio>',{
       src: ''
@@ -396,7 +423,7 @@ $(document).ready(function(){
   });
   $('#ie').on('click',function(){
     $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/apple.png'
+      src: 'img/phonics_img/longVowels/subMenu/pie.png'
     }));
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
@@ -406,12 +433,12 @@ $(document).ready(function(){
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word2',
-      text: 'Pie'
+      text: 'Lie'
     }));
     $('.content p#word3').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word3',
-      text: 'Pie'
+      text: 'Tie'
     }));
     $('.content audio').replaceWith($('<audio></audio>',{
       src: ''
@@ -424,12 +451,12 @@ $(document).ready(function(){
   });
   $('#igh').on('click',function(){
     $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/apple.png'
+      src: 'img/phonics_img/longVowels/subMenu/light.png'
     }));
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word1',
-      text: 'High'
+      text: 'Light'
     }));
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
@@ -439,7 +466,7 @@ $(document).ready(function(){
     $('.content p#word3').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word3',
-      text: 'High'
+      text: 'Sigh'
     }));
     $('.content audio').replaceWith($('<audio></audio>',{
       src: ''
@@ -452,7 +479,7 @@ $(document).ready(function(){
   });
   $('#y').on('click',function(){
     $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/apple.png'
+      src: 'img/phonics_img/longVowels/subMenu/fly.png'
     }));
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
@@ -462,12 +489,12 @@ $(document).ready(function(){
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word2',
-      text: 'Fly'
+      text: 'Fry'
     }));
     $('.content p#word3').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word3',
-      text: 'Fly'
+      text: 'Cry'
     }));
     $('.content audio').replaceWith($('<audio></audio>',{
       src: ''
@@ -480,12 +507,12 @@ $(document).ready(function(){
   });
   $('#i_e').on('click',function(){
     $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/apple.png'
+      src: 'img/phonics_img/longVowels/subMenu/bike.png'
     }));
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word1',
-      text: 'Time'
+      text: 'Bike'
     }));
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
@@ -495,7 +522,7 @@ $(document).ready(function(){
     $('.content p#word3').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word3',
-      text: 'Time'
+      text: 'Wine'
     }));
     $('.content audio').replaceWith($('<audio></audio>',{
       src: ''
@@ -520,12 +547,12 @@ $(document).ready(function(){
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word2',
-      text: 'Boat'
+      text: 'Road'
     }));
     $('.content p#word3').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word3',
-      text: 'Boat'
+      text: 'Coat'
     }));
     $('.content audio').replaceWith($('<audio></audio>',{
       src: ''
@@ -540,22 +567,22 @@ $(document).ready(function(){
   });
   $('#oa').on('click',function(){
     $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/longVowels/boat.jpg'
+      src: 'img/phonics_img/longVowels/subMenu/coat.png'
     }));
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word1',
-      text: 'Boat'
+      text: 'Coat'
     }));
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word2',
-      text: 'Boat'
+      text: 'Road'
     }));
     $('.content p#word3').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word3',
-      text: 'Boat'
+      text: 'Goat'
     }));
     $('.content audio').replaceWith($('<audio></audio>',{
       src: ''
@@ -568,12 +595,12 @@ $(document).ready(function(){
   });
   $('#ow').on('click',function(){
     $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/apple.png'
+      src: 'img/phonics_img/longVowels/subMenu/window.png'
     }));
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word1',
-      text: 'Blow'
+      text: 'Window'
     }));
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
@@ -583,7 +610,7 @@ $(document).ready(function(){
     $('.content p#word3').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word3',
-      text: 'Blow'
+      text: 'Row'
     }));
     $('.content audio').replaceWith($('<audio></audio>',{
       src: ''
@@ -596,17 +623,17 @@ $(document).ready(function(){
   });
   $('#o_e').on('click',function(){
     $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/apple.png'
+      src: 'img/phonics_img/longVowels/subMenu/phone.png'
     }));
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word1',
-      text: 'Tone'
+      text: 'Phone'
     }));
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word2',
-      text: 'Tone'
+      text: 'Bone'
     }));
     $('.content p#word3').replaceWith($('<p></p>',{
       class: 'vowelWord',
@@ -641,7 +668,7 @@ $(document).ready(function(){
     $('.content p#word3').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word3',
-      text: 'Blue'
+      text: 'True'
     }));
     $('.content audio').replaceWith($('<audio></audio>',{
       src: ''
@@ -656,7 +683,7 @@ $(document).ready(function(){
   });
   $('#ue').on('click',function(){
     $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/apple.png'
+      src: 'img/phonics_img/longVowels/subMenu/blue.png'
     }));
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
@@ -666,12 +693,12 @@ $(document).ready(function(){
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word2',
-      text: 'Blue'
+      text: 'True'
     }));
     $('.content p#word3').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word3',
-      text: 'Blue'
+      text: 'Argue'
     }));
     $('.content audio').replaceWith($('<audio></audio>',{
       src: ''
@@ -684,22 +711,22 @@ $(document).ready(function(){
   });
   $('#ew').on('click',function(){
     $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/apple.png'
+      src: 'img/phonics_img/longVowels/subMenu/mew.png'
     }));
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word1',
-      text: 'Few'
+      text: 'Mew'
     }));
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word2',
-      text: 'Few'
+      text: 'Blew'
     }));
     $('.content p#word3').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word3',
-      text: 'Few'
+      text: 'Shrew'
     }));
     $('.content audio').replaceWith($('<audio></audio>',{
       src: ''
@@ -712,17 +739,17 @@ $(document).ready(function(){
   });
   $('#u_e').on('click',function(){
     $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/apple.png'
+      src: 'img/phonics_img/longVowels/subMenu/cube.png'
     }));
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word1',
-      text: 'Tube'
+      text: 'Cube'
     }));
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word2',
-      text: 'Tube'
+      text: 'Refuse'
     }));
     $('.content p#word3').replaceWith($('<p></p>',{
       class: 'vowelWord',
