@@ -987,21 +987,21 @@ $(document).ready(function(){
   $('#ch').on('click',function(){
     $('#overlay').show();
     $('.conContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/blends/apple.png'
+      src: 'img/phonics_img/blends/cheese.png'
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'ch'
+      text: 'Cheese'
     }));
   });
   $('#sh').on('click',function(){
     $('#overlay').show();
     $('.conContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/blends/apple.png'
+      src: 'img/phonics_img/blends/sh!.png'
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'sh'
+      text: 'Sh!'
     }));
   });
   $('#th').on('click',function(){
