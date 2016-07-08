@@ -9,14 +9,6 @@ $(document).ready(function(){
             .addClass('buttonDark'); // selected li removes dark
   });
 
-  $('span').click(function(){ // for sub buttons in longVowels
-     $(this).removeClass('buttonLight') // selected removes light
-        .addClass('buttonDark') // selected adds dark
-        .siblings(this) // choose all other siblings of selected
-        .removeClass('buttonDark') // remove dark
-        .addClass('buttonLight'); // add light
-  });
-
           // This is for the SHORT VOWELS
   $('#shortA').on('click',function(){
     $('.content img').replaceWith($('<img></img>',{
@@ -138,30 +130,6 @@ $(document).ready(function(){
   $('.subVmenu').hide();
   $('.subA').show();
 
-
-        // To show,hide sub-menu
-  $('#longA').on('click', function(){
-    $('.subVmenu').hide();
-    $('.subA').show();
-  });
-  $('#longE').on('click', function(){
-    $('.subVmenu').hide();
-    $('.subE').show();
-  });
-  $('#longI').on('click', function(){
-    $('.subVmenu').hide();
-    $('.subI').show();
-  });
-  $('#longO').on('click', function(){
-    $('.subVmenu').hide();
-    $('.subO').show();
-  });
-  $('#longU').on('click', function(){
-    $('.subVmenu').hide();
-    $('.subU').show();
-  });
-
-
           // To show content in LONG VOWELS
                 //Long Vowel A
   $('#longA').on('click',function(){
@@ -186,6 +154,8 @@ $(document).ready(function(){
     $('.content audio').replaceWith($('<audio></audio>',{
       src: ''
     }));
+    $('.subVmenu').hide();
+    $('.subA').show();
     $('span#ay').removeClass('buttonLight')
           .addClass('buttonDark')
           .siblings(this)
@@ -300,6 +270,8 @@ $(document).ready(function(){
     $('.content audio').replaceWith($('<audio></audio>',{
       src: ''
     }));
+    $('.subVmenu').hide();
+    $('.subE').show();
     $('span#ee').removeClass('buttonLight')
           .addClass('buttonDark')
           .siblings(this)
@@ -414,6 +386,8 @@ $(document).ready(function(){
     $('.content audio').replaceWith($('<audio></audio>',{
       src: ''
     }));
+    $('.subVmenu').hide();
+    $('.subI').show();
     $('span#ie').removeClass('buttonLight')
           .addClass('buttonDark')
           .siblings(this)
@@ -536,7 +510,7 @@ $(document).ready(function(){
           //Long Vowel O
   $('#longO').on('click',function(){
     $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/longVowels/boat.png'
+      src: 'img/phonics_img/longVowels/boat.jpg'
     }));
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
@@ -556,6 +530,8 @@ $(document).ready(function(){
     $('.content audio').replaceWith($('<audio></audio>',{
       src: ''
     }));
+    $('.subVmenu').hide();
+    $('.subO').show();
     $('span#oa').removeClass('buttonLight')
           .addClass('buttonDark')
           .siblings(this)
@@ -564,7 +540,7 @@ $(document).ready(function(){
   });
   $('#oa').on('click',function(){
     $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/apple.png'
+      src: 'img/phonics_img/longVowels/boat.jpg'
     }));
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
@@ -670,6 +646,8 @@ $(document).ready(function(){
     $('.content audio').replaceWith($('<audio></audio>',{
       src: ''
     }));
+    $('.subVmenu').hide();
+    $('.subU').show();
     $('span#ue').removeClass('buttonLight')
           .addClass('buttonDark')
           .siblings(this)
@@ -761,11 +739,5 @@ $(document).ready(function(){
           .addClass('buttonLight');
   });
 
-
-
-      // CONSONANTS
-  // $('#b').on('click',function(){
-  //   $('#dialog').dialog("open");
-  // });
 
  });
