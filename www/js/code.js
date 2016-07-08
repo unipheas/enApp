@@ -983,7 +983,7 @@ $(document).ready(function(){
     }));
   });
 
-            // BLENDS
+            // `BLENDS`
   $('#ch').on('click',function(){
     $('#overlay').show();
     $('.conContent img').replaceWith($('<img></img>',{
@@ -1007,61 +1007,61 @@ $(document).ready(function(){
   $('#th').on('click',function(){
     $('#overlay').show();
     $('.conContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/blends/apple.png'
+      src: 'img/phonics_img/blends/there.png'
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'th'
+      text: 'There'
     }));
   });
   $('#thU').on('click',function(){
     $('#overlay').show();
     $('.conContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/blends/apple.png'
+      src: 'img/phonics_img/blends/three.png'
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'thU'
+      text: 'Three'
     }));
   });
   $('#oo').on('click',function(){
     $('#overlay').show();
     $('.conContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/blends/apple.png'
+      src: 'img/phonics_img/blends/tools.png'
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'oo'
+      text: 'Tools'
     }));
   });
   $('#ooU').on('click',function(){
     $('#overlay').show();
     $('.conContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/blends/apple.png'
+      src: 'img/phonics_img/blends/good.png'
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'ooU'
+      text: 'Good'
     }));
   });
   $('#oioy').on('click',function(){
     $('#overlay').show();
     $('.conContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/blends/apple.png'
+      src: 'img/phonics_img/blends/toys.png'
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'oioy'
+      text: 'Toys'
     }));
   });
   $('#ouow').on('click',function(){
     $('#overlay').show();
     $('.conContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/blends/apple.png'
+      src: 'img/phonics_img/blends/owl.png'
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'ouow'
+      text: 'Owl'
     }));
   });
   $('#erurir').on('click',function(){
