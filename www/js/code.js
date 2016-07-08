@@ -739,8 +739,10 @@ $(document).ready(function(){
           .addClass('buttonLight');
   });
 
-  function overlay() {
-	   el = document.getElementById("overlay");
-	    el.style.visibility = (el.style.visibility == "visible") ? "hidden" : "visible";
-  }
+            // DIALOG BOX FOR CONTENT
+  $('#close').on('click',function(){
+    $('#overlay').hide();
+  });
+
+  
  });

@@ -265,9 +265,7 @@ a:active, a:hover, a:link, a:visited  {
 }
 
 
-
 #overlay {
-     visibility: hidden;
      position: absolute;
      left: 0px;
      top: 0px;
@@ -285,6 +283,7 @@ a:active, a:hover, a:link, a:visited  {
      padding:5px;
      text-align:center;
      color: #02FD3D;
+     border-radius: 10px;
 }
 
 #overlay span {
@@ -292,4 +291,13 @@ a:active, a:hover, a:link, a:visited  {
   border:1px solid #000;
   background-color: grey;
   padding: 3px;
+  border-radius: 5px;
+}
+
+.conContent{
+}
+
+.conContent img {
+  width: 150px;
+  padding: 10px;
 }
