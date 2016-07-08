@@ -765,7 +765,7 @@ $(document).ready(function(){
       id: 'word1',
       text: 'Cat'
     }));
-  })
+  });
   $('#d').on('click',function(){
     $('#overlay').show();
     $('.conContent img').replaceWith($('<img></img>',{
@@ -775,7 +775,7 @@ $(document).ready(function(){
       id: 'word1',
       text: 'Dog'
     }));
-  })
+  });
   $('#f').on('click',function(){
     $('#overlay').show();
     $('.conContent img').replaceWith($('<img></img>',{
@@ -785,7 +785,7 @@ $(document).ready(function(){
       id: 'word1',
       text: 'Fish'
     }));
-  })
+  });
   $('#g').on('click',function(){
     $('#overlay').show();
     $('.conContent img').replaceWith($('<img></img>',{
@@ -795,7 +795,7 @@ $(document).ready(function(){
       id: 'word1',
       text: 'Goat'
     }));
-  })
+  });
   $('#h').on('click',function(){
     $('#overlay').show();
     $('.conContent img').replaceWith($('<img></img>',{
@@ -805,7 +805,7 @@ $(document).ready(function(){
       id: 'word1',
       text: 'Hat'
     }));
-  })
+  });
   $('#j').on('click',function(){
     $('#overlay').show();
     $('.conContent img').replaceWith($('<img></img>',{
@@ -815,7 +815,7 @@ $(document).ready(function(){
       id: 'word1',
       text: 'Jar'
     }));
-  })
+  });
   $('#k').on('click',function(){
     $('#overlay').show();
     $('.conContent img').replaceWith($('<img></img>',{
@@ -825,7 +825,7 @@ $(document).ready(function(){
       id: 'word1',
       text: 'King'
     }));
-  })
+  });
   $('#l').on('click',function(){
     $('#overlay').show();
     $('.conContent img').replaceWith($('<img></img>',{
@@ -835,7 +835,7 @@ $(document).ready(function(){
       id: 'word1',
       text: 'Lady'
     }));
-  })
+  });
   $('#m').on('click',function(){
     $('#overlay').show();
     $('.conContent img').replaceWith($('<img></img>',{
@@ -845,7 +845,7 @@ $(document).ready(function(){
       id: 'word1',
       text: 'Mouse'
     }));
-  })
+  });
   $('#n').on('click',function(){
     $('#overlay').show();
     $('.conContent img').replaceWith($('<img></img>',{
@@ -855,7 +855,7 @@ $(document).ready(function(){
       id: 'word1',
       text: 'Nose'
     }));
-  })
+  });
   $('#p').on('click',function(){
     $('#overlay').show();
     $('.conContent img').replaceWith($('<img></img>',{
@@ -865,7 +865,7 @@ $(document).ready(function(){
       id: 'word1',
       text: 'Pencil'
     }));
-  })
+  });
   $('#q').on('click',function(){
     $('#overlay').show();
     $('.conContent img').replaceWith($('<img></img>',{
@@ -875,7 +875,7 @@ $(document).ready(function(){
       id: 'word1',
       text: 'Queen'
     }));
-  })
+  });
   $('#r').on('click',function(){
     $('#overlay').show();
     $('.conContent img').replaceWith($('<img></img>',{
@@ -885,7 +885,7 @@ $(document).ready(function(){
       id: 'word1',
       text: 'Robot'
     }));
-  })
+  });
   $('#s').on('click',function(){
     $('#overlay').show();
     $('.conContent img').replaceWith($('<img></img>',{
@@ -895,7 +895,7 @@ $(document).ready(function(){
       id: 'word1',
       text: 'Snake'
     }));
-  })
+  });
   $('#t').on('click',function(){
     $('#overlay').show();
     $('.conContent img').replaceWith($('<img></img>',{
@@ -905,7 +905,7 @@ $(document).ready(function(){
       id: 'word1',
       text: 'Tshirt'
     }));
-  })
+  });
   $('#v').on('click',function(){
     $('#overlay').show();
     $('.conContent img').replaceWith($('<img></img>',{
@@ -915,7 +915,7 @@ $(document).ready(function(){
       id: 'word1',
       text: 'Van'
     }));
-  })
+  });
   $('#w').on('click',function(){
     $('#overlay').show();
     $('.conContent img').replaceWith($('<img></img>',{
@@ -925,7 +925,7 @@ $(document).ready(function(){
       id: 'word1',
       text: 'Whale'
     }));
-  })
+  });
   $('#x').on('click',function(){
     $('#overlay').show();
     $('.conContent img').replaceWith($('<img></img>',{
@@ -935,7 +935,7 @@ $(document).ready(function(){
       id: 'word1',
       text: 'X-box'
     }));
-  })
+  });
   $('#y').on('click',function(){
     $('#overlay').show();
     $('.conContent img').replaceWith($('<img></img>',{
@@ -945,7 +945,7 @@ $(document).ready(function(){
       id: 'word1',
       text: 'Yellow'
     }));
-  })
+  });
   $('#z').on('click',function(){
     $('#overlay').show();
     $('.conContent img').replaceWith($('<img></img>',{
@@ -955,5 +955,157 @@ $(document).ready(function(){
       id: 'word1',
       text: 'Zebra'
     }));
-  })
+  });
+
+            // BLENDS
+  $('#ch').on('click',function(){
+    $('#overlay').show();
+    $('.conContent img').replaceWith($('<img></img>',{
+      src: 'img/phonics_img/blends/apple.png'
+    }));
+    $('.conContent p#word1').replaceWith($('<p></p>',{
+      id: 'word1',
+      text: 'ch'
+    }));
+  });
+  $('#sh').on('click',function(){
+    $('#overlay').show();
+    $('.conContent img').replaceWith($('<img></img>',{
+      src: 'img/phonics_img/blends/apple.png'
+    }));
+    $('.conContent p#word1').replaceWith($('<p></p>',{
+      id: 'word1',
+      text: 'sh'
+    }));
+  });
+  $('#th').on('click',function(){
+    $('#overlay').show();
+    $('.conContent img').replaceWith($('<img></img>',{
+      src: 'img/phonics_img/blends/apple.png'
+    }));
+    $('.conContent p#word1').replaceWith($('<p></p>',{
+      id: 'word1',
+      text: 'th'
+    }));
+  });
+  $('#thU').on('click',function(){
+    $('#overlay').show();
+    $('.conContent img').replaceWith($('<img></img>',{
+      src: 'img/phonics_img/blends/apple.png'
+    }));
+    $('.conContent p#word1').replaceWith($('<p></p>',{
+      id: 'word1',
+      text: 'thU'
+    }));
+  });
+  $('#oo').on('click',function(){
+    $('#overlay').show();
+    $('.conContent img').replaceWith($('<img></img>',{
+      src: 'img/phonics_img/blends/apple.png'
+    }));
+    $('.conContent p#word1').replaceWith($('<p></p>',{
+      id: 'word1',
+      text: 'oo'
+    }));
+  });
+  $('#ooU').on('click',function(){
+    $('#overlay').show();
+    $('.conContent img').replaceWith($('<img></img>',{
+      src: 'img/phonics_img/blends/apple.png'
+    }));
+    $('.conContent p#word1').replaceWith($('<p></p>',{
+      id: 'word1',
+      text: 'ooU'
+    }));
+  });
+  $('#oioy').on('click',function(){
+    $('#overlay').show();
+    $('.conContent img').replaceWith($('<img></img>',{
+      src: 'img/phonics_img/blends/apple.png'
+    }));
+    $('.conContent p#word1').replaceWith($('<p></p>',{
+      id: 'word1',
+      text: 'oioy'
+    }));
+  });
+  $('#ouow').on('click',function(){
+    $('#overlay').show();
+    $('.conContent img').replaceWith($('<img></img>',{
+      src: 'img/phonics_img/blends/apple.png'
+    }));
+    $('.conContent p#word1').replaceWith($('<p></p>',{
+      id: 'word1',
+      text: 'ouow'
+    }));
+  });
+  $('#erurir').on('click',function(){
+    $('#overlay').show();
+    $('.conContent img').replaceWith($('<img></img>',{
+      src: 'img/phonics_img/blends/apple.png'
+    }));
+    $('.conContent p#word1').replaceWith($('<p></p>',{
+      id: 'word1',
+      text: 'erurir'
+    }));
+  });
+  $('#or').on('click',function(){
+    $('#overlay').show();
+    $('.conContent img').replaceWith($('<img></img>',{
+      src: 'img/phonics_img/blends/apple.png'
+    }));
+    $('.conContent p#word1').replaceWith($('<p></p>',{
+      id: 'word1',
+      text: 'or'
+    }));
+  });
+  $('#ar').on('click',function(){
+    $('#overlay').show();
+    $('.conContent img').replaceWith($('<img></img>',{
+      src: 'img/phonics_img/blends/apple.png'
+    }));
+    $('.conContent p#word1').replaceWith($('<p></p>',{
+      id: 'word1',
+      text: 'ar'
+    }));
+  });
+  $('#aw').on('click',function(){
+    $('#overlay').show();
+    $('.conContent img').replaceWith($('<img></img>',{
+      src: 'img/phonics_img/blends/apple.png'
+    }));
+    $('.conContent p#word1').replaceWith($('<p></p>',{
+      id: 'word1',
+      text: 'aw'
+    }));
+  });
+  $('#ing').on('click',function(){
+    $('#overlay').show();
+    $('.conContent img').replaceWith($('<img></img>',{
+      src: 'img/phonics_img/blends/apple.png'
+    }));
+    $('.conContent p#word1').replaceWith($('<p></p>',{
+      id: 'word1',
+      text: 'ing'
+    }));
+  });
+  $('#ph').on('click',function(){
+    $('#overlay').show();
+    $('.conContent img').replaceWith($('<img></img>',{
+      src: 'img/phonics_img/blends/apple.png'
+    }));
+    $('.conContent p#word1').replaceWith($('<p></p>',{
+      id: 'word1',
+      text: 'ph'
+    }));
+  });
+  $('#tion').on('click',function(){
+    $('#overlay').show();
+    $('.conContent img').replaceWith($('<img></img>',{
+      src: 'img/phonics_img/blends/apple.png'
+    }));
+    $('.conContent p#word1').replaceWith($('<p></p>',{
+      id: 'word1',
+      text: 'tion'
+    }));
+  });
  });
