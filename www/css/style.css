@@ -250,19 +250,12 @@ a:active, a:hover, a:link, a:visited  {
   background-repeat: no-repeat;
 }
 
-#oioy{
-  /* oi,oy: */
-  font-size: 30px;
-}
-#ouow{
-  /* ou,ow: */
-  font-size: 26px;
-}
-#erurir{
-  /* er,ur,ir: */
-  font-size: 20px;
-}
+.group1{color:#e9671e;}
+.group2{color:#18a8de;}
+.group3{color:#cf15c7;}
 
+
+                                      /* DIALOG BOX */
 
 #overlay {
      position: absolute;

@@ -1041,7 +1041,7 @@ $(document).ready(function(){
       text: 'Good'
     }));
   });
-  $('#oioy').on('click',function(){
+  $('#oi').on('click',function(){
     $('#overlay').show();
     $('.conContent img').replaceWith($('<img></img>',{
       src: 'img/phonics_img/blends/toys.png'
@@ -1051,7 +1051,7 @@ $(document).ready(function(){
       text: 'Toys'
     }));
   });
-  $('#ouow').on('click',function(){
+  $('#oy').on('click',function(){
     $('#overlay').show();
     $('.conContent img').replaceWith($('<img></img>',{
       src: 'img/phonics_img/blends/owl.png'
@@ -1061,7 +1061,47 @@ $(document).ready(function(){
       text: 'Owl'
     }));
   });
-  $('#erurir').on('click',function(){
+  $('#ou').on('click',function(){
+    $('#overlay').show();
+    $('.conContent img').replaceWith($('<img></img>',{
+      src: 'img/phonics_img/blends/toys.png'
+    }));
+    $('.conContent p#word1').replaceWith($('<p></p>',{
+      id: 'word1',
+      text: 'Toys'
+    }));
+  });
+  $('#ow').on('click',function(){
+    $('#overlay').show();
+    $('.conContent img').replaceWith($('<img></img>',{
+      src: 'img/phonics_img/blends/owl.png'
+    }));
+    $('.conContent p#word1').replaceWith($('<p></p>',{
+      id: 'word1',
+      text: 'Owl'
+    }));
+  });
+  $('#er').on('click',function(){
+    $('#overlay').show();
+    $('.conContent img').replaceWith($('<img></img>',{
+      src: 'img/phonics_img/blends/apple.png'
+    }));
+    $('.conContent p#word1').replaceWith($('<p></p>',{
+      id: 'word1',
+      text: 'erurir'
+    }));
+  });
+  $('#ur').on('click',function(){
+    $('#overlay').show();
+    $('.conContent img').replaceWith($('<img></img>',{
+      src: 'img/phonics_img/blends/apple.png'
+    }));
+    $('.conContent p#word1').replaceWith($('<p></p>',{
+      id: 'word1',
+      text: 'erurir'
+    }));
+  });
+  $('#ir').on('click',function(){
     $('#overlay').show();
     $('.conContent img').replaceWith($('<img></img>',{
       src: 'img/phonics_img/blends/apple.png'
