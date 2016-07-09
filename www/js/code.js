@@ -564,12 +564,12 @@ $(document).ready(function(){
   });
   $('#oa').on('click',function(){
     $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/longVowels/subMenu/coat.png'
+      src: 'img/phonics_img/longVowels/boat.jpg'
     }));
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word1',
-      text: 'Coat'
+      text: 'Boat'
     }));
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
@@ -579,7 +579,7 @@ $(document).ready(function(){
     $('.content p#word3').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word3',
-      text: 'Goat'
+      text: 'Coat'
     }));
     $('.content audio').replaceWith($('<audio></audio>',{
       src: ''
