@@ -1044,31 +1044,31 @@ $(document).ready(function(){
   $('#oi').on('click',function(){
     $('#overlay').show();
     $('.conContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/blends/toys.png'
+      src: 'img/phonics_img/blends/boil.png'
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'Toys'
+      text: 'Boil'
     }));
   });
   $('#oy').on('click',function(){
     $('#overlay').show();
     $('.conContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/blends/owl.png'
-    }));
-    $('.conContent p#word1').replaceWith($('<p></p>',{
-      id: 'word1',
-      text: 'Owl'
-    }));
-  });
-  $('#ou').on('click',function(){
-    $('#overlay').show();
-    $('.conContent img').replaceWith($('<img></img>',{
       src: 'img/phonics_img/blends/toys.png'
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
       text: 'Toys'
+    }));
+  });
+  $('#ou').on('click',function(){
+    $('#overlay').show();
+    $('.conContent img').replaceWith($('<img></img>',{
+      src: 'img/phonics_img/blends/out.png'
+    }));
+    $('.conContent p#word1').replaceWith($('<p></p>',{
+      id: 'word1',
+      text: 'Out'
     }));
   });
   $('#ow').on('click',function(){
@@ -1084,91 +1084,91 @@ $(document).ready(function(){
   $('#er').on('click',function(){
     $('#overlay').show();
     $('.conContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/blends/apple.png'
+      src: 'img/phonics_img/blends/germ.png'
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'erurir'
+      text: 'Germ'
     }));
   });
   $('#ur').on('click',function(){
     $('#overlay').show();
     $('.conContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/blends/apple.png'
+      src: 'img/phonics_img/blends/nurse.png'
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'erurir'
+      text: 'Nurse'
     }));
   });
   $('#ir').on('click',function(){
     $('#overlay').show();
     $('.conContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/blends/apple.png'
+      src: 'img/phonics_img/blends/shirt.png'
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'erurir'
+      text: 'Shirt'
     }));
   });
   $('#or').on('click',function(){
     $('#overlay').show();
     $('.conContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/blends/apple.png'
+      src: 'img/phonics_img/blends/horn.png'
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'or'
+      text: 'Horn'
     }));
   });
   $('#ar').on('click',function(){
     $('#overlay').show();
     $('.conContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/blends/apple.png'
+      src: 'img/phonics_img/blends/car.png'
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'ar'
+      text: 'Car'
     }));
   });
   $('#aw').on('click',function(){
     $('#overlay').show();
     $('.conContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/blends/apple.png'
+      src: 'img/phonics_img/blends/crawl.png'
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'aw'
+      text: 'Crawl'
     }));
   });
   $('#ing').on('click',function(){
     $('#overlay').show();
     $('.conContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/blends/apple.png'
+      src: 'img/phonics_img/blends/sing.png'
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'ing'
+      text: 'Sing'
     }));
   });
   $('#ph').on('click',function(){
     $('#overlay').show();
     $('.conContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/blends/apple.png'
+      src: 'img/phonics_img/longVowels/subMenu/phone.png'
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'ph'
+      text: 'Phone'
     }));
   });
   $('#tion').on('click',function(){
     $('#overlay').show();
     $('.conContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/blends/apple.png'
+      src: 'img/phonics_img/blends/construction.png'
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'tion'
+      text: 'Construction'
     }));
   });
  });
