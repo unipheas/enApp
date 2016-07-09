@@ -280,9 +280,9 @@ a:active, a:hover, a:link, a:visited  {
 #overlay span {
   float: right;
   background-color: rgb(65, 83, 107);
-  padding: 6px;
-  border-radius: 50%;
-  font-size: 25px;
+  padding: 3px 10px;
+  border-radius: 25%;
+  font-size: 30px;
 
 }
 
@@ -293,6 +293,7 @@ a:active, a:hover, a:link, a:visited  {
 .conContent img {
   width: 150px;
   padding: 10px;
+  margin-right: -30px;
 }
 
     /* Phone Size */
