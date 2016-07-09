@@ -271,7 +271,7 @@ a:active, a:hover, a:link, a:visited  {
      width:300px;
      margin: 100px auto;
      background-color: rgba(45, 50, 85, 0.9);
-     padding:5px;
+     padding:6px;
      text-align:center;
      color: #02FD3D;
      border-radius: 10px;
@@ -283,7 +283,6 @@ a:active, a:hover, a:link, a:visited  {
   padding: 3px 10px;
   border-radius: 25%;
   font-size: 30px;
-
 }
 
 .conContent{
