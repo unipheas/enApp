@@ -271,7 +271,6 @@ a:active, a:hover, a:link, a:visited  {
      width:300px;
      margin: 100px auto;
      background-color: rgba(45, 50, 85, 0.9);
-     /*border:1px solid #000;*/
      padding:5px;
      text-align:center;
      color: #02FD3D;
@@ -280,11 +279,11 @@ a:active, a:hover, a:link, a:visited  {
 
 #overlay span {
   float: right;
-  border:1px solid #000;
-  background-color: grey;
-  padding: 3px;rgb(30, 24, 34)
-  border-radius: 5px;
+  background-color: rgb(65, 83, 107);
+  padding: 6px;
+  border-radius: 50%;
   font-size: 25px;
+
 }
 
 .conContent{
