@@ -649,17 +649,17 @@ $(document).ready(function(){
           //Long Vowel U
   $('#longU').on('click',function(){
     $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/longVowels/uniform.png'
+      src: 'img/phonics_img/longVowels/subMenu/blue.png'
     }));
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word1',
-      text: 'Uniform'
+      text: 'Blue'
     }));
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word2',
-      text: 'Blue'
+      text: 'Argue'
     }));
     $('.content p#word3').replaceWith($('<p></p>',{
       class: 'vowelWord',
@@ -689,12 +689,12 @@ $(document).ready(function(){
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word2',
-      text: 'True'
+      text: 'Argue'
     }));
     $('.content p#word3').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word3',
-      text: 'Argue'
+      text: 'True'
     }));
     $('.content audio').replaceWith($('<audio></audio>',{
       src: ''
