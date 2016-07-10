@@ -1,6 +1,10 @@
 
 $(document).ready(function(){
 
+  $('changeVoice').on('click', function(){
+
+  });
+
   // Change all clicked elements to dark and light shading.
   $('ul').on('click', 'li', function(){ // When selector 'li' is clicked do the function
     $('li').removeClass('buttonDark').addClass('buttonLight'); // remove dark and add light from all li

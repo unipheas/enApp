@@ -158,6 +158,14 @@ a:active, a:hover, a:link, a:visited  {
   color: currentColor;
 }
 
+#changeVoice {
+  float: right;
+  padding: 0px;
+  margin-top: -25px;
+  color: rgb(25, 238, 40);
+  font-size: 20px;
+}
+
                                                     /* VOWELS */
 .vowelMenu {
   list-style-type: none;
