@@ -1,17 +1,32 @@
 /*FONTS*/
 @font-face {
   font-family: 'nanum_penregular';
-  src: url('nanumpenscript-regular-webfont.woff2') format('woff2'),
-  url('nanumpenscript-regular-webfont.woff') format('woff');
+  src: url('../font/NanumPenScript-Regular.ttf') format('truetype'),
   font-weight: normal;
   font-style: normal;
-
+}
+@font-face {
+    font-family: "chinesefont";
+    src: url('../font/chinesefont.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+/*GLOBALS*/
+body {
+  max-width: 355px;
+  font-family: NanumPen;
 }
 
-/*GLOBALS*/
+.buttonDark{
+  background: rgba(0,0,0,0.80);
+}
+
+.buttonLight{
+  background: rgba(0,0,0,0.50);
+}
+
 .button{
   /* button: */
-  background: rgba(0,0,0,0.50);
   box-shadow: 0px 2px 4px 0px #000000;
   border-radius: 10px;
   width: 77.74px;
@@ -22,7 +37,6 @@
   width:23%;
 
   /* text */
-  font-family: .HelveticaNeueDeskInterface-Regular;
   font-size: 42.64px;
   color: #02FD3D;
   letter-spacing: 2px;
@@ -82,7 +96,7 @@
 
 #mainTitle{
   /* title: */
-  font-family: NanumPen;
+  /*font-family: NanumPen;*/
   font-size: 24px;
   color: #02FD3D;
   letter-spacing: 0px;
@@ -93,7 +107,7 @@
 }
 
 .menu{
-  font-family: NanumPen;
+  /*font-family: NanumPen;*/
   letter-spacing: 0px;
   text-shadow: 0px 2px 4px #000000;
 
@@ -147,27 +161,58 @@ a:active, a:hover, a:link, a:visited  {
   color: currentColor;
 }
 
+#changeVoice {
+  float: right;
+  padding: 0px;
+  margin-top: -25px;
+  margin-right: 5px;
+  color: rgb(25, 238, 40);
+  font-size: 20px;
+}
+
                                                     /* VOWELS */
 .vowelMenu {
   list-style-type: none;
   margin-left: -40px;
+
 }
 
 .lbutton{
-  background: rgba(0,0,0,0.50);
   box-shadow: 0px 2px 4px 0px #000000;
   border-radius: 10px;
   width: 60px;
   height: 60px;
   margin: 5px;
   width:20%;
-  font-family: .HelveticaNeueDeskInterface-Regular;
+  /*font-family: .HelveticaNeueDeskInterface-Regular;*/
   font-size: 42.64px;
   color: #02FD3D;
   letter-spacing: 2px;
   text-align: center;
   line-height: 63px;
 }
+
+.content{
+  float:right;
+}
+
+.content img {
+  width: 150px;
+  margin-top: 50px;
+  margin-right: 50px;
+}
+
+.vowelWord{
+  text-align: right;
+  margin-right: 20px;
+  /*font-family: .HelveticaNeueDeskInterface-Regular;*/
+  font-size: 45px;
+  color: #02FD3D;
+  line-height: 35px;
+  text-shadow: 2px 4px 3px #000000;
+}
+
+
 
                                               /* SHORT VOWELS */
 
@@ -187,6 +232,22 @@ a:active, a:hover, a:link, a:visited  {
   background-repeat: no-repeat;
 }
 
+.subVmenu{
+  text-align: center;
+   margin-top: 55%;
+}
+
+.subButton{
+  box-shadow: 0px 2px 4px 0px #000000;
+  border-radius: 10px;
+  padding: 8px;
+  margin: 5px;
+  /*font-family: .HelveticaNeueDeskInterface-Regular;*/
+  font-size: 30px;
+  color: #02FD3D;
+  letter-spacing: 4px;
+}
+
                                             /* CONSONANTS */
 .consBody{
   background: url(../img/bg/consonants/background.png);
@@ -201,15 +262,74 @@ a:active, a:hover, a:link, a:visited  {
   background-repeat: no-repeat;
 }
 
-#oioy{
-  /* oi,oy: */
+.group1{color:#e9671e;}
+.group2{color:#18a8de;}
+.group3{color:#cf15c7;}
+
+
+                                      /* DIALOG BOX */
+
+#overlay {
+     position: absolute;
+     left: 0px;
+     top: 0px;
+     width:100%;
+     height:100%;
+     text-align:center;
+     z-index: 1000;
+}
+
+#overlay div {
+     width:300px;
+     margin: 100px auto;
+     background-color: rgba(45, 50, 85, 0.9);
+     padding:6px;
+     text-align:center;
+     color: #02FD3D;
+     border-radius: 10px;
+}
+
+#overlay span {
+  float: right;
+  background-color: rgb(65, 83, 107);
+  padding: 3px 10px;
+  border-radius: 25%;
   font-size: 30px;
 }
-#ouow{
-  /* ou,ow: */
-  font-size: 26px;
+
+.conContent{
+  font-size: 46px;
 }
-#erurir{
-  /* er,ur,ir: */
-  font-size: 20px;
+
+.conContent img {
+  width: 150px;
+  padding: 10px;
+  margin-right: -30px;
 }
+
+    /* Phone Size */
+@media screen and (max-width: 960px) {
+
+}
+
+    /* Tablet Size */
+@media screen and (max-width: 1024px) { //tablet
+
+}
+
+/*
+Phone
+480
+640
+720
+768
+1080
+
+Tablet
+600
+768
+800
+1200
+1536
+1600
+*/

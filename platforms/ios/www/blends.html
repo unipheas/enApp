@@ -5,8 +5,7 @@
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title>Blends</title>
     <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/bootstrap-3.3.6-dist/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
-
+    <script type="text/javascript" src="js/jquery.min.js"></script>
   </head>
   <body class="blendsBody">
     <!-- The title -->
@@ -22,31 +21,46 @@
   </div>
 
   <!-- The content -->
-  <div class="blendsContent">
+  <div>
       <div class="buttonRow"><ul>
-        <li class="button">ch</li>
-        <li class="button">sh</li>
-        <li class="button">th</li>
-        <li class="button"><u>th</u></li>
+        <li class="button buttonDark" id="ch">ch</li>
+        <li class="button buttonLight" id="sh">sh</li>
+        <li class="button buttonLight" id="th">th</li>
+        <li class="button buttonLight" id="thU"><u>th</u></li>
       </ul></div>
       <div class="buttonRow"><ul>
-        <li class="button">oo</li>
-        <li class="button"><u>oo</u></li>
-        <li class="button" id="oioy">oi,oy</li>
-        <li class="button" id="ouow">ou,ow</li>
+        <li class="button buttonLight" id="oo">oo</li>
+        <li class="button buttonLight" id="ooU"><u>oo</u></li>
+        <li class="button buttonLight group1"  id="oi">oi</li>
+        <li class="button buttonLight group1"  id="oy">oy</li>
       </ul></div>
       <div class="buttonRow"><ul>
-        <li class="button" id="erurir">er,ur,ir</li>
-        <li class="button">or</li>
-        <li class="button">ar</li>
-        <li class="button">aw</li>
+        <li class="button buttonLight group2"  id="ou">ou</li>
+        <li class="button buttonLight group2"  id="ow">ow</li>
+        <li class="button buttonLight group3"  id="er">er</li>
+        <li class="button buttonLight group3"  id="ur">ur</li>
       </ul></div>
       <div class="buttonRow"><ul>
-        <li class="button">ing</li>
-        <li class="button">ph</li>
-        <li class="button">tion</li>
+        <li class="button buttonLight group3"  id="ir">ir</li>
+        <li class="button buttonLight" id="or">or</li>
+        <li class="button buttonLight" id="ar">ar</li>
+        <li class="button buttonLight" id="aw">aw</li>
+      </ul></div>
+      <div class="buttonRow"><ul>
+        <li class="button buttonLight" id="ing">ing</li>
+        <li class="button buttonLight" id="ph">ph</li>
+        <li class="button buttonLight" id="tion">tion</li>
       </ul></div>
   </div>
 
+  <div id="overlay">
+     <div class='conContent'>
+          <span id="close">X</span>
+            <img src="" />
+            <p id="word1"></p>
+            <audio src=""></audio>
+     </div>
+  </div>
+<script type="text/javascript" src="js/code.js"></script>
 </body>
 </html>
