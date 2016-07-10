@@ -1,12 +1,16 @@
 /*FONTS*/
 @font-face {
   font-family: 'nanum_penregular';
-  src: url('nanumpenscript-regular-webfont.woff2') format('woff2'),
-  url('nanumpenscript-regular-webfont.woff') format('woff');
+  src: url('../font/NanumPenScript-Regular.ttf') format('truetype'),
   font-weight: normal;
   font-style: normal;
 }
-
+@font-face {
+    font-family: "chinesefont";
+    src: url('../font/chinesefont.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
 /*GLOBALS*/
 body {
   max-width: 355px;
