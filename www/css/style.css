@@ -1,20 +1,20 @@
 /*FONTS*/
 @font-face {
   font-family: 'nanum_penregular';
-  src: url('../font/NanumPenScript-Regular.ttf') format('truetype'),
+  src: url('NanumPenScript-Regular.ttf') format('truetype'),
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
-    font-family: "chinesefont";
-    src: url('../font/chinesefont.ttf') format("truetype");
-    font-weight: normal;
-    font-style: normal;
+    font-family: chinesefont;
+    src: url('chinesefont.ttf');
 }
+
 /*GLOBALS*/
 body {
   max-width: 355px;
-  font-family: NanumPen;
+  font-family: ［何尼玛］土肥圆;
 }
 
 .buttonDark{
