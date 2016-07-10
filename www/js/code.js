@@ -1,14 +1,18 @@
 
 $(document).ready(function(){
 
-  // if () {
-  //
-  // }
-  // $('div#changeVoice').on('click', function(){
-  //   $('#changeVoice p').replaceWith($('<p></p>',{
-  //     text: 'UK'
-  //   }));
-  // });
+
+    $('div#changeVoice').on('click', function(){
+        if ($('div#changeVoice p').text() == 'US') {
+          $('#changeVoice p').replaceWith($('<p></p>',{
+            text: 'UK'
+          }));
+        }else {
+          $('#changeVoice p').replaceWith($('<p></p>',{
+            text: 'US'
+          }));
+        };
+      });
 
   // Change all clicked elements to dark and light shading.
   $('ul').on('click', 'li', function(){ // When selector 'li' is clicked do the function
