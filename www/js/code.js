@@ -34,12 +34,12 @@ $(document).ready(function(){
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word2',
-      text: 'Ant'
+      text: 'Ant 蚂蚁'
     }));
     $('.content p#word3').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word3',
-      text: 'Antelope'
+      text: 'Antelope 羚羊'
     }));
     $('.content audio').replaceWith($('<audio></audio>',{
       src: ''
@@ -52,17 +52,17 @@ $(document).ready(function(){
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word1',
-      text: 'Egg'
+      text: 'Egg 鸡蛋'
     }));
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word2',
-      text: 'End'
+      text: 'End 结束'
     }));
     $('.content p#word3').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word3',
-      text: 'Engine'
+      text: 'Engine 引擎'
     }));
     $('.content audio').replaceWith($('<audio></audio>',{
       src: ''
@@ -75,17 +75,17 @@ $(document).ready(function(){
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word1',
-      text: 'Insect'
+      text: 'Insect 昆虫'
     }));
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word2',
-      text: 'In'
+      text: 'In 在...里面'
     }));
     $('.content p#word3').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word3',
-      text: 'Internet'
+      text: 'Internet 因特网'
     }));
     $('.content audio').replaceWith($('<audio></audio>',{
       src: ''
@@ -98,17 +98,17 @@ $(document).ready(function(){
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word1',
-      text: 'Orange'
+      text: 'Orange 橙子'
     }));
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word2',
-      text: 'Object'
+      text: 'Object 物体'
     }));
     $('.content p#word3').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word3',
-      text: 'Ostrich'
+      text: 'Ostrich 鸵鸟'
     }));
     $('.content audio').replaceWith($('<audio></audio>',{
       src: ''
@@ -121,17 +121,17 @@ $(document).ready(function(){
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word1',
-      text: 'Umbrella'
+      text: 'Umbrella 雨伞'
     }));
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word2',
-      text: 'Under'
+      text: 'Under 在...下面'
     }));
     $('.content p#word3').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word3',
-      text: 'Ugly'
+      text: 'Ugly 丑'
     }));
     $('.content audio').replaceWith($('<audio></audio>',{
       src: ''
@@ -151,17 +151,17 @@ $(document).ready(function(){
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word1',
-      text: 'Day'
+      text: 'Day 白天'
     }));
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word2',
-      text: 'Pay'
+      text: 'Pay 付钱'
     }));
     $('.content p#word3').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word3',
-      text: 'Play'
+      text: 'Play 玩耍'
     }));
     $('.content audio').replaceWith($('<audio></audio>',{
       src: ''
@@ -181,17 +181,17 @@ $(document).ready(function(){
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word1',
-      text: 'Day'
+      text: 'Day 白天'
     }));
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word2',
-      text: 'Pay'
+      text: 'Pay 付钱'
     }));
     $('.content p#word3').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word3',
-      text: 'Play'
+      text: 'Play 玩耍'
     }));
     $('.content audio').replaceWith($('<audio></audio>',{
       src: ''
@@ -209,17 +209,17 @@ $(document).ready(function(){
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word1',
-      text: 'Rain'
+      text: 'Rain 下雨'
     }));
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word2',
-      text: 'Laid'
+      text: 'Laid 下蛋'
     }));
     $('.content p#word3').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word3',
-      text: 'Paid'
+      text: 'Paid 付钱'
     }));
     $('.content audio').replaceWith($('<audio></audio>',{
       src: ''
@@ -237,17 +237,17 @@ $(document).ready(function(){
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word1',
-      text: 'Plane'
+      text: 'Plane 飞机'
     }));
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word2',
-      text: 'Game'
+      text: 'Game 游戏'
     }));
     $('.content p#word3').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word3',
-      text: 'Paper'
+      text: 'Paper 纸'
     }));
     $('.content audio').replaceWith($('<audio></audio>',{
       src: ''
@@ -266,17 +266,17 @@ $(document).ready(function(){
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word1',
-      text: 'Bee'
+      text: 'Bee 蜜蜂'
     }));
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word2',
-      text: 'Free'
+      text: 'Free 免费'
     }));
     $('.content p#word3').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word3',
-      text: 'Tree'
+      text: 'Tree 树'
     }));
     $('.content audio').replaceWith($('<audio></audio>',{
       src: ''
@@ -296,17 +296,17 @@ $(document).ready(function(){
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word1',
-      text: 'Bee'
+      text: 'Bee 蜜蜂'
     }));
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word2',
-      text: 'Free'
+      text: 'Free 免费'
     }));
     $('.content p#word3').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word3',
-      text: 'Tree'
+      text: 'Tree 树'
     }));
     $('.content audio').replaceWith($('<audio></audio>',{
       src: ''
@@ -324,17 +324,17 @@ $(document).ready(function(){
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word1',
-      text: 'Eat'
+      text: 'Eat 吃'
     }));
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word2',
-      text: 'Clean'
+      text: 'Clean 干净'
     }));
     $('.content p#word3').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word3',
-      text: 'Flea'
+      text: 'Flea 跳蚤'
     }));
     $('.content audio').replaceWith($('<audio></audio>',{
       src: ''
@@ -352,17 +352,17 @@ $(document).ready(function(){
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word1',
-      text: 'Chinese'
+      text: 'Chinese 中国人'
     }));
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word2',
-      text: 'Athlete'
+      text: 'Athlete 运动员'
     }));
     $('.content p#word3').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word3',
-      text: 'Theme'
+      text: 'Theme 主题'
     }));
     $('.content audio').replaceWith($('<audio></audio>',{
       src: ''
@@ -380,17 +380,17 @@ $(document).ready(function(){
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word1',
-      text: 'Angry'
+      text: 'Angry 生气'
     }));
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word2',
-      text: 'Happy'
+      text: 'Happy 高兴'
     }));
     $('.content p#word3').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word3',
-      text: 'Lady'
+      text: 'Lady 女士'
     }));
     $('.content audio').replaceWith($('<audio></audio>',{
       src: ''
@@ -409,17 +409,17 @@ $(document).ready(function(){
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word1',
-      text: 'Pie'
+      text: 'Pie 派'
     }));
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word2',
-      text: 'Lie'
+      text: 'Lie 撒谎'
     }));
     $('.content p#word3').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word3',
-      text: 'Tie'
+      text: 'Tie 领带'
     }));
     $('.content audio').replaceWith($('<audio></audio>',{
       src: ''
@@ -439,17 +439,17 @@ $(document).ready(function(){
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word1',
-      text: 'Pie'
+      text: 'Pie 派'
     }));
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word2',
-      text: 'Lie'
+      text: 'Lie 撒谎'
     }));
     $('.content p#word3').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word3',
-      text: 'Tie'
+      text: 'Tie 领带'
     }));
     $('.content audio').replaceWith($('<audio></audio>',{
       src: ''
@@ -467,17 +467,17 @@ $(document).ready(function(){
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word1',
-      text: 'Light'
+      text: 'Light 轻'
     }));
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word2',
-      text: 'High'
+      text: 'High 高'
     }));
     $('.content p#word3').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word3',
-      text: 'Sigh'
+      text: 'Sigh 叹气'
     }));
     $('.content audio').replaceWith($('<audio></audio>',{
       src: ''
@@ -495,17 +495,17 @@ $(document).ready(function(){
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word1',
-      text: 'Fly'
+      text: 'Fly 苍蝇'
     }));
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word2',
-      text: 'Fry'
+      text: 'Fry 炸'
     }));
     $('.content p#word3').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word3',
-      text: 'Cry'
+      text: 'Cry 哭'
     }));
     $('.content audio').replaceWith($('<audio></audio>',{
       src: ''
@@ -523,17 +523,17 @@ $(document).ready(function(){
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word1',
-      text: 'Bike'
+      text: 'Bike 自行车'
     }));
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word2',
-      text: 'Time'
+      text: 'Time 时间'
     }));
     $('.content p#word3').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word3',
-      text: 'Wine'
+      text: 'Wine 红酒'
     }));
     $('.content audio').replaceWith($('<audio></audio>',{
       src: ''
@@ -552,17 +552,17 @@ $(document).ready(function(){
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word1',
-      text: 'Boat'
+      text: 'Boat 船'
     }));
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word2',
-      text: 'Road'
+      text: 'Road 道路'
     }));
     $('.content p#word3').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word3',
-      text: 'Coat'
+      text: 'Coat 外套'
     }));
     $('.content audio').replaceWith($('<audio></audio>',{
       src: ''
@@ -582,17 +582,17 @@ $(document).ready(function(){
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word1',
-      text: 'Boat'
+      text: 'Boat 船'
     }));
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word2',
-      text: 'Road'
+      text: 'Road 道路'
     }));
     $('.content p#word3').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word3',
-      text: 'Coat'
+      text: 'Coat 外套'
     }));
     $('.content audio').replaceWith($('<audio></audio>',{
       src: ''
@@ -610,17 +610,17 @@ $(document).ready(function(){
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word1',
-      text: 'Window'
+      text: 'Window 窗户'
     }));
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word2',
-      text: 'Blow'
+      text: 'Blow 吹'
     }));
     $('.content p#word3').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word3',
-      text: 'Row'
+      text: 'Row 划船'
     }));
     $('.content audio').replaceWith($('<audio></audio>',{
       src: ''
@@ -638,17 +638,17 @@ $(document).ready(function(){
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word1',
-      text: 'Phone'
+      text: 'Phone 手机'
     }));
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word2',
-      text: 'Bone'
+      text: 'Bone 骨头'
     }));
     $('.content p#word3').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word3',
-      text: 'Tone'
+      text: 'Tone 声调'
     }));
     $('.content audio').replaceWith($('<audio></audio>',{
       src: ''
@@ -667,17 +667,17 @@ $(document).ready(function(){
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word1',
-      text: 'Blue'
+      text: 'Blue 蓝色'
     }));
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word2',
-      text: 'Argue'
+      text: 'Argue 争吵'
     }));
     $('.content p#word3').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word3',
-      text: 'True'
+      text: 'True 真实'
     }));
     $('.content audio').replaceWith($('<audio></audio>',{
       src: ''
@@ -697,17 +697,17 @@ $(document).ready(function(){
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word1',
-      text: 'Blue'
+      text: 'Blue 蓝色'
     }));
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word2',
-      text: 'Argue'
+      text: 'Argue 争吵'
     }));
     $('.content p#word3').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word3',
-      text: 'True'
+      text: 'True 真实'
     }));
     $('.content audio').replaceWith($('<audio></audio>',{
       src: ''
@@ -725,17 +725,17 @@ $(document).ready(function(){
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word1',
-      text: 'Mew'
+      text: 'Mew 喵喵叫'
     }));
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word2',
-      text: 'Blew'
+      text: 'Blew 吹'
     }));
     $('.content p#word3').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word3',
-      text: 'Shrew'
+      text: 'Shrew 鼩鼱'
     }));
     $('.content audio').replaceWith($('<audio></audio>',{
       src: ''
@@ -753,17 +753,17 @@ $(document).ready(function(){
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word1',
-      text: 'Cube'
+      text: 'Cube 方块'
     }));
     $('.content p#word2').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word2',
-      text: 'Refuse'
+      text: 'Refuse 拒绝'
     }));
     $('.content p#word3').replaceWith($('<p></p>',{
       class: 'vowelWord',
       id: 'word3',
-      text: 'Tube'
+      text: 'Tube 管道'
     }));
     $('.content audio').replaceWith($('<audio></audio>',{
       src: ''
@@ -789,7 +789,7 @@ $(document).ready(function(){
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'Ball'
+      text: 'Ball 球'
     }));
   })
   $('#c').on('click',function(){
@@ -799,7 +799,7 @@ $(document).ready(function(){
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'Cat'
+      text: 'Cat 猫'
     }));
   });
   $('#d').on('click',function(){
@@ -809,7 +809,7 @@ $(document).ready(function(){
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'Dog'
+      text: 'Dog 狗'
     }));
   });
   $('#f').on('click',function(){
@@ -819,7 +819,7 @@ $(document).ready(function(){
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'Fish'
+      text: 'Fish 鱼'
     }));
   });
   $('#g').on('click',function(){
@@ -829,7 +829,7 @@ $(document).ready(function(){
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'Goat'
+      text: 'Goat 山羊'
     }));
   });
   $('#h').on('click',function(){
@@ -839,7 +839,7 @@ $(document).ready(function(){
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'Hat'
+      text: 'Hat 帽子'
     }));
   });
   $('#j').on('click',function(){
@@ -849,7 +849,7 @@ $(document).ready(function(){
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'Jar'
+      text: 'Jar 罐子'
     }));
   });
   $('#k').on('click',function(){
@@ -859,7 +859,7 @@ $(document).ready(function(){
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'King'
+      text: 'King 国王'
     }));
   });
   $('#l').on('click',function(){
@@ -869,7 +869,7 @@ $(document).ready(function(){
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'Lady'
+      text: 'Lady 女士'
     }));
   });
   $('#m').on('click',function(){
@@ -879,7 +879,7 @@ $(document).ready(function(){
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'Mouse'
+      text: 'Mouse 老鼠'
     }));
   });
   $('#n').on('click',function(){
@@ -889,7 +889,7 @@ $(document).ready(function(){
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'Nose'
+      text: 'Nose 鼻子'
     }));
   });
   $('#p').on('click',function(){
@@ -899,7 +899,7 @@ $(document).ready(function(){
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'Pencil'
+      text: 'Pencil 铅笔'
     }));
   });
   $('#q').on('click',function(){
@@ -909,7 +909,7 @@ $(document).ready(function(){
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'Queen'
+      text: 'Queen 女王'
     }));
   });
   $('#r').on('click',function(){
@@ -919,7 +919,7 @@ $(document).ready(function(){
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'Robot'
+      text: 'Robot 机器人'
     }));
   });
   $('#s').on('click',function(){
@@ -929,7 +929,7 @@ $(document).ready(function(){
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'Snake'
+      text: 'Snake 蛇'
     }));
   });
   $('#t').on('click',function(){
@@ -939,7 +939,7 @@ $(document).ready(function(){
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'Tshirt'
+      text: 'Tshirt T恤'
     }));
   });
   $('#v').on('click',function(){
@@ -949,7 +949,7 @@ $(document).ready(function(){
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'Van'
+      text: 'Van 小货车'
     }));
   });
   $('#w').on('click',function(){
@@ -959,7 +959,7 @@ $(document).ready(function(){
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'Whale'
+      text: 'Whale 鲸鱼'
     }));
   });
   $('#x').on('click',function(){
@@ -969,7 +969,7 @@ $(document).ready(function(){
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'X-box'
+      text: 'X-box X-box'
     }));
   });
   $('#y').on('click',function(){
@@ -979,7 +979,7 @@ $(document).ready(function(){
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'Yellow'
+      text: 'Yellow 黄色'
     }));
   });
   $('#z').on('click',function(){
@@ -989,7 +989,7 @@ $(document).ready(function(){
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'Zebra'
+      text: 'Zebra 斑马'
     }));
   });
 
@@ -1001,7 +1001,7 @@ $(document).ready(function(){
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'Cheese'
+      text: 'Cheese 芝士'
     }));
   });
   $('#sh').on('click',function(){
@@ -1011,7 +1011,7 @@ $(document).ready(function(){
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'Sh!'
+      text: 'Sh! 嘘！'
     }));
   });
   $('#th').on('click',function(){
@@ -1021,7 +1021,7 @@ $(document).ready(function(){
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'There'
+      text: 'There 那里'
     }));
   });
   $('#thU').on('click',function(){
@@ -1031,7 +1031,7 @@ $(document).ready(function(){
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'Three'
+      text: 'Three 三'
     }));
   });
   $('#oo').on('click',function(){
@@ -1041,7 +1041,7 @@ $(document).ready(function(){
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'Tools'
+      text: 'Tools 工具'
     }));
   });
   $('#ooU').on('click',function(){
@@ -1051,7 +1051,7 @@ $(document).ready(function(){
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'Good'
+      text: 'Good 好'
     }));
   });
   $('#oi').on('click',function(){
@@ -1061,7 +1061,7 @@ $(document).ready(function(){
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'Boil'
+      text: 'Boil 煮沸'
     }));
   });
   $('#oy').on('click',function(){
@@ -1071,7 +1071,7 @@ $(document).ready(function(){
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'Toys'
+      text: 'Toys 玩具'
     }));
   });
   $('#ou').on('click',function(){
@@ -1081,7 +1081,7 @@ $(document).ready(function(){
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'Out'
+      text: 'Out 外面'
     }));
   });
   $('#ow').on('click',function(){
@@ -1091,7 +1091,7 @@ $(document).ready(function(){
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'Owl'
+      text: 'Owl 猫头鹰'
     }));
   });
   $('#er').on('click',function(){
@@ -1101,7 +1101,7 @@ $(document).ready(function(){
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'Germ'
+      text: 'Germ 病菌'
     }));
   });
   $('#ur').on('click',function(){
@@ -1111,7 +1111,7 @@ $(document).ready(function(){
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'Nurse'
+      text: 'Nurse 护士'
     }));
   });
   $('#ir').on('click',function(){
@@ -1121,7 +1121,7 @@ $(document).ready(function(){
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'Shirt'
+      text: 'Shirt 衬衫'
     }));
   });
   $('#or').on('click',function(){
@@ -1131,7 +1131,7 @@ $(document).ready(function(){
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'Horn'
+      text: 'Horn 角'
     }));
   });
   $('#ar').on('click',function(){
@@ -1141,7 +1141,7 @@ $(document).ready(function(){
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'Car'
+      text: 'Car 车'
     }));
   });
   $('#aw').on('click',function(){
@@ -1151,7 +1151,7 @@ $(document).ready(function(){
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'Crawl'
+      text: 'Crawl 爬行'
     }));
   });
   $('#ing').on('click',function(){
@@ -1161,7 +1161,7 @@ $(document).ready(function(){
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'Sing'
+      text: 'Sing 唱歌'
     }));
   });
   $('#ph').on('click',function(){
@@ -1171,7 +1171,7 @@ $(document).ready(function(){
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'Phone'
+      text: 'Phone 电话'
     }));
   });
   $('#tion').on('click',function(){
@@ -1181,7 +1181,7 @@ $(document).ready(function(){
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'Construction'
+      text: 'Construction 建造'
     }));
   });
  });
