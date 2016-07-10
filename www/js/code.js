@@ -1,8 +1,10 @@
 
 $(document).ready(function(){
 
-  $('changeVoice').on('click', function(){
-
+  $('div#changeVoice').on('click', function(){
+    $('#changeVoice p').replaceWith($('<p></p>',{
+      text: 'UK'
+    }));
   });
 
   // Change all clicked elements to dark and light shading.
