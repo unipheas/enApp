@@ -68,7 +68,7 @@ body {
 
                                                         /* MAIN */
 .main {
-  background: url(../img/bg/main/background.png);
+  background: url(../img/bg/main/background.png) rgba(150, 150, 150, 0.60);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -95,49 +95,49 @@ body {
 .menu{
   letter-spacing: 0px;
   text-shadow: 0px 2px 4px #000000;
-
+  text-align: center;
 }
 
 .mainShortVowels {
   /* shortVowels: */
-  font-size: 26px;
-  color: #FF00F1;
-  margin: 20px 10px 25px 20px;
+  font-size: 22px;
+  color: #02FD3D;
+  margin: 20px 30px 0 -140px;
 }
 
 .mainLongVowels {
   /* longVowels: */
-  font-size: 28px;
-  color: #FF001F;
-  margin: 0 0 30px 180px;
+  font-size: 22px;
+  color: #02FD3D;
+  margin: 0 0 0 190px;
 }
 
 .mainConsonants{
   /* consonants: */
-  font-size: 24px;
-  color: #FFE400;
-  margin: 80px 0 70px 10px;
+  font-size: 22px;
+  color: #02FD3D;
+  margin: 60px 0 0 -100px;
 }
 
 .mainBlends{
   /* blends: */
-  font-size: 28px;
-  color: #15FF00;
-  margin: 0 0 100px 180px;
+  font-size: 22px;
+  color: #02FD3D;
+  margin: 20px 0 0 200px;
 }
 
 .mainMoreComing{
   /* moreComing: */
-  font-size: 20px;
-  color: #00F8FF;
-  margin: 0 0 40px 40px;
+  font-size: 22px;
+  color: #02FD3D;
+  margin: 75px 0 0 -180px;
 }
 
 #mainSoon{
   /* soon: */
   font-size: 20px;
-  color: #37FF00;
-  margin: 0 0 0 250px;
+  color: #02FD3D;
+  margin: 0 0 0 220px;
 
 }
 
@@ -151,7 +151,7 @@ a:active, a:hover, a:link, a:visited  {
   padding: 0px;
   margin-top: -25px;
   margin-right: 5px;
-  color: rgb(25, 238, 40);
+  color: #02FD3D;
   font-size: 20px;
 }
 
