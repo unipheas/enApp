@@ -6,6 +6,9 @@
     <title>Short Vowels</title>
     <link href="css/style.css" rel="stylesheet">
     <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript"
+        src="http://cdn.webfont.youziku.com/wwwroot/js/wf/youziku.api.min.js">
+    </script>
   </head>
   <body class="shortVowelsBody">
     <!-- Title -->
@@ -22,9 +25,9 @@
     <!-- content -->
     <div class="content">
       <img src="img/phonics_img/apple.png"/>
-      <p class="vowelWord" id="word1">Ant 蚂蚁</p>
-      <p class="vowelWord" id="word2">Apple 苹果</p>
-      <p class="vowelWord" id="word3">Antelope 羚羊</p>
+      <p class="vowelWord" id="word1">Ant <span id="ch">蚂蚁</span></p>
+      <p class="vowelWord" id="word2">Apple <span id="ch">苹果</span></p>
+      <p class="vowelWord" id="word3">Antelope <span id="ch">羚羊</span></p>
       <audio src=""></audio>
     </div>
     <!-- Menu -->
@@ -36,5 +39,9 @@
       <li class="lbutton buttonLight" id="shortU">U</li>
     </ul>
 <script type="text/javascript" src="js/code.js"></script>
+<script type="text/javascript">
+  $youziku.load("#ch", "26e96e6ecaed443baa7ceea7c3bace48", "minijiankatong");
+  $youziku.draw();
+</script>
 </body>
 </html>

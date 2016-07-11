@@ -1,16 +1,19 @@
 
 $(document).ready(function(){
 
+    var lang = 'us';
 
     $('div#changeVoice').on('click', function(){
         if ($('div#changeVoice p').text() == 'US') {
           $('#changeVoice p').replaceWith($('<p></p>',{
             text: 'UK'
           }));
+          lang = 'uk';
         }else {
           $('#changeVoice p').replaceWith($('<p></p>',{
             text: 'US'
           }));
+          lang = 'us';
         };
       });
 
