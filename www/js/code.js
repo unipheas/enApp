@@ -1,19 +1,19 @@
-z
+
 $(document).ready(function(){
 
-    var lang = 'us';
+    var lang = = '../audio/us/';
 
     $('div#changeVoice').on('click', function(){
         if ($('div#changeVoice p').text() == 'US') {
           $('#changeVoice p').replaceWith($('<p></p>',{
             text: 'UK'
           }));
-          lang = 'uk';
+          lang = '../audio/uk/';
         }else {
           $('#changeVoice p').replaceWith($('<p></p>',{
             text: 'US'
           }));
-          lang = 'us';
+          lang = '../audio/us/';
         };
       });
 
@@ -43,9 +43,9 @@ $(document).ready(function(){
       class: 'vowelWord',
       id: 'word3',
       text: 'Antelope 羚羊'
-    }));
+    }));  
     $('.content audio').replaceWith($('<audio></audio>',{
-      src: ''
+      src: '/audio/'.lang.'apple.mp3'
     }));
   });
   $('#shortE').on('click',function(){
