@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
 
-    var lang = = '../audio/us/';
+    var lang = '../audio/us/';
 
     $('div#changeVoice').on('click', function(){
         if ($('div#changeVoice p').text() == 'US') {
@@ -18,7 +18,7 @@ $(document).ready(function(){
       });
 
   // Change all clicked elements to dark and light shading.
-  $('ul').on('click', 'li', function(){ // When selector 'li' is clicked do the function
+  $('ul').on('click', 'li',function(){ // When selector 'li' is clicked do the function
     $('li').removeClass('buttonDark').addClass('buttonLight'); // remove dark and add light from all li
      $(this).removeClass('buttonLight') // selected li gets light
             .addClass('buttonDark'); // selected li removes dark
@@ -43,9 +43,9 @@ $(document).ready(function(){
       class: 'vowelWord',
       id: 'word3',
       text: 'Antelope 羚羊'
-    }));  
+    }));
     $('.content audio').replaceWith($('<audio></audio>',{
-      src: '/audio/'.lang.'apple.mp3'
+      src: '../audio/uk/apple.mp3'
     }));
   });
   $('#shortE').on('click',function(){

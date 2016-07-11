@@ -2,7 +2,6 @@
 /*GLOBALS*/
 body {
   max-width: 355px;
-  /*font-family: NanumPen;*/
 }
 
 .buttonDark{
@@ -226,7 +225,6 @@ a:active, a:hover, a:link, a:visited  {
   border-radius: 10px;
   padding: 8px;
   margin: 5px;
-  /*font-family: .HelveticaNeueDeskInterface-Regular;*/
   font-size: 30px;
   color: #02FD3D;
   letter-spacing: 4px;
