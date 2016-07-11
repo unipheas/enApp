@@ -4,14 +4,18 @@ $(document).ready(function(){
     var lang = '../audio/us/';
 
     $('div#changeVoice').on('click', function(){
-        if ($('div#changeVoice p').text() == 'US') {
-          $('#changeVoice p').replaceWith($('<p></p>',{
-            text: 'UK'
+        if ($("#changeVoice img").attr('src') == 'img/usflag.png') {
+          $('#changeVoice img').replaceWith($('<img></img>',{
+            src: 'img/ukflag.png',
+            height: '35',
+            width: '35'
           }));
           lang = '../audio/uk/';
         }else {
-          $('#changeVoice p').replaceWith($('<p></p>',{
-            text: 'US'
+          $('#changeVoice img').replaceWith($('<img></img>',{
+            src: 'img/usflag.png',
+            height: '35',
+            width: '35'
           }));
           lang = '../audio/us/';
         };

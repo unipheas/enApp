@@ -153,10 +153,10 @@ a:active, a:hover, a:link, a:visited  {
   margin-top: -15px;
   margin-right: 5px;
   color: #02FD3D;
-  font-size: 20px;
-  border: 1px solid #979797;
+  /*font-size: 20px;*/
+  /*border: 1px solid #979797;
   border-radius: 5px;
-  background: rgba(0, 0, 0, 0.30);
+  background: rgba(0, 0, 0, 0.30);*/
 }
 
                                                     /* VOWELS */
