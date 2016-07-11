@@ -972,7 +972,7 @@ $(document).ready(function(){
     }));
     $('.conContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'X-box X-box'
+      text: 'Box 箱'
     }));
   });
   $('#y').on('click',function(){

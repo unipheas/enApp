@@ -1,20 +1,8 @@
-/*FONTS*/
-@font-face {
-  font-family: 'nanum_penregular';
-  src: url('NanumPenScript-Regular.ttf') format('truetype'),
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-    font-family: chinesefont;
-    src: url('chinesefont.ttf');
-}
 
 /*GLOBALS*/
 body {
   max-width: 355px;
-  font-family: NanumPen;
+  /*font-family: NanumPen;*/
 }
 
 .buttonDark{
@@ -60,8 +48,8 @@ body {
 
 .title{
   /* title: */
-  font-family: NanumPen;
-  font-size: 36px;
+  font-size: 20px;
+  padding: 4px;
   color: #02FD3D;
   letter-spacing: 0px;
   text-shadow: 0px 2px 4px #000000;
@@ -71,7 +59,7 @@ body {
   float: left;
   clear: both;
   padding: 10px;
-  margin-top: -12px;
+  margin-top: -8px;
 }
 
 .titleText{
@@ -96,8 +84,7 @@ body {
 
 #mainTitle{
   /* title: */
-  /*font-family: NanumPen;*/
-  font-size: 24px;
+  font-size: 20px;
   color: #02FD3D;
   letter-spacing: 0px;
   text-shadow: 0px 2px 4px #000000;
@@ -107,7 +94,6 @@ body {
 }
 
 .menu{
-  /*font-family: NanumPen;*/
   letter-spacing: 0px;
   text-shadow: 0px 2px 4px #000000;
 
@@ -115,44 +101,44 @@ body {
 
 .mainShortVowels {
   /* shortVowels: */
-  font-size: 32px;
+  font-size: 26px;
   color: #FF00F1;
-  margin: 15px 10px 0 20px;
+  margin: 20px 10px 25px 20px;
 }
 
 .mainLongVowels {
   /* longVowels: */
-  font-size: 36px;
+  font-size: 28px;
   color: #FF001F;
   margin: 0 0 30px 180px;
 }
 
 .mainConsonants{
   /* consonants: */
-  font-size: 36px;
+  font-size: 24px;
   color: #FFE400;
-  margin: 60px 0 70px 0;
+  margin: 80px 0 70px 10px;
 }
 
 .mainBlends{
   /* blends: */
-  font-size: 36px;
+  font-size: 28px;
   color: #15FF00;
-  margin: 0 0 60px 180px;
+  margin: 0 0 100px 180px;
 }
 
 .mainMoreComing{
   /* moreComing: */
-  font-size: 36px;
+  font-size: 20px;
   color: #00F8FF;
-  margin: 0 0 15px 20px;
+  margin: 0 0 40px 40px;
 }
 
 #mainSoon{
   /* soon: */
-  font-size: 48px;
+  font-size: 20px;
   color: #37FF00;
-  margin: 0 0 0 190px;
+  margin: 0 0 0 250px;
 
 }
 
@@ -184,8 +170,7 @@ a:active, a:hover, a:link, a:visited  {
   height: 60px;
   margin: 5px;
   width:20%;
-  /*font-family: .HelveticaNeueDeskInterface-Regular;*/
-  font-size: 42.64px;
+  font-size: 40px;
   color: #02FD3D;
   letter-spacing: 2px;
   text-align: center;
@@ -198,15 +183,14 @@ a:active, a:hover, a:link, a:visited  {
 
 .content img {
   width: 150px;
-  margin-top: 50px;
-  margin-right: 50px;
+  margin: 40px;
+  padding: 0px;
 }
 
 .vowelWord{
   text-align: right;
   margin-right: 20px;
-  /*font-family: .HelveticaNeueDeskInterface-Regular;*/
-  font-size: 45px;
+  font-size: 35px;
   color: #02FD3D;
   line-height: 35px;
   text-shadow: 2px 4px 3px #000000;
@@ -283,7 +267,7 @@ a:active, a:hover, a:link, a:visited  {
      width:300px;
      margin: 100px auto;
      background-color: rgba(45, 50, 85, 0.9);
-     padding:6px;
+     padding:12px;
      text-align:center;
      color: #02FD3D;
      border-radius: 10px;
@@ -298,13 +282,14 @@ a:active, a:hover, a:link, a:visited  {
 }
 
 .conContent{
-  font-size: 46px;
+  font-size: 40px;
 }
 
 .conContent img {
   width: 150px;
   padding: 10px;
   margin-right: -30px;
+  margin-top: 20px;
 }
 
     /* Phone Size */
