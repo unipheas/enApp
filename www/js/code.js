@@ -2,7 +2,7 @@
 $(document).ready(function(){
 
     var lang = '../audio/us/';
-
+// Language switcher with flag icons
     $('div#changeVoice').on('click', function(){
         if ($("#changeVoice img").attr('src') == 'img/usflag.png') {
           $('#changeVoice img').replaceWith($('<img></img>',{
@@ -48,8 +48,8 @@ $(document).ready(function(){
       id: 'word3',
       text: 'Antelope 羚羊'
     }));
-    $('.content audio').replaceWith($('<audio></audio>',{
-      src: '../audio/uk/apple.mp3'
+    $('.content audio').replaceWith($('<audio autoplay></audio>',{
+      src: 'apple.mp3'
     }));
   });
   $('#shortE').on('click',function(){
