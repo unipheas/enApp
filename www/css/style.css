@@ -159,6 +159,14 @@ a:active, a:hover, a:link, a:visited  {
   background: rgba(0, 0, 0, 0.30);*/
 }
 
+#changeSex {
+  float: right;
+  padding: 0px 6px 0px 6px;
+  line-height: 0px;
+  margin-top: -15px;
+  margin-right: 5px;
+  color: inherit;
+}
                                                     /* VOWELS */
 .vowelMenu {
   list-style-type: none;

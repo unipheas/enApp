@@ -2,6 +2,8 @@
 $(document).ready(function(){
 
     var lang = '../audio/us/';
+    var sex = '../audio/us/male';
+
 // Language switcher with flag icons
     $('div#changeVoice').on('click', function(){
         if ($("#changeVoice img").attr('src') == 'img/usflag.png') {
@@ -20,6 +22,25 @@ $(document).ready(function(){
           lang = '../audio/us/';
         };
       });
+
+// Sex switcher for male/female voiceover
+    $('div#changeSex').on('click', function(){
+      if ($("#changeSex img").attr('src') == 'img/male.png') {
+        $('#changeSex img').replaceWith($('<img></img>',{
+          src: 'img/male.png',
+          height: '35',
+          width: '35'
+        }))
+        sex = "../audio/'lang'/male/";
+      }else {
+        $('#changeSex img').replaceWith($('<img></img>', {
+          src: 'img/female.png'
+          height: '35',
+          width: '35'
+        }))
+        sex = "../audio/'lang'/female/";
+      };
+    });
 
   // Change all clicked elements to dark and light shading.
   $('ul').on('click', 'li',function(){ // When selector 'li' is clicked do the function
@@ -48,8 +69,8 @@ $(document).ready(function(){
       id: 'word3',
       text: 'Antelope 羚羊'
     }));
-    $('.content audio').replaceWith($('<audio autoplay></audio>',{
-      src: 'apple.mp3'
+    $('.content audio source').replaceWith($('<source></source>',{
+      src: "lang+sex+'apple.mp3'"
     }));
   });
   $('#shortE').on('click',function(){
