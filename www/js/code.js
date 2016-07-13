@@ -31,14 +31,16 @@ $(document).ready(function(){
           height: '35',
           width: '35'
         }))
-        lang + "male/";
+        sex = "male/";
+        lang = lang + sex;
       }else {
         $('#changeSex img').replaceWith($('<img></img>', {
           src: 'img/female.png',
           height: '35',
           width: '35'
         }))
-        lang + "female/";
+        sex = "female/"
+        lang = lang + sex;
       };
     });
 
