@@ -27,20 +27,20 @@ $(document).ready(function(){
     $('div#changeSex').on('click', function(){
       if ($("#changeSex img").attr('src') == 'img/male.png') {
         $('#changeSex img').replaceWith($('<img></img>',{
+          src: 'img/female.png',
+          height: '35',
+          width: '35'
+        }))
+         sex = "female/";
+         lang += sex;
+      }else {
+        $('#changeSex img').replaceWith($('<img></img>', {
           src: 'img/male.png',
           height: '35',
           width: '35'
         }))
         sex = "male/";
-        lang = lang + sex;
-      }else {
-        $('#changeSex img').replaceWith($('<img></img>', {
-          src: 'img/female.png',
-          height: '35',
-          width: '35'
-        }))
-        sex = "female/"
-        lang = lang + sex;
+        lang += sex;
       };
     });
 
@@ -71,8 +71,8 @@ $(document).ready(function(){
       id: 'word3',
       text: 'Antelope 羚羊'
     }));
-    $('.content audio source').replaceWith($('<source></source>',{
-      src: "lang+sex+'apple.mp3'"
+    $('.content audio').replaceWith($('<source src></source>',{
+      src: lang+sex+'apple.mp3';
     }));
   });
   $('#shortE').on('click',function(){
