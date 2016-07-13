@@ -30,17 +30,15 @@ $(document).ready(function(){
           src: 'img/female.png',
           height: '35',
           width: '35'
-        }))
-         sex = "female/";
-         lang += sex;
+        }));
+         sex = 'female/';
       }else {
         $('#changeSex img').replaceWith($('<img></img>', {
           src: 'img/male.png',
           height: '35',
           width: '35'
-        }))
-        sex = "male/";
-        lang += sex;
+        }));
+        sex = 'male/';
       };
     });
 
@@ -71,8 +69,9 @@ $(document).ready(function(){
       id: 'word3',
       text: 'Antelope 羚羊'
     }));
-    $('.content audio').replaceWith($('<source src></source>',{
+    $('.content audio source').replaceWith($('<source>',{
       src: lang+sex+'apple.mp3';
+      type: "audio/mpeg"
     }));
   });
   $('#shortE').on('click',function(){
