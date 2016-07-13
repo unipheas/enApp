@@ -2,7 +2,7 @@
 $(document).ready(function(){
 
     var lang = '../audio/us/';
-    var sex = '../audio/us/male';
+    var sex = 'male/';
 
 // Language switcher with flag icons
     $('div#changeVoice').on('click', function(){
@@ -31,14 +31,14 @@ $(document).ready(function(){
           height: '35',
           width: '35'
         }))
-        sex += lang + "/male/";
+        lang + "male/";
       }else {
         $('#changeSex img').replaceWith($('<img></img>', {
-          src: 'img/female.png'
+          src: 'img/female.png',
           height: '35',
           width: '35'
         }))
-        sex += lang + "female/";
+        lang + "female/";
       };
     });
 
