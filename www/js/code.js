@@ -70,7 +70,7 @@ $(document).ready(function(){
       text: 'Antelope 羚羊'
     }));
     $('.content audio source').replaceWith($('<source>',{
-      src: lang+sex+'apple.mp3';
+      src: lang+sex+'apple.mp3',
       type: "audio/mpeg"
     }));
   });
