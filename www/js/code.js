@@ -1,46 +1,46 @@
 
 $(document).ready(function(){
 
-    var lang = '../audio/us/';
-    var sex = 'male/';
-
-// Language switcher with flag icons
-    $('div#changeVoice').on('click', function(){
-        if ($("#changeVoice img").attr('src') == 'img/usflag.png') {
-          $('#changeVoice img').replaceWith($('<img></img>',{
-            src: 'img/ukflag.png',
-            height: '35',
-            width: '35'
-          }));
-          lang = '../audio/uk/';
-        }else {
-          $('#changeVoice img').replaceWith($('<img></img>',{
-            src: 'img/usflag.png',
-            height: '35',
-            width: '35'
-          }));
-          lang = '../audio/us/';
-        };
-      });
-
-// Sex switcher for male/female voiceover
-    $('div#changeSex').on('click', function(){
-      if ($("#changeSex img").attr('src') == 'img/male.png') {
-        $('#changeSex img').replaceWith($('<img></img>',{
-          src: 'img/female.png',
-          height: '35',
-          width: '35'
-        }));
-         sex = 'female/';
-      }else {
-        $('#changeSex img').replaceWith($('<img></img>', {
-          src: 'img/male.png',
-          height: '35',
-          width: '35'
-        }));
-        sex = 'male/';
-      };
-    });
+//     var lang = '../audio/us/';
+//     var sex = 'male/';
+//
+// // Language switcher with flag icons
+//     $('div#changeVoice').on('click', function(){
+//         if ($("#changeVoice img").attr('src') == 'img/usflag.png') {
+//           $('#changeVoice img').replaceWith($('<img></img>',{
+//             src: 'img/ukflag.png',
+//             height: '35',
+//             width: '35'
+//           }));
+//           lang = '../audio/uk/';
+//         }else {
+//           $('#changeVoice img').replaceWith($('<img></img>',{
+//             src: 'img/usflag.png',
+//             height: '35',
+//             width: '35'
+//           }));
+//           lang = '../audio/us/';
+//         };
+//       });
+//
+// // Sex switcher for male/female voiceover
+//     $('div#changeSex').on('click', function(){
+//       if ($("#changeSex img").attr('src') == 'img/male.png') {
+//         $('#changeSex img').replaceWith($('<img></img>',{
+//           src: 'img/female.png',
+//           height: '35',
+//           width: '35'
+//         }));
+//          sex = 'female/';
+//       }else {
+//         $('#changeSex img').replaceWith($('<img></img>', {
+//           src: 'img/male.png',
+//           height: '35',
+//           width: '35'
+//         }));
+//         sex = 'male/';
+//       };
+//     });
 
   // Change all clicked elements to dark and light shading.
   $('ul').on('click', 'li',function(){ // When selector 'li' is clicked do the function
