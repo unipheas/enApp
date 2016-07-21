@@ -1,19 +1,9 @@
 
 /*GLOBALS*/
-body {
-  max-width: 355px;
-}
-
-.buttonDark{
-  background: rgba(0,0,0,0.80);
-}
-
-.buttonLight{
-  background: rgba(0,0,0,0.50);
-}
-
+body {color: white; background-color: red;}
+.buttonDark{background: rgba(0,0,0,0.80);}
+.buttonLight{background: rgba(0,0,0,0.50);}
 .button{
-  /* button: */
   box-shadow: 0px 2px 4px 0px #000000;
   border-radius: 10px;
   width: 77.74px;
@@ -21,519 +11,147 @@ body {
   margin: 3px;
   float:left;
   list-style-type:none;
-  width:23%;
-
-  /* text */
   font-size: 42.64px;
-  color: #02FD3D;
   letter-spacing: 2px;
   text-align: center;
   line-height: 77.74px;
 }
-
-.buttonRow{
-  width:375px;
-  height:75px;
-  margin-left:-26px;
-}
-
+.buttonHolder{margin-left:-31px;}
 .titleBackground{
-  /* titleBackground: */
   background: rgba(0, 0, 0, 0.30);
   border: 1px solid #979797;
   margin: 0px -10px;
   padding: 0;
 }
-
 .title{
-  /* title: */
   font-size: 20px;
   padding: 4px;
-  color: #02FD3D;
   letter-spacing: 0px;
   text-shadow: 0px 2px 4px #000000;
 }
-
 .backButton{
   float: left;
   clear: both;
   padding: 10px;
   margin-top: -8px;
 }
-
-.titleText{
-  text-align: center;
-}
-
-
-                                                        /* MAIN */
-.main {
-  background: url(../img/bg/main/background.png) rgba(150, 150, 150, 0.60);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
+.titleText{text-align: center;}
+/* MAIN */
 #mainTitleBackground{
-  /* titleBackground: */
   border: 1px solid #979797;
   background: rgba(0, 0, 0, 0.30);
-  margin: 0;
+  margin: auto;
   padding: 0;
+  width:95%;
 }
-
 #mainTitle{
-  /* title: */
   font-size: 20px;
-  color: #02FD3D;
   letter-spacing: 0px;
   text-shadow: 0px 2px 4px #000000;
   text-align: center;
   margin: 0;
   padding: 0;
 }
-
 .menu{
   letter-spacing: 0px;
   text-shadow: 0px 2px 4px #000000;
   text-align: center;
-}
-
-.mainShortVowels {
-  /* shortVowels: */
   font-size: 22px;
-  color: #02FD3D;
-  margin: 20px 50px 0 -140px;
 }
-
-.mainLongVowels {
-  /* longVowels: */
-  font-size: 22px;
-  color: #02FD3D;
-  margin: 0 0 0 190px;
-}
-
-.mainConsonants{
-  /* consonants: */
-  font-size: 22px;
-  color: #02FD3D;
-  margin: 60px 0 0 -100px;
-}
-
-.mainBlends{
-  /* blends: */
-  font-size: 22px;
-  color: #02FD3D;
-  margin: 20px 0 0 200px;
-}
-
-.mainMoreComing{
-  /* moreComing: */
-  font-size: 22px;
-  color: #02FD3D;
-  margin: 75px 0 0 -180px;
-}
-
-#mainSoon{
-  /* soon: */
-  font-size: 20px;
-  color: #02FD3D;
-  margin: 0 0 0 220px;
-
-}
-
-a:active, a:hover, a:link, a:visited  {
-  text-decoration: none !important;
-  color: currentColor;
-}
-
-#changeVoice {
-  float: right;
-  padding: 0px 6px 0px 6px;
-  line-height: 0px;
-  margin-top: -15px;
-  margin-right: 5px;
-  color: #02FD3D;
-  /*font-size: 20px;*/
-  /*border: 1px solid #979797;
-  border-radius: 5px;
-  background: rgba(0, 0, 0, 0.30);*/
-}
-
-#changeSex {
-  float: right;
-  padding: 0px 6px 0px 6px;
-  line-height: 0px;
-  margin-top: -15px;
-  margin-right: 5px;
-  color: inherit;
-}
-                                                    /* VOWELS */
-.vowelMenu {
-  list-style-type: none;
-  margin-left: -40px;
-
-}
-
+.mainShortVowels {margin: 20px 50px 0 -140px;}
+.mainLongVowels {margin: 0 0 0 190px;}
+.mainConsonants{margin: 60px 0 0 -100px;}
+.mainBlends{margin: 20px 0 0 200px;}
+.mainMoreComing{margin: 75px 0 0 -180px;}
+#mainSoon{margin: 0 0 0 220px;}
+a:active, a:hover, a:link, a:visited {text-decoration: none !important; color: currentColor;}
+/* VOWELS */
+.vowelMenu {list-style-type: none; margin-left: -40px;}
 .lbutton{
   box-shadow: 0px 2px 4px 0px #000000;
   border-radius: 10px;
   width: 60px;
   height: 60px;
   margin: 5px;
-  width:20%;
   font-size: 40px;
-  color: #02FD3D;
   letter-spacing: 2px;
   text-align: center;
   line-height: 63px;
 }
-
-.content{
-  float:right;
-}
-
-.content img {
-  width: 150px;
-  margin: 40px;
-  padding: 0px;
-}
-
+.content{float:right;}
+.content img {width: 150px; margin: 40px; padding: 0px;}
 .vowelWord{
   text-align: right;
   margin-right: 20px;
   font-size: 35px;
-  color: #02FD3D;
   line-height: 35px;
   text-shadow: 2px 4px 3px #000000;
 }
-
-
-
-                                              /* SHORT VOWELS */
-
-/* background */
-.shortVowelsBody{
-  background: url(../img/bg/shortVowels/background.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-                                              /* LONG VOWELS */
-
-/* background */
-.longVowelsBody{
-  background: url(../img/bg/longVowels/background.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.subVmenu{
-  text-align: center;
-   margin-top: 55%;
-}
-
+/* LONG VOWELS */
+.subVmenu{text-align: center; margin-top: 55%;}
 .subButton{
   box-shadow: 0px 2px 4px 0px #000000;
   border-radius: 10px;
   padding: 8px;
   margin: 5px;
   font-size: 30px;
-  color: #02FD3D;
   letter-spacing: 4px;
 }
-
-                                            /* CONSONANTS */
-.consBody{
-  background: url(../img/bg/consonants/background.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-                                              /* BLENDS */
-.blendsBody {
-  background: url(../img/bg/blends/background.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.group1{color:#e9671e;}
-.group2{color:#18a8de;}
-.group3{color:#cf15c7;}
-
-
-                                      /* DIALOG BOX */
-
+/* DIALOG BOX */
 #overlay {
-     position: absolute;
-     left: 0px;
-     top: 0px;
-     width:100%;
-     height:100%;
-     text-align:center;
-     z-index: 1000;
+   position: absolute;
+   left: 0px;
+   top: 0px;
+   width:100%;
+   height:100%;
+   text-align:center;
+   z-index: 1000;
 }
-
-#overlay div {
-     width:300px;
-     margin: 100px auto;
-     background-color: rgba(45, 50, 85, 0.9);
-     padding:12px;
-     text-align:center;
-     color: #02FD3D;
-     border-radius: 10px;
+.conContent {
+   width:300px;
+   margin: 100px auto;
+   background-color: rgba(113, 113, 113, 0.91);
+   padding:12px;
+   text-align:center;
+   border-radius: 10px;
+   font-size: 40px;
 }
-
-#overlay span {
+.conContent #close {
   float: right;
-  background-color: rgb(65, 83, 107);
+  background-color: rgb(73, 73, 73);
   padding: 3px 10px;
   border-radius: 25%;
   font-size: 30px;
 }
-
-.conContent{
-  font-size: 40px;
-}
-
 .conContent img {
   width: 150px;
   padding: 10px;
   margin-right: -30px;
   margin-top: 20px;
 }
-
-    /* Phone Size */
-@media screen and (max-width: 960px) {
-
-}
-
-    /* Tablet Size */
-@media screen and (max-width: 1024px) { //tablet
-
-}
-
-/*
-Phone
-480
-640
-720
-768
-1080
-
-Tablet
-600
-768
-800
-1200
-1536
-1600
-*/
-
-/* iPhone 6 in portrait & landscape */
+/*RESPONSIVE DESIGN*/
 @media screen
-and (min-device-width : 375px)
-and (max-device-width : 667px) {
-
-}
-/* iPhone 6 in landscape */
-@media screen
-and (min-device-width : 375px)
-and (max-device-width : 667px)
-and (orientation : landscape) {
-
-}
-/* iPhone 6 in portrait */
-@media screen
-and (min-device-width : 375px)
-and (max-device-width : 667px)
-and (orientation : portrait) {
-
-}
-
-/* iPhone 6 plus in portrait & landscape */
-@media screen
-and (min-device-width : 414px)
-and (max-device-width : 736px) {
-
-}
-/* iPhone 6 plus in landscape */
-@media screen
-and (min-device-width : 414px)
-and (max-device-width : 736px)
-and (orientation : landscape) {
-
-}
-/* iPhone 6 plus in portrait */
-@media screen
-and (min-device-width : 414px)
-and (max-device-width : 736px)
-and (orientation : portrait) {
-
-}
-
-/* iPhone 5 and 5s in portrait & landscape */
-@media screen
-and (min-device-width : 320px)
-and (max-device-width : 568px) {
-
-}
-/* iPhone 5 and 5s in landscape */
-@media screen
-and (min-device-width : 320px)
-and (max-device-width : 568px)
-and (orientation : landscape) {
-
-}
-/* iPhone 5 and 5s in portrait */
-@media screen
-and (min-device-width : 320px)
-and (max-device-width : 568px)
-and (orientation : portrait) {
-
-}
-
-/* iPhone 4 and 4s in portrait & landscape */
-@media screen
-and (min-device-width : 320px)
-and (max-device-width : 480px) {
-
-}
-/* iPhone 4 and 4s in landscape */
-@media screen
-and (min-device-width : 320px)
-and (max-device-width : 480px)
-and (orientation : landscape) {
-
-}
-/* iPhone 4 and 4s in portrait */
-@media screen
-and (min-device-width : 320px)
-and (max-device-width : 480px)
-and (orientation : portrait) {
-
-}
-
-/* iPhone Galaxy S3/4 in portrait & landscape */
-@media screen
-and (min-device-width : 320px)
-and (max-device-width : 640px) {
-
-}
-/* iPhone Galaxy S3/4 in landscape */
-@media screen
-and (min-device-width : 320px)
-and (max-device-width : 640px)
-and (orientation : landscape) {
-
-}
-/* iPhone Galaxy S3/4 in portrait */
-@media screen
-and (min-device-width : 320px)
-and (max-device-width : 640px)
-and (orientation : portrait) {
-
-}
-
-/* iPhone Galaxy S5/6/7 and HTC one in portrait & landscape */
-@media screen
-and (min-device-width : 360px)
-and (max-device-width : 640px) {
-
-}
-/* iPhone Galaxy S5/6/7 and HTC one in landscape */
-@media screen
-and (min-device-width : 360px)
-and (max-device-width : 640px)
-and (orientation : landscape) {
-
-}
-/* iPhone Galaxy S5/6/7 and HTC one in portrait */
-@media screen
-and (min-device-width : 360px)
-and (max-device-width : 640px)
-and (orientation : portrait) {
-
-}
-
-/* iPad in portrait & landscape */
-@media screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px) {
-
-}
-/* iPad in landscape */
-@media screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
-and (orientation : landscape) {
-
-}
-/* iPad in portrait */
-@media screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
-and (orientation : portrait) {
-
-}
-
-/* Galaxy/Kindle fire 7" tablet */
-@media screen
-and (min-device-width: 800px)
-and (max-device-width: 1280px) {
-
-  }
-
-@media screen
-and (min-device-width: 800px)
-and (max-device-width: 1280px)
-and (orientation : landscape) {
-
-  }
-
-@media screen
-and (min-device-width: 800px)
-and (max-device-width: 1280px)
-and (orientation : portrait) {
-
-  }
-
-/* Kindle fire 8.9" */
-@media screen
-and (min-device-width: 1200px)
-and (max-device-width: 1600px) {
-
-  }
-
-@media screen
-and (min-device-width: 1200px)
-and (max-device-width: 1600px)
-and (orientation: landscape) {
-  }
-
-@media screen
-and (min-device-width: 1200px)
-and (max-device-width: 1600px)
+and (min-device-width: 0px)
+and (max-device-width: 359px)
 and (orientation: portrait) {
-
-}
-
-/* Nesus 7 */
-@media screen
-and (device-width: 601px)
-and (device-height: 906px) {
-
-}
-
-@media screen
-and (device-width: 601px)
-and (device-height: 906px)
-and (orientation: landscape) {
-
-}
-
-@media screen
-and (device-width: 601px)
-and (device-height: 906px)
-and (orientation: portrait) {
-
+  .menu{font-size: 18px;}
+  .mainShortVowels {margin: 15px 150px 0px 0px;}
+  .mainLongVowels {margin: 10px 0px 0px 150px;}
+  .mainConsonants{margin: 18px 130px 0px 10px;}
+  .mainBlends{margin: 25px 0px 0px 150px;}
+  .mainMoreComing{margin: 15px 150px 0px 0px;}
+  #mainSoon{margin: 15px 0px 0px 150px;}
+  .lbutton {width: 50px; height: 50px; font-size: 30px;}
+  .content img {width: 130px; margin: 15px;}
+  .vowelWord {font-size: 30px;line-height: 26px;}
+  .subVmenu {margin-top: 33%;}
+  .buttonRow {height: 53px;}
+  .button {
+    height: 60.81px;
+    width: 21%;
+    font-size: 36.64px;
+    line-height: 71.74px;
+  }
+  .conContent{width: 261px;margin: 80px auto; font-size: 34px;}
+  .conContent img {width: 105px;}
 }
