@@ -42,6 +42,11 @@ $(document).ready(function(){
 //       };
 //     });
 
+  var shortVowels = "../audio/short_vowels/mp3/";
+  var longVowels = "../audio/long_vowels/mp3/";
+  var cons = "../audio/consonants/mp3";
+  var blends = "../audio/blends/mp3";
+
   // Change all clicked elements to dark and light shading.
   $('ul').on('click', 'li',function(){ // When selector 'li' is clicked do the function
     $('li').removeClass('buttonDark').addClass('buttonLight'); // remove dark and add light from all li
@@ -70,7 +75,7 @@ $(document).ready(function(){
       text: 'Antelope 羚羊'
     }));
     $('.content audio source').replaceWith($('<source>',{
-      src: lang+sex+'apple.mp3',
+      src: shortVowels+'a.mp3',
       type: "audio/mpeg"
     }));
   });
@@ -93,8 +98,9 @@ $(document).ready(function(){
       id: 'word3',
       text: 'Engine 引擎'
     }));
-    $('.content audio').replaceWith($('<audio></audio>',{
-      src: ''
+    $('.content audio source').replaceWith($('<source>',{
+      src: shortVowels+'e.mp3',
+      type: "audio/mpeg"
     }));
   });
   $('#shortI').on('click',function(){
@@ -116,8 +122,9 @@ $(document).ready(function(){
       id: 'word3',
       text: 'Internet 因特网'
     }));
-    $('.content audio').replaceWith($('<audio></audio>',{
-      src: ''
+    $('.content audio source').replaceWith($('<source>',{
+      src: shortVowels+'i.mp3',
+      type: "audio/mpeg"
     }));
   });
   $('#shortO').on('click',function(){
@@ -139,8 +146,9 @@ $(document).ready(function(){
       id: 'word3',
       text: 'Ostrich 鸵鸟'
     }));
-    $('.content audio').replaceWith($('<audio></audio>',{
-      src: ''
+    $('.content audio source').replaceWith($('<source>',{
+      src: shortVowels+'o.mp3',
+      type: "audio/mpeg"
     }));
   });
   $('#shortU').on('click',function(){
@@ -162,8 +170,9 @@ $(document).ready(function(){
       id: 'word3',
       text: 'Ugly 丑'
     }));
-    $('.content audio').replaceWith($('<audio></audio>',{
-      src: ''
+    $('.content audio source').replaceWith($('<source>',{
+      src: shortVowels+'u.mp3',
+      type: "audio/mpeg"
     }));
   });
 
