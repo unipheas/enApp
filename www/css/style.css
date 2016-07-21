@@ -131,9 +131,7 @@ a:active, a:hover, a:link, a:visited {text-decoration: none !important; color: c
 }
 /*RESPONSIVE DESIGN*/
 @media screen
-and (min-device-width: 0px)
-and (max-device-width: 359px)
-and (orientation: portrait) {
+and (min-device-width: 0px) and (max-device-width: 359px) and (orientation: portrait) {
   .menu{font-size: 18px;}
   .mainShortVowels {margin: 15px 150px 0px 0px;}
   .mainLongVowels {margin: 10px 0px 0px 150px;}
