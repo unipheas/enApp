@@ -65,9 +65,9 @@ body {color: #ffffff; background-color: #AA1520;}
 .mainShortVowels {margin: 20px 50px 0 -140px;}
 .mainLongVowels {margin: 0 0 0 190px;}
 .mainConsonants{margin: 60px 0 0 -100px;}
-.mainBlends{margin: 20px 0 0 200px;}
-.mainMoreComing{margin: 75px 0 0 -180px;}
-#mainSoon{margin: 0 0 0 220px;}
+.mainBlends{margin: 40px 0 0 200px;}
+.mainMoreComing{margin: 40px 0 0 -180px;}
+#mainSoon{margin: 0 0 0 200px;}
 a:active, a:hover, a:link, a:visited {text-decoration: none !important; color: currentColor;}
 /* VOWELS */
 .vowelMenu {list-style-type: none; margin-left: -40px;}
