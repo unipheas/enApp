@@ -57,7 +57,7 @@ $(document).ready(function(){
           // This is for the SHORT VOWELS
   $('#shortA').on('click',function(){
     $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/apple.png'
+      src: 'img/phonics_img/shortVowels/apple.png'
     }));
     $('.content p#word1').replaceWith($('<p></p>',{
       class: 'vowelWord',
