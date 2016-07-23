@@ -52,7 +52,7 @@ body {color: #ffffff; background-color: #AA1520;}
   text-shadow: 0px 2px 4px #000000;
   text-align: center;
   margin: 0;
-  padding: 0;
+  padding: 2px;
 }
 .menu{
   letter-spacing: 0px;
@@ -134,24 +134,94 @@ a:active, a:hover, a:link, a:visited {text-decoration: none !important; color: c
 /*RESPONSIVE DESIGN*/
 @media screen
 and (min-device-width: 0px) and (max-device-width: 359px) and (orientation: portrait) {
-  .menu{font-size: 18px;}
+  .menu {font-size: 18px;}
   .mainShortVowels {margin: 15px 150px 0px 0px;}
   .mainLongVowels {margin: 10px 0px 0px 150px;}
-  .mainConsonants{margin: 18px 130px 0px 10px;}
-  .mainBlends{margin: 25px 0px 0px 150px;}
-  .mainMoreComing{margin: 15px 150px 0px 0px;}
-  #mainSoon{margin: 15px 0px 0px 150px;}
+  .mainConsonants {margin: 18px 130px 0px 10px;}
+  .mainBlends {margin: 25px 0px 0px 150px;}
+  .mainMoreComing {margin: 15px 150px 0px 0px;}
+  #mainSoon {margin: 15px 0px 0px 150px;}
   .lbutton {width: 50px; height: 50px; font-size: 30px;}
   .content img {width: 130px; margin: 15px;}
-  .vowelWord {font-size: 30px;line-height: 26px;}
+  .vowelWord {font-size: 30px; line-height: 24px;}
   .subVmenu {margin-top: 33%;}
   .buttonRow {height: 53px;}
+  .subButton {padding: 7px;}
+  .buttonHolder {margin-left: -21px;}
   .button {
     height: 60.81px;
     width: 21%;
     font-size: 36.64px;
     line-height: 71.74px;
   }
-  .conContent{width: 261px;margin: 80px auto; font-size: 34px;}
-  .conContent img {width: 105px;}
+  .conContent{width: 261px; margin: 80px auto; font-size: 34px;}
+  .conContent img {width: 87px;}
+}
+
+@media screen
+and (min-device-width: 414px) and (max-device-width: 600px) and (orientation: portrait) {
+  .buttonHolder {margin-left: -11px;}
+}
+
+@media screen
+and (min-device-width: 601px) and (max-device-width: 767px) and (orientation: portrait) {
+  .menu {font-size: 30px;}
+  .title {font-size: 25px;}
+  #mainTitle {font-size: 25px;}
+  .mainShortVowels {margin: 30px 250px 0px 0px;}
+  .mainLongVowels {margin: 30px 0px 0px 250px;}
+  .mainConsonants {margin: 30px 250px 0px 0px;}
+  .mainBlends {margin: 30px 0px 0px 250px;}
+  .mainMoreComing {margin: 30px 250px 0px 0px;}
+  #mainSoon {margin: 30px 0px 0px 250px;}
+  .lbutton {width: 88px; height: 88px; font-size: 56px; line-height: 92px;}
+  .content img {width: 200px; margin: 50px;}
+  .vowelWord {font-size: 45px; line-height: 55px;}
+  .subVmenu {margin-top: 45%;}
+  .buttonRow {height: 66px;}
+  .subButton {padding: 15px; font-size: 40px;}
+  .buttonHolder {margin-left: 0px;}
+  .button {
+    height: 108px;
+    width: 108px;
+    font-size: 55px;
+    line-height: 110px;
+    margin: 7px;
+  }
+  .conContent{width: 330px; margin: 135px auto; font-size: 50px;}
+  .conContent img {width: 150px;}
+}
+
+@media screen
+and (min-device-width: 768px) and (max-device-width: 799px) and (orientation: portrait) {
+  .menu {font-size: 35px;}
+  .title {font-size: 30px;}
+  #mainTitle {font-size: 30px;}
+  .mainShortVowels {margin: 40px 350px 0px 0px;}
+  .mainLongVowels {margin: 40px 0px 0px 350px;}
+  .mainConsonants {margin: 40px 350px 0px 0px;}
+  .mainBlends {margin: 40px 0px 0px 350px;}
+  .mainMoreComing {margin: 40px 350px 0px 0px;}
+  #mainSoon {margin: 40px 0px 0px 350px;}
+  .lbutton {width: 100px; height: 100px; font-size: 70px; line-height: 106px; margin: 10px;}
+  .content img {width: 280px; margin: 60px;}
+  .vowelWord {font-size: 55px; line-height: 55px; margin-right: 40px;}
+  .subVmenu {margin-top: 40%;}
+  .buttonRow {height: 66px;}
+  .subButton {padding: 15px; font-size: 50px;}
+  .buttonHolder {margin-left: 38px;}
+  .button {
+    height: 118px;
+    width: 126px;
+    font-size: 66px;
+    line-height: 125px;
+    margin: 11px;
+  }
+  .conContent{width: 375px; margin: 155px auto; font-size: 58px;}
+  .conContent img {width: 220px;}
+}
+
+@media screen
+and (min-device-width: 800px) and (orientation: portrait) {
+
 }
