@@ -86,11 +86,11 @@ a:active, a:hover, a:link, a:visited {text-decoration: none !important; color: c
   text-align: right;
   margin-right: 20px;
   font-size: 35px;
-  line-height: 35px;
+  line-height: 23px;
   text-shadow: 2px 4px 3px #000000;
 }
 /* LONG VOWELS */
-.subVmenu{text-align: center; margin-top: 55%;}
+.subVmenu{text-align: center; margin-top: 40%;}
 .subButton{
   box-shadow: 0px 2px 4px 0px #000000;
   border-radius: 10px;
