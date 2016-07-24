@@ -109,7 +109,7 @@ a:active, a:hover, a:link, a:visited {text-decoration: none !important; color: c
    text-align:center;
    z-index: 1000;
 }
-.conContent {
+.ovContent {
    width:300px;
    margin: 100px auto;
    background-color: rgba(201, 114, 121, 0.95);
@@ -118,14 +118,14 @@ a:active, a:hover, a:link, a:visited {text-decoration: none !important; color: c
    border-radius: 10px;
    font-size: 40px;
 }
-.conContent #close {
+.ovContent #close {
   float: right;
   background-color: #C01D24;
   padding: 3px 10px;
   border-radius: 25%;
   font-size: 30px;
 }
-.conContent img {
+.ovContent img {
   width: 150px;
   padding: 10px;
   margin-right: -30px;
@@ -154,8 +154,8 @@ and (min-device-width: 0px) and (max-device-width: 359px) and (orientation: port
     font-size: 36.64px;
     line-height: 71.74px;
   }
-  .conContent{width: 261px; margin: 80px auto; font-size: 34px;}
-  .conContent img {width: 87px;}
+  .ovContent{width: 261px; margin: 80px auto; font-size: 34px;}
+  .ovContent img {width: 87px;}
 }
 
 @media screen
@@ -188,8 +188,8 @@ and (min-device-width: 601px) and (max-device-width: 767px) and (orientation: po
     line-height: 110px;
     margin: 7px;
   }
-  .conContent{width: 330px; margin: 135px auto; font-size: 50px;}
-  .conContent img {width: 150px;}
+  .ovContent{width: 330px; margin: 135px auto; font-size: 50px;}
+  .ovContent img {width: 150px;}
 }
 
 @media screen
@@ -217,8 +217,8 @@ and (min-device-width: 768px) and (max-device-width: 799px) and (orientation: po
     line-height: 125px;
     margin: 11px;
   }
-  .conContent{width: 375px; margin: 155px auto; font-size: 58px;}
-  .conContent img {width: 220px;}
+  .ovContent{width: 375px; margin: 155px auto; font-size: 58px;}
+  .ovContent img {width: 220px;}
 }
 
 @media screen
