@@ -1026,7 +1026,7 @@ $(document).ready(function(){
     }));
     $('.ovContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'Jam'
+      text: 'Jam 果酱'
     }));
     $('#overlay audio').replaceWith($('<audio></audio>',{
       id: "mp3",
@@ -1106,7 +1106,7 @@ $(document).ready(function(){
     }));
     $('.ovContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'Pen'
+      text: 'Pen 笔'
     }));
     $('#overlay audio').replaceWith($('<audio></audio>',{
       id: "mp3",
@@ -1186,7 +1186,7 @@ $(document).ready(function(){
     }));
     $('.ovContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'Violet '
+      text: 'Violet 紫罗兰'
     }));
     $('#overlay audio').replaceWith($('<audio></audio>',{
       id: "mp3",
@@ -1218,7 +1218,7 @@ $(document).ready(function(){
     }));
     $('.ovContent p#word1').replaceWith($('<p></p>',{
       id: 'word1',
-      text: 'Xray'
+      text: 'Xray X光'
     }));
     $('#overlay audio').replaceWith($('<audio></audio>',{
       id: "mp3",
