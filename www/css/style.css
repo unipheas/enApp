@@ -131,6 +131,7 @@ a:active, a:hover, a:link, a:visited {text-decoration: none !important; color: c
   margin-right: -30px;
   margin-top: 20px;
 }
+
 /*RESPONSIVE DESIGN*/
 @media screen
 and (min-device-width: 0px) and (max-device-width: 359px) and (orientation: portrait) {
