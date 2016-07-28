@@ -1,51 +1,100 @@
 
 $(document).ready(function(){
 
-//     var lang = '../audio/us/';
-//     var sex = 'male/';
-//
-// // Language switcher with flag icons
-//     $('div#changeVoice').on('click', function(){
-//         if ($("#changeVoice img").attr('src') == 'img/usflag.png') {
-//           $('#changeVoice img').replaceWith($('<img></img>',{
-//             src: 'img/ukflag.png',
-//             height: '35',
-//             width: '35'
-//           }));
-//           lang = '../audio/uk/';
-//         }else {
-//           $('#changeVoice img').replaceWith($('<img></img>',{
-//             src: 'img/usflag.png',
-//             height: '35',
-//             width: '35'
-//           }));
-//           lang = '../audio/us/';
-//         };
-//       });
-//
-// // Sex switcher for male/female voiceover
-//     $('div#changeSex').on('click', function(){
-//       if ($("#changeSex img").attr('src') == 'img/male.png') {
-//         $('#changeSex img').replaceWith($('<img></img>',{
-//           src: 'img/female.png',
-//           height: '35',
-//           width: '35'
-//         }));
-//          sex = 'female/';
-//       }else {
-//         $('#changeSex img').replaceWith($('<img></img>', {
-//           src: 'img/male.png',
-//           height: '35',
-//           width: '35'
-//         }));
-//         sex = 'male/';
-//       };
-//     });
+  function shortVowel(picture, word1, word2, word3, audio){
+    $('.content img').replaceWith($('<img></img>',{
+      src: 'img/phonics_img/shortVowels/'+picture
+    }));
+    $('.content p#word1').replaceWith($('<p></p>',{
+      class: 'vowelWord',
+      id: 'word1',
+      text: word1
+    }));
+    $('.content p#word2').replaceWith($('<p></p>',{
+      class: 'vowelWord',
+      id: 'word2',
+      text: word2
+    }));
+    $('.content p#word3').replaceWith($('<p></p>',{
+      class: 'vowelWord',
+      id: 'word3',
+      text: word3
+    }));
+    $('.content audio').replaceWith($('<audio></audio>',{
+      id: "mp3",
+      autoplay: "autoplay",
+      src: "../audio/short_vowels/mp3/"+audio,
+      type: "audio/mpeg"
+    }));
+    document.getElementById('mp3').play();
+  }
+  
+  function longVowel(pic, word1, word2, word3, audio, tag){
+    $('.content img').replaceWith($('<img></img>',{
+      src: 'img/phonics_img/longVowels/'+pic
+    }));
+    $('.content p#word1').replaceWith($('<p></p>',{
+      class: 'vowelWord',
+      id: 'word1',
+      text: word1
+    }));
+    $('.content p#word2').replaceWith($('<p></p>',{
+      class: 'vowelWord',
+      id: 'word2',
+      text: word2
+    }));
+    $('.content p#word3').replaceWith($('<p></p>',{
+      class: 'vowelWord',
+      id: 'word3',
+      text: word3
+    }));
+    $('.content audio').replaceWith($('<audio></audio>',{
+      id: "mp3",
+      autoplay: "autoplay",
+      src: "../audio/long_vowels/mp3/"+audio,
+      type: "audio/mpeg"
+    }));
+    document.getElementById('mp3').play();
+    $(tag).removeClass('buttonLight')
+          .addClass('buttonDark')
+          .siblings(this)
+          .removeClass('buttonDark')
+          .addClass('buttonLight');
+  }
 
-  var shortVowels = "../audio/short_vowels/mp3/";
-  var longVowels = "../audio/long_vowels/mp3/";
-  var cons = "../audio/consonants/mp3/";
-  var blends = "../audio/blends/mp3/";
+  function consonants(pic, word, audio){
+    $('#overlay').show();
+    $('.ovContent img').replaceWith($('<img></img>',{
+      src: 'img/phonics_img/consonants/'+pic
+    }));
+    $('.ovContent p#word1').replaceWith($('<p></p>',{
+      id: 'word1',
+      text: word
+    }));
+    $('#overlay audio').replaceWith($('<audio></audio>',{
+      id: "mp3",
+      autoplay: "autoplay",
+      src: "../audio/consonants/mp3/"+audio,
+      type: "audio/mpeg"
+    }));
+  }
+
+  function blends(pic, word, audio){
+    $('#overlay').show();
+    $('.ovContent img').replaceWith($('<img></img>',{
+      src: 'img/phonics_img/blends/'+pic
+    }));
+    $('.ovContent p#word1').replaceWith($('<p></p>',{
+      id: 'word1',
+      text: word
+    }));
+    $('#overlay audio').replaceWith($('<audio></audio>',{
+      id: "mp3",
+      autoplay: "autoplay",
+      src: "../audio/blends/mp3/"+audio,
+      type: "audio/mpeg"
+    }));
+  }
 
   // Change all clicked elements to dark and light shading.
   $('ul').on('click', 'li',function(){ // When selector 'li' is clicked do the function
@@ -56,139 +105,19 @@ $(document).ready(function(){
 
           // This is for the SHORT VOWELS
   $('#shortA').on('click',function(){
-    $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/shortVowels/apple.png'
-    }));
-    $('.content p#word1').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word1',
-      text: 'Apple 苹果'
-    }));
-    $('.content p#word2').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word2',
-      text: 'Ant 蚂蚁'
-    }));
-    $('.content p#word3').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word3',
-      text: 'Antelope 羚羊'
-    }));
-    $('.content audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: shortVowels+'a.mp3',
-      type: "audio/mpeg"
-    }));
-    document.getElementById('mp3').play();
+    shortVowel('apple.png','Apple 苹果','Ant 蚂蚁','Antelope 羚羊','a.mp3');
   });
   $('#shortE').on('click',function(){
-    $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/shortVowels/egg.png'
-    }));
-    $('.content p#word1').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word1',
-      text: 'Egg 鸡蛋'
-    }));
-    $('.content p#word2').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word2',
-      text: 'End 结束'
-    }));
-    $('.content p#word3').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word3',
-      text: 'Engine 引擎'
-    }));
-    $('.content audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: shortVowels+'e.mp3',
-      type: "audio/mpeg"
-    }));
-    document.getElementById('mp3').play();
+    shortVowel('egg.png','Egg 鸡蛋','End 结束','Engine 引擎','e.mp3');
   });
   $('#shortI').on('click',function(){
-    $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/shortVowels/insect.png'
-    }));
-    $('.content p#word1').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word1',
-      text: 'Insect 昆虫'
-    }));
-    $('.content p#word2').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word2',
-      text: 'In 在...里面'
-    }));
-    $('.content p#word3').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word3',
-      text: 'Internet 因特网'
-    }));
-    $('.content audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: shortVowels+'i.mp3',
-      type: "audio/mpeg"
-    }));
-    document.getElementById('mp3').play();
+    shortVowel('insect.png', 'Insect 昆虫', 'In 在...里面', 'Internet 因特网', 'i.mp3');
   });
   $('#shortO').on('click',function(){
-    $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/shortVowels/orange.png'
-    }));
-    $('.content p#word1').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word1',
-      text: 'Orange 橙子'
-    }));
-    $('.content p#word2').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word2',
-      text: 'Object 物体'
-    }));
-    $('.content p#word3').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word3',
-      text: 'Ostrich 鸵鸟'
-    }));
-    $('.content audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: shortVowels+'o.mp3',
-      type: "audio/mpeg"
-    }));
-    document.getElementById('mp3').play();
+    shortVowel('orange.png','Orange 橙子','Object 物体','Ostrich 鸵鸟','o.mp3');
   });
   $('#shortU').on('click',function(){
-    $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/shortVowels/umbrella.png'
-    }));
-    $('.content p#word1').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word1',
-      text: 'Umbrella 雨伞'
-    }));
-    $('.content p#word2').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word2',
-      text: 'Under 在...下面'
-    }));
-    $('.content p#word3').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word3',
-      text: 'Ugly 丑'
-    }));
-    $('.content audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: shortVowels+'u.mp3',
-      type: "audio/mpeg"
-    }));
-    document.getElementById('mp3').play();
+    shortVowel('umbrella.png','Umbrella 雨伞','Under 在...下面','Ugly 丑','u.mp3');
   });
 
         // This is for the LONG VOWELS
@@ -198,722 +127,84 @@ $(document).ready(function(){
           // To show content in LONG VOWELS
                 //Long Vowel A
   $('#longA').on('click',function(){
-    $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/longVowels/subMenu/day.png'
-    }));
-    $('.content p#word1').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word1',
-      text: 'Day 白天'
-    }));
-    $('.content p#word2').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word2',
-      text: 'Pay 付钱'
-    }));
-    $('.content p#word3').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word3',
-      text: 'Play 玩耍'
-    }));
-    $('.content audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: longVowels+'a.mp3',
-      type: "audio/mpeg"
-    }));
-    document.getElementById('mp3').play();
     $('.subVmenu').hide();
     $('.subA').show();
-    $('span#ay').removeClass('buttonLight')
-          .addClass('buttonDark')
-          .siblings(this)
-          .removeClass('buttonDark')
-          .addClass('buttonLight');
+    longVowel('day.png','Day 白天','Pay 付钱','Play 玩耍','a.mp3', 'span#ay');
   });
   $('#ay').on('click',function(){
-    $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/longVowels/subMenu/day.png'
-    }));
-    $('.content p#word1').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word1',
-      text: 'Day 白天'
-    }));
-    $('.content p#word2').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word2',
-      text: 'Pay 付钱'
-    }));
-    $('.content p#word3').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word3',
-      text: 'Play 玩耍'
-    }));
-    $('.content audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: longVowels+'a.mp3',
-      type: "audio/mpeg"
-    }));
-    document.getElementById('mp3').play();
-    $('#ay').removeClass('buttonLight')
-          .addClass('buttonDark')
-          .siblings(this)
-          .removeClass('buttonDark')
-          .addClass('buttonLight');
+    longVowel('day.png','Day 白天','Pay 付钱','Play 玩耍','a.mp3','#ay');
   });
   $('#ai').on('click',function(){
-    $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/longVowels/subMenu/rain.png'
-    }));
-    $('.content p#word1').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word1',
-      text: 'Rain 下雨'
-    }));
-    $('.content p#word2').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word2',
-      text: 'Laid 下蛋'
-    }));
-    $('.content p#word3').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word3',
-      text: 'Paid 付钱'
-    }));
-    $('.content audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: longVowels+'a.mp3',
-      type: "audio/mpeg"
-    }));
-    document.getElementById('mp3').play();
-    $('#ai').removeClass('buttonLight')
-          .addClass('buttonDark')
-          .siblings(this)
-          .removeClass('buttonDark')
-          .addClass('buttonLight');
+    longVowel('rain.png','Rain 下雨','Laid 下蛋','Paid 付钱','a.mp3','#ai');
   });
   $('#a_e').on('click',function(){
-    $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/longVowels/subMenu/plane.png'
-    }));
-    $('.content p#word1').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word1',
-      text: 'Plane 飞机'
-    }));
-    $('.content p#word2').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word2',
-      text: 'Game 游戏'
-    }));
-    $('.content p#word3').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word3',
-      text: 'Paper 纸'
-    }));
-    $('.content audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: longVowels+'a.mp3',
-      type: "audio/mpeg"
-    }));
-    document.getElementById('mp3').play();
-    $('#a_e').removeClass('buttonLight')
-          .addClass('buttonDark')
-          .siblings(this)
-          .removeClass('buttonDark')
-          .addClass('buttonLight');
+    longVowel('plane.png','Plane 飞机','Game 游戏','Paper 纸','a.mp3','#a_e');
   });
               //Long Vowel E
   $('#longE').on('click',function(){
-    $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/longVowels/subMenu/bee.png'
-    }));
-    $('.content p#word1').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word1',
-      text: 'Bee 蜜蜂'
-    }));
-    $('.content p#word2').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word2',
-      text: 'Free 免费'
-    }));
-    $('.content p#word3').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word3',
-      text: 'Tree 树'
-    }));
-    $('.content audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: longVowels+'e.mp3',
-      type: "audio/mpeg"
-    }));
-    document.getElementById('mp3').play();
     $('.subVmenu').hide();
     $('.subE').show();
-    $('span#ee').removeClass('buttonLight')
-          .addClass('buttonDark')
-          .siblings(this)
-          .removeClass('buttonDark')
-          .addClass('buttonLight');
+    longVowel('bee.png','Bee 蜜蜂','Free 免费','Tree 树','e.mp3','span#ee');
   });
   $('#ee').on('click',function(){
-    $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/longVowels/subMenu/bee.png'
-    }));
-    $('.content p#word1').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word1',
-      text: 'Bee 蜜蜂'
-    }));
-    $('.content p#word2').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word2',
-      text: 'Free 免费'
-    }));
-    $('.content p#word3').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word3',
-      text: 'Tree 树'
-    }));
-    $('.content audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: longVowels+'e.mp3',
-      type: "audio/mpeg"
-    }));
-    document.getElementById('mp3').play();
-    $('#ee').removeClass('buttonLight')
-          .addClass('buttonDark')
-          .siblings(this)
-          .removeClass('buttonDark')
-          .addClass('buttonLight');
+    longVowel('bee.png','Bee 蜜蜂','Free 免费','Tree 树','e.mp3','#ee');
   });
   $('#ea').on('click',function(){
-    $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/longVowels/eat.png'
-    }));
-    $('.content p#word1').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word1',
-      text: 'Eat 吃'
-    }));
-    $('.content p#word2').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word2',
-      text: 'Clean 干净'
-    }));
-    $('.content p#word3').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word3',
-      text: 'Flea 跳蚤'
-    }));
-    $('.content audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: longVowels+'e.mp3',
-      type: "audio/mpeg"
-    }));
-    document.getElementById('mp3').play();
-    $('#ea').removeClass('buttonLight')
-          .addClass('buttonDark')
-          .siblings(this)
-          .removeClass('buttonDark')
-          .addClass('buttonLight');
+    longVowel('eat.png','Eat 吃','Clean 干净','Flea 跳蚤','e.mp3','#ea');
   });
   $('#e_e').on('click',function(){
-    $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/longVowels/subMenu/chinese.png'
-    }));
-    $('.content p#word1').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word1',
-      text: 'Chinese 中国人'
-    }));
-    $('.content p#word2').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word2',
-      text: 'Athlete 运动员'
-    }));
-    $('.content p#word3').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word3',
-      text: 'Theme 主题'
-    }));
-    $('.content audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: longVowels+'e.mp3',
-      type: "audio/mpeg"
-    }));
-    document.getElementById('mp3').play();
-    $('#e_e').removeClass('buttonLight')
-          .addClass('buttonDark')
-          .siblings(this)
-          .removeClass('buttonDark')
-          .addClass('buttonLight');
+    longVowel('chinese.png','Chinese 中国人','Athlete 运动员','Theme 主题','e.mp3','#e_e');
   });
   $('#eay').on('click',function(){
-    $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/longVowels/subMenu/Angry.png'
-    }));
-    $('.content p#word1').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word1',
-      text: 'Angry 生气'
-    }));
-    $('.content p#word2').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word2',
-      text: 'Happy 高兴'
-    }));
-    $('.content p#word3').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word3',
-      text: 'Lady 女士'
-    }));
-    $('.content audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: longVowels+'e.mp3',
-      type: "audio/mpeg"
-    }));
-    document.getElementById('mp3').play();
-    $('#eay').removeClass('buttonLight')
-          .addClass('buttonDark')
-          .siblings(this)
-          .removeClass('buttonDark')
-          .addClass('buttonLight');
+    longVowel('angry.png','Angry 生气','Happy 高兴','Lady 女士','e.mp3','#eay');
   });
             //Long Vowel I
   $('#longI').on('click',function(){
-    $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/longVowels/subMenu/pie.png'
-    }));
-    $('.content p#word1').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word1',
-      text: 'Pie 派'
-    }));
-    $('.content p#word2').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word2',
-      text: 'Lie 撒谎'
-    }));
-    $('.content p#word3').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word3',
-      text: 'Tie 领带'
-    }));
-    $('.content audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: longVowels+'i.mp3',
-      type: "audio/mpeg"
-    }));
-    document.getElementById('mp3').play();
     $('.subVmenu').hide();
     $('.subI').show();
-    $('span#ie').removeClass('buttonLight')
-          .addClass('buttonDark')
-          .siblings(this)
-          .removeClass('buttonDark')
-          .addClass('buttonLight');
+    longVowel('pie.png','Pie 派','Lie 撒谎','Tie 领带','i.mp3','span#ie');
   });
   $('#ie').on('click',function(){
-    $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/longVowels/subMenu/pie.png'
-    }));
-    $('.content p#word1').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word1',
-      text: 'Pie 派'
-    }));
-    $('.content p#word2').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word2',
-      text: 'Lie 撒谎'
-    }));
-    $('.content p#word3').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word3',
-      text: 'Tie 领带'
-    }));
-    $('.content audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: longVowels+'i.mp3',
-      type: "audio/mpeg"
-    }));
-    document.getElementById('mp3').play();
-    $('#ie').removeClass('buttonLight')
-          .addClass('buttonDark')
-          .siblings(this)
-          .removeClass('buttonDark')
-          .addClass('buttonLight');
+    longVowel('pie.png','Pie 派','Lie 撒谎','Tie 领带','i.mp3','span#ie');
   });
   $('#igh').on('click',function(){
-    $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/longVowels/subMenu/light.png'
-    }));
-    $('.content p#word1').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word1',
-      text: 'Light 轻'
-    }));
-    $('.content p#word2').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word2',
-      text: 'High 高'
-    }));
-    $('.content p#word3').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word3',
-      text: 'Sigh 叹气'
-    }));
-    $('.content audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: longVowels+'i.mp3',
-      type: "audio/mpeg"
-    }));
-    document.getElementById('mp3').play();
-    $('#igh').removeClass('buttonLight')
-          .addClass('buttonDark')
-          .siblings(this)
-          .removeClass('buttonDark')
-          .addClass('buttonLight');
+    longVowel('light.png','Light 轻','High 高','Sigh 叹气','i.mp3','#igh');
   });
   $('#y').on('click',function(){
-    $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/longVowels/subMenu/fly.png'
-    }));
-    $('.content p#word1').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word1',
-      text: 'Fly 苍蝇'
-    }));
-    $('.content p#word2').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word2',
-      text: 'Fry 炸'
-    }));
-    $('.content p#word3').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word3',
-      text: 'Cry 哭'
-    }));
-    $('.content audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: longVowels+'i.mp3',
-      type: "audio/mpeg"
-    }));
-    document.getElementById('mp3').play();
-    $('#y').removeClass('buttonLight')
-          .addClass('buttonDark')
-          .siblings(this)
-          .removeClass('buttonDark')
-          .addClass('buttonLight');
+    longVowel('fly.png','Fly 苍蝇','Fry 炸','Cry 哭','i.mp3','#y');
   });
   $('#i_e').on('click',function(){
-    $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/longVowels/subMenu/bike.png'
-    }));
-    $('.content p#word1').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word1',
-      text: 'Bike 自行车'
-    }));
-    $('.content p#word2').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word2',
-      text: 'Time 时间'
-    }));
-    $('.content p#word3').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word3',
-      text: 'Wine 红酒'
-    }));
-    $('.content audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: longVowels+'i.mp3',
-      type: "audio/mpeg"
-    }));
-    document.getElementById('mp3').play();
-    $('#i_e').removeClass('buttonLight')
-          .addClass('buttonDark')
-          .siblings(this)
-          .removeClass('buttonDark')
-          .addClass('buttonLight');
+    longVowel('bike.png','Bike 自行车','Time 时间','Wine 红酒','i.mp3','#i_e');
   });
           //Long Vowel O
   $('#longO').on('click',function(){
-    $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/longVowels/boat.jpg'
-    }));
-    $('.content p#word1').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word1',
-      text: 'Boat 船'
-    }));
-    $('.content p#word2').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word2',
-      text: 'Road 道路'
-    }));
-    $('.content p#word3').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word3',
-      text: 'Coat 外套'
-    }));
-    $('.content audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: longVowels+'o.mp3',
-      type: "audio/mpeg"
-    }));
-    document.getElementById('mp3').play();
     $('.subVmenu').hide();
     $('.subO').show();
-    $('span#oa').removeClass('buttonLight')
-          .addClass('buttonDark')
-          .siblings(this)
-          .removeClass('buttonDark')
-          .addClass('buttonLight');
+    longVowel('boat.jpg','Boat 船','Road 道路','Coat 外套','o.mp3','span#oa');
   });
   $('#oa').on('click',function(){
-    $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/longVowels/boat.jpg'
-    }));
-    $('.content p#word1').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word1',
-      text: 'Boat 船'
-    }));
-    $('.content p#word2').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word2',
-      text: 'Road 道路'
-    }));
-    $('.content p#word3').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word3',
-      text: 'Coat 外套'
-    }));
-    $('.content audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: longVowels+'o.mp3',
-      type: "audio/mpeg"
-    }));
-    document.getElementById('mp3').play();
-    $('#oa').removeClass('buttonLight')
-          .addClass('buttonDark')
-          .siblings(this)
-          .removeClass('buttonDark')
-          .addClass('buttonLight');
+    longVowel('boat.jpg','Boat 船','Road 道路','Coat 外套','o.mp3','span#oa');
   });
   $('#ow').on('click',function(){
-    $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/longVowels/subMenu/window.png'
-    }));
-    $('.content p#word1').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word1',
-      text: 'Window 窗户'
-    }));
-    $('.content p#word2').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word2',
-      text: 'Blow 吹'
-    }));
-    $('.content p#word3').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word3',
-      text: 'Row 划船'
-    }));
-    $('.content audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: longVowels+'o.mp3',
-      type: "audio/mpeg"
-    }));
-    document.getElementById('mp3').play();
-    $('#ow').removeClass('buttonLight')
-          .addClass('buttonDark')
-          .siblings(this)
-          .removeClass('buttonDark')
-          .addClass('buttonLight');
+    longVowel('window.png','Window 窗户','Blow 吹','Row 划船','o.mp3','#ow');
   });
   $('#o_e').on('click',function(){
-    $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/longVowels/subMenu/phone.png'
-    }));
-    $('.content p#word1').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word1',
-      text: 'Phone 手机'
-    }));
-    $('.content p#word2').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word2',
-      text: 'Bone 骨头'
-    }));
-    $('.content p#word3').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word3',
-      text: 'Tone 声调'
-    }));
-    $('.content audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: longVowels+'o.mp3',
-      type: "audio/mpeg"
-    }));
-    document.getElementById('mp3').play();
-    $('#o_e').removeClass('buttonLight')
-          .addClass('buttonDark')
-          .siblings(this)
-          .removeClass('buttonDark')
-          .addClass('buttonLight');
+    longVowel('phone.png','Phone 手机','Bone 骨头','Tone 声调','o.mp3','#o_e');
   });
           //Long Vowel U
   $('#longU').on('click',function(){
-    $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/longVowels/subMenu/blue.png'
-    }));
-    $('.content p#word1').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word1',
-      text: 'Blue 蓝色'
-    }));
-    $('.content p#word2').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word2',
-      text: 'Argue 争吵'
-    }));
-    $('.content p#word3').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word3',
-      text: 'True 真实'
-    }));
-    $('.content audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: longVowels+'u.mp3',
-      type: "audio/mpeg"
-    }));
-    document.getElementById('mp3').play();
     $('.subVmenu').hide();
     $('.subU').show();
-    $('span#ue').removeClass('buttonLight')
-          .addClass('buttonDark')
-          .siblings(this)
-          .removeClass('buttonDark')
-          .addClass('buttonLight');
+    longVowel('blue.png','Blue 蓝色','Argue 争吵','True 真实','u.mp3','span#ue');
   });
   $('#ue').on('click',function(){
-    $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/longVowels/subMenu/blue.png'
-    }));
-    $('.content p#word1').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word1',
-      text: 'Blue 蓝色'
-    }));
-    $('.content p#word2').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word2',
-      text: 'Argue 争吵'
-    }));
-    $('.content p#word3').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word3',
-      text: 'True 真实'
-    }));
-    $('.content audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: longVowels+'u.mp3',
-      type: "audio/mpeg"
-    }));
-    document.getElementById('mp3').play();
-    $('#ue').removeClass('buttonLight')
-          .addClass('buttonDark')
-          .siblings(this)
-          .removeClass('buttonDark')
-          .addClass('buttonLight');
+    longVowel('blue.png','Blue 蓝色','Argue 争吵','True 真实','u.mp3','span#ue');
   });
   $('#ew').on('click',function(){
-    $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/longVowels/subMenu/mew.png'
-    }));
-    $('.content p#word1').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word1',
-      text: 'Mew 喵喵叫'
-    }));
-    $('.content p#word2').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word2',
-      text: 'Blew 吹'
-    }));
-    $('.content p#word3').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word3',
-      text: 'Shrew 鼩鼱'
-    }));
-    $('.content audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: longVowels+'u.mp3',
-      type: "audio/mpeg"
-    }));
-    document.getElementById('mp3').play();
-    $('#ew').removeClass('buttonLight')
-          .addClass('buttonDark')
-          .siblings(this)
-          .removeClass('buttonDark')
-          .addClass('buttonLight');
+    longVowel('mew.png','Mew 喵喵叫','Blew 吹','Shrew 鼩鼱','u.mp3','#ew');
   });
   $('#u_e').on('click',function(){
-    $('.content img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/longVowels/subMenu/cube.png'
-    }));
-    $('.content p#word1').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word1',
-      text: 'Cube 方块'
-    }));
-    $('.content p#word2').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word2',
-      text: 'Refuse 拒绝'
-    }));
-    $('.content p#word3').replaceWith($('<p></p>',{
-      class: 'vowelWord',
-      id: 'word3',
-      text: 'Tube 管道'
-    }));
-    $('.content audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: longVowels+'u.mp3',
-      type: "audio/mpeg"
-    }));
-    document.getElementById('mp3').play();
-    $('#u_e').removeClass('buttonLight')
-          .addClass('buttonDark')
-          .siblings(this)
-          .removeClass('buttonDark')
-          .addClass('buttonLight');
+    longVowel('cube.png','Cube 方块','Refuse 拒绝','Tube 管道','u.mp3','#u_e');
   });
 
             // DIALOG BOX FOR CONTENT
@@ -924,651 +215,167 @@ $(document).ready(function(){
 
               // CONSONANTS
   $('#b').on('click',function(){
-    $('#overlay').show();
-    $('.ovContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/consonants/ball.png'
-    }));
-    $('.ovContent p#word1').replaceWith($('<p></p>',{
-      id: 'word1',
-      text: 'Ball 球'
-    }));
-    $('#overlay audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: cons+'ball.mp3',
-      type: "audio/mpeg"
-    }));
+    consonants('ball.png','Ball 球','ball.mp3');
   })
   $('#c').on('click',function(){
-    $('#overlay').show();
-    $('.ovContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/consonants/cat.png'
-    }));
-    $('.ovContent p#word1').replaceWith($('<p></p>',{
-      id: 'word1',
-      text: 'Cat 猫'
-    }));
-    $('#overlay audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: cons+'cat.mp3',
-      type: "audio/mpeg"
-    }));
+    consonants('cat.png','Cat 猫','cat.mp3');
   });
   $('#d').on('click',function(){
-    $('#overlay').show();
-    $('.ovContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/consonants/dog.png'
-    }));
-    $('.ovContent p#word1').replaceWith($('<p></p>',{
-      id: 'word1',
-      text: 'Dog 狗'
-    }));
-    $('#overlay audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: cons+'dog.mp3',
-      type: "audio/mpeg"
-    }));
+    consonants('dog.png','Dog 狗','dog.mp3');
   });
   $('#f').on('click',function(){
-    $('#overlay').show();
-    $('.ovContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/consonants/fish.png'
-    }));
-    $('.ovContent p#word1').replaceWith($('<p></p>',{
-      id: 'word1',
-      text: 'Fish 鱼'
-    }));
-    $('#overlay audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: cons+'fish.mp3',
-      type: "audio/mpeg"
-    }));
+    consonants('fish.png','Fish 鱼','fish.mp3');
   });
   $('#g').on('click',function(){
-    $('#overlay').show();
-    $('.ovContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/consonants/goat.png'
-    }));
-    $('.ovContent p#word1').replaceWith($('<p></p>',{
-      id: 'word1',
-      text: 'Goat 山羊'
-    }));
-    $('#overlay audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: cons+'goat.mp3',
-      type: "audio/mpeg"
-    }));
+    consonants('goat.png','Goat 山羊','goat.mp3');
   });
   $('#h').on('click',function(){
-    $('#overlay').show();
-    $('.ovContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/consonants/hat.png'
-    }));
-    $('.ovContent p#word1').replaceWith($('<p></p>',{
-      id: 'word1',
-      text: 'Hat 帽子'
-    }));
-    $('#overlay audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: cons+'hat.mp3',
-      type: "audio/mpeg"
-    }));
+    consonants('hat.png','Hat 帽子','hat.mp3');
   });
   $('#j').on('click',function(){
-    $('#overlay').show();
-    $('.ovContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/consonants/jam.png'
-    }));
-    $('.ovContent p#word1').replaceWith($('<p></p>',{
-      id: 'word1',
-      text: 'Jam 果酱'
-    }));
-    $('#overlay audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: cons+'jam.mp3',
-      type: "audio/mpeg"
-    }));
+    consonants('jam.png','Jam 果酱','jam.mp3');
   });
   $('#k').on('click',function(){
-    $('#overlay').show();
-    $('.ovContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/consonants/king.png'
-    }));
-    $('.ovContent p#word1').replaceWith($('<p></p>',{
-      id: 'word1',
-      text: 'King 国王'
-    }));
-    $('#overlay audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: cons+'king.mp3',
-      type: "audio/mpeg"
-    }));
+    consonants('king.png','King 国王','king.mp3');
   });
   $('#l').on('click',function(){
-    $('#overlay').show();
-    $('.ovContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/consonants/lady.png'
-    }));
-    $('.ovContent p#word1').replaceWith($('<p></p>',{
-      id: 'word1',
-      text: 'Lady 女士'
-    }));
-    $('#overlay audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: cons+'lady.mp3',
-      type: "audio/mpeg"
-    }));
+    consonants('lady.png','Lady 女士','lady.mp3');
   });
   $('#m').on('click',function(){
-    $('#overlay').show();
-    $('.ovContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/consonants/mouse.png'
-    }));
-    $('.ovContent p#word1').replaceWith($('<p></p>',{
-      id: 'word1',
-      text: 'Mouse 老鼠'
-    }));
-    $('#overlay audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: cons+'mouse.mp3',
-      type: "audio/mpeg"
-    }));
+    consonants('mouse.png','Mouse 老鼠','mouse.mp3');
   });
   $('#n').on('click',function(){
-    $('#overlay').show();
-    $('.ovContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/consonants/nose.png'
-    }));
-    $('.ovContent p#word1').replaceWith($('<p></p>',{
-      id: 'word1',
-      text: 'Nose 鼻子'
-    }));
-    $('#overlay audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: cons+'nose.mp3',
-      type: "audio/mpeg"
-    }));
+    consonants('nose.png','Nose 鼻子','nose.mp3');
   });
   $('#p').on('click',function(){
-    $('#overlay').show();
-    $('.ovContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/consonants/pen.png'
-    }));
-    $('.ovContent p#word1').replaceWith($('<p></p>',{
-      id: 'word1',
-      text: 'Pen 笔'
-    }));
-    $('#overlay audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: cons+'pen.mp3',
-      type: "audio/mpeg"
-    }));
+    consonants('pen.png','Pen 笔','pen.mp3');
   });
   $('#q').on('click',function(){
-    $('#overlay').show();
-    $('.ovContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/consonants/queen.png'
-    }));
-    $('.ovContent p#word1').replaceWith($('<p></p>',{
-      id: 'word1',
-      text: 'Queen 女王'
-    }));
-    $('#overlay audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: cons+'queen.mp3',
-      type: "audio/mpeg"
-    }));
+    consonants('queen.png','Queen 女王','queen.mp3');
   });
   $('#r').on('click',function(){
-    $('#overlay').show();
-    $('.ovContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/consonants/robot.png'
-    }));
-    $('.ovContent p#word1').replaceWith($('<p></p>',{
-      id: 'word1',
-      text: 'Robot 机器人'
-    }));
-    $('#overlay audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: cons+'robot.mp3',
-      type: "audio/mpeg"
-    }));
+    consonants('robot.png','Robot 机器人','robot.mp3');
   });
   $('#s').on('click',function(){
-    $('#overlay').show();
-    $('.ovContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/consonants/snake.png'
-    }));
-    $('.ovContent p#word1').replaceWith($('<p></p>',{
-      id: 'word1',
-      text: 'Snake 蛇'
-    }));
-    $('#overlay audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: cons+'snake.mp3',
-      type: "audio/mpeg"
-    }));
+    consonants('snake.png','Snake 蛇','snake.mp3');
   });
   $('#t').on('click',function(){
-    $('#overlay').show();
-    $('.ovContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/consonants/tshirt.png'
-    }));
-    $('.ovContent p#word1').replaceWith($('<p></p>',{
-      id: 'word1',
-      text: 'Tshirt T恤'
-    }));
-    $('#overlay audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: cons+'tshirt.mp3',
-      type: "audio/mpeg"
-    }));
+    consonants('tshirt.png','Tshirt T恤','tshirt.mp3');
   });
   $('#v').on('click',function(){
-    $('#overlay').show();
-    $('.ovContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/consonants/violet.png'
-    }));
-    $('.ovContent p#word1').replaceWith($('<p></p>',{
-      id: 'word1',
-      text: 'Violet 紫罗兰'
-    }));
-    $('#overlay audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: cons+'violet.mp3',
-      type: "audio/mpeg"
-    }));
+    consonants('violet.png','Violet 紫罗兰','violet.mp3');
   });
   $('#w').on('click',function(){
-    $('#overlay').show();
-    $('.ovContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/consonants/whale.png'
-    }));
-    $('.ovContent p#word1').replaceWith($('<p></p>',{
-      id: 'word1',
-      text: 'Whale 鲸鱼'
-    }));
-    $('#overlay audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: cons+'whale.mp3',
-      type: "audio/mpeg"
-    }));
+    consonants('whale.png','Whale 鲸鱼','whale.mp3');
   });
   $('#x').on('click',function(){
-    $('#overlay').show();
-    $('.ovContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/consonants/xray.png'
-    }));
-    $('.ovContent p#word1').replaceWith($('<p></p>',{
-      id: 'word1',
-      text: 'Xray X光'
-    }));
-    $('#overlay audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: cons+'xray.mp3',
-      type: "audio/mpeg"
-    }));
+    consonants('xray.png','Xray X光','xray.mp3');
   });
   $('#cony').on('click',function(){
-    $('#overlay').show();
-    $('.ovContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/consonants/yellow.png'
-    }));
-    $('.ovContent p#word1').replaceWith($('<p></p>',{
-      id: 'word1',
-      text: 'Yellow 黄色'
-    }));
-    $('#overlay audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: cons+'yellow.mp3',
-      type: "audio/mpeg"
-    }));
+    consonants('yellow.png','Yellow 黄色','yellow.mp3');
   });
   $('#z').on('click',function(){
-    $('#overlay').show();
-    $('.ovContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/consonants/zebra.png'
-    }));
-    $('.ovContent p#word1').replaceWith($('<p></p>',{
-      id: 'word1',
-      text: 'Zebra 斑马'
-    }));
-    $('#overlay audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: cons+'zebra.mp3',
-      type: "audio/mpeg"
-    }));
-    $('#overlay audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: cons+'zebra.mp3',
-      type: "audio/mpeg"
-    }));
+    consonants('zebra.png','Zebra 斑马','zebra.mp3');
   });
 
             // `BLENDS`
   $('#ch').on('click',function(){
-    $('#overlay').show();
-    $('.ovContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/blends/cheese.png'
-    }));
-    $('.ovContent p#word1').replaceWith($('<p></p>',{
-      id: 'word1',
-      text: 'Cheese 芝士'
-    }));
-    $('#overlay audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: blends+'ch.mp3',
-      type: "audio/mpeg"
-    }));
+    blends('cheese.png','Cheese 芝士','ch.mp3');
   });
   $('#sh').on('click',function(){
-    $('#overlay').show();
-    $('.ovContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/blends/sh!.png'
-    }));
-    $('.ovContent p#word1').replaceWith($('<p></p>',{
-      id: 'word1',
-      text: 'Sh! 嘘！'
-    }));
-    $('#overlay audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: blends+'sh.mp3',
-      type: "audio/mpeg"
-    }));
+    blends('sh.png','Sh! 嘘！','sh.mp3');
   });
   $('#th').on('click',function(){
-    $('#overlay').show();
-    $('.ovContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/blends/there.png'
-    }));
-    $('.ovContent p#word1').replaceWith($('<p></p>',{
-      id: 'word1',
-      text: 'There 那里'
-    }));
-    $('#overlay audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: blends+'th.mp3',
-      type: "audio/mpeg"
-    }));
+    blends('there.png','There 那里','th.mp3');
   });
   $('#thU').on('click',function(){
-    $('#overlay').show();
-    $('.ovContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/blends/three.png'
-    }));
-    $('.ovContent p#word1').replaceWith($('<p></p>',{
-      id: 'word1',
-      text: 'Three 三'
-    }));
-    $('#overlay audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: blends+'th_.mp3',
-      type: "audio/mpeg"
-    }));
+    blends('three.png','Three 三','th_.mp3');
   });
   $('#oo').on('click',function(){
-    $('#overlay').show();
-    $('.ovContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/blends/tools.png'
-    }));
-    $('.ovContent p#word1').replaceWith($('<p></p>',{
-      id: 'word1',
-      text: 'Tools 工具'
-    }));
-    $('#overlay audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: blends+'oo.mp3',
-      type: "audio/mpeg"
-    }));
+    blends('tools.png','Tools 工具','oo.mp3');
   });
   $('#ooU').on('click',function(){
-    $('#overlay').show();
-    $('.ovContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/blends/good.png'
-    }));
-    $('.ovContent p#word1').replaceWith($('<p></p>',{
-      id: 'word1',
-      text: 'Good 好'
-    }));
-    $('#overlay audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: blends+'oo_.mp3',
-      type: "audio/mpeg"
-    }));
+    blends('good.png','Good 好','oo_.mp3');
   });
   $('#oi').on('click',function(){
-    $('#overlay').show();
-    $('.ovContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/blends/boil.png'
-    }));
-    $('.ovContent p#word1').replaceWith($('<p></p>',{
-      id: 'word1',
-      text: 'Boil 煮沸'
-    }));
-    $('#overlay audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: blends+'oi.mp3',
-      type: "audio/mpeg"
-    }));
+    blends('boil.png','Boil 煮沸','oi.mp3');
   });
   $('#oy').on('click',function(){
-    $('#overlay').show();
-    $('.ovContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/blends/toys.png'
-    }));
-    $('.ovContent p#word1').replaceWith($('<p></p>',{
-      id: 'word1',
-      text: 'Toys 玩具'
-    }));
-    $('#overlay audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: blends+'oy.mp3',
-      type: "audio/mpeg"
-    }));
+    blends('toys.png','Toys 玩具','oy.mp3');
   });
   $('#ou').on('click',function(){
-    $('#overlay').show();
-    $('.ovContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/blends/out.png'
-    }));
-    $('.ovContent p#word1').replaceWith($('<p></p>',{
-      id: 'word1',
-      text: 'Out 外面'
-    }));
-    $('#overlay audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: blends+'ou.mp3',
-      type: "audio/mpeg"
-    }));
+    blends('out.png','Out 外面','ou.mp3');
   });
   $('#blOw').on('click',function(){
-    $('#overlay').show();
-    $('.ovContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/blends/owl.png'
-    }));
-    $('.ovContent p#word1').replaceWith($('<p></p>',{
-      id: 'word1',
-      text: 'Owl 猫头鹰'
-    }));
-    $('#overlay audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: blends+'ow.mp3',
-      type: "audio/mpeg"
-    }));
+    blends('owl.png','Owl 猫头鹰','ow.mp3');
   });
   $('#er').on('click',function(){
-    $('#overlay').show();
-    $('.ovContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/blends/germ.png'
-    }));
-    $('.ovContent p#word1').replaceWith($('<p></p>',{
-      id: 'word1',
-      text: 'Germ 病菌'
-    }));
-    $('#overlay audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: blends+'er.mp3',
-      type: "audio/mpeg"
-    }));
+    blends('germ.png','Germ 病菌','er.mp3');
   });
   $('#ur').on('click',function(){
-    $('#overlay').show();
-    $('.ovContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/blends/nurse.png'
-    }));
-    $('.ovContent p#word1').replaceWith($('<p></p>',{
-      id: 'word1',
-      text: 'Nurse 护士'
-    }));
-    $('#overlay audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: blends+'ur.mp3',
-      type: "audio/mpeg"
-    }));
+    blends('nurse.png','Nurse 护士','ur.mpe');
   });
   $('#ir').on('click',function(){
-    $('#overlay').show();
-    $('.ovContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/blends/shirt.png'
-    }));
-    $('.ovContent p#word1').replaceWith($('<p></p>',{
-      id: 'word1',
-      text: 'Shirt 衬衫'
-    }));
-    $('#overlay audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: blends+'ir.mp3',
-      type: "audio/mpeg"
-    }));
+    blends('shirt.png','Shirt 衬衫','ir.mp3');
   });
   $('#or').on('click',function(){
-    $('#overlay').show();
-    $('.ovContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/blends/horn.png'
-    }));
-    $('.ovContent p#word1').replaceWith($('<p></p>',{
-      id: 'word1',
-      text: 'Horn 角'
-    }));
-    $('#overlay audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: blends+'or.mp3',
-      type: "audio/mpeg"
-    }));
+    blends('horn.png','Horn 角','or.mp3');
   });
   $('#ar').on('click',function(){
-    $('#overlay').show();
-    $('.ovContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/blends/car.png'
-    }));
-    $('.ovContent p#word1').replaceWith($('<p></p>',{
-      id: 'word1',
-      text: 'Car 车'
-    }));
-    $('#overlay audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: blends+'ar.mp3',
-      type: "audio/mpeg"
-    }));
+    blends('car.png','Car 车','ar.mp3');
   });
   $('#aw').on('click',function(){
-    $('#overlay').show();
-    $('.ovContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/blends/crawl.png'
-    }));
-    $('.ovContent p#word1').replaceWith($('<p></p>',{
-      id: 'word1',
-      text: 'Crawl 爬行'
-    }));
-    $('#overlay audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: blends+'aw.mp3',
-      type: "audio/mpeg"
-    }));
+    blends('crawl.png','Crawl 爬行','aw.mp3');
   });
   $('#ing').on('click',function(){
-    $('#overlay').show();
-    $('.ovContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/blends/sing.png'
-    }));
-    $('.ovContent p#word1').replaceWith($('<p></p>',{
-      id: 'word1',
-      text: 'Sing 唱歌'
-    }));
-    $('#overlay audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: blends+'ing.mp3',
-      type: "audio/mpeg"
-    }));
+    blends('sing.png','Sing 唱歌','ing.mp3');
   });
   $('#ph').on('click',function(){
-    $('#overlay').show();
-    $('.ovContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/longVowels/subMenu/phone.png'
-    }));
-    $('.ovContent p#word1').replaceWith($('<p></p>',{
-      id: 'word1',
-      text: 'Phone 电话'
-    }));
-    $('#overlay audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: blends+'ph.mp3',
-      type: "audio/mpeg"
-    }));
+    blends('phone.png','Phone 电话','ph.mp3');
   });
   $('#tion').on('click',function(){
-    $('#overlay').show();
-    $('.ovContent img').replaceWith($('<img></img>',{
-      src: 'img/phonics_img/blends/construction.png'
-    }));
-    $('.ovContent p#word1').replaceWith($('<p></p>',{
-      id: 'word1',
-      text: 'Construction 建造'
-    }));
-    $('#overlay audio').replaceWith($('<audio></audio>',{
-      id: "mp3",
-      autoplay: "autoplay",
-      src: blends+'tion.mp3',
-      type: "audio/mpeg"
-    }));
+    blends('construction.png','Construction 建造','tion.mp3');
   });
  });
+
+
+ //     var lang = '../audio/us/';
+ //     var sex = 'male/';
+ //
+ // // Language switcher with flag icons
+ //     $('div#changeVoice').on('click', function(){
+ //         if ($("#changeVoice img").attr('src') == 'img/usflag.png') {
+ //           $('#changeVoice img').replaceWith($('<img></img>',{
+ //             src: 'img/ukflag.png',
+ //             height: '35',
+ //             width: '35'
+ //           }));
+ //           lang = '../audio/uk/';
+ //         }else {
+ //           $('#changeVoice img').replaceWith($('<img></img>',{
+ //             src: 'img/usflag.png',
+ //             height: '35',
+ //             width: '35'
+ //           }));
+ //           lang = '../audio/us/';
+ //         };
+ //       });
+ //
+ // // Sex switcher for male/female voiceover
+ //     $('div#changeSex').on('click', function(){
+ //       if ($("#changeSex img").attr('src') == 'img/male.png') {
+ //         $('#changeSex img').replaceWith($('<img></img>',{
+ //           src: 'img/female.png',
+ //           height: '35',
+ //           width: '35'
+ //         }));
+ //          sex = 'female/';
+ //       }else {
+ //         $('#changeSex img').replaceWith($('<img></img>', {
+ //           src: 'img/male.png',
+ //           height: '35',
+ //           width: '35'
+ //         }));
+ //         sex = 'male/';
+ //       };
+ //     });
