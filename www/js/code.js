@@ -123,7 +123,7 @@ $(document).ready(function(){
 
           // This is for the SHORT VOWELS
   $('#shortA').on('click',function(){
-    shortVowel('apple.png','Apple 苹果','Ant 蚂蚁','Antelope 羚羊','a.mp3','apple.mp3','ant.mp3','antelope.mp3');
+    shortVowel('apple.png','Apple 苹果','Ant 蚂蚁','Arrow ','a.mp3','apple.mp3','ant.mp3','antelope.mp3');
   });
   $('#shortE').on('click',function(){
     shortVowel('egg.png','Egg 鸡蛋','End 结束','Engine 引擎','e.mp3','egg.mp3','end.mp3','engine.mp3');
@@ -132,7 +132,7 @@ $(document).ready(function(){
     shortVowel('insect.png', 'Insect 昆虫', 'In 在...里面', 'Internet 因特网', 'i.mp3','insect.mp3','in.mp3','internet.mp3');
   });
   $('#shortO').on('click',function(){
-    shortVowel('orange.png','Orange 橙子','Object 物体','Ostrich 鸵鸟','o.mp3','orange.mp3','object.mp3','ostrich.mp3');
+    shortVowel('orange.png','Orange 橙子','Object 物体','Odd ','o.mp3','orange.mp3','object.mp3','ostrich.mp3');
   });
   $('#shortU').on('click',function(){
     shortVowel('umbrella.png','Umbrella 雨伞','Under 在...下面','Ugly 丑','u.mp3','umbrella.mp3','under.mp3','ugly.mp3');
